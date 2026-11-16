@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа8" id="82">
+			<Group>AlwaysHorizontal</Group>
+			<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="83"/>
+			<ChildItems>
+				<UsualGroup name="Группа6" id="78">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="79"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="37">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="38"/>
+							<ChildItems>
+								<UsualGroup name="Группа10" id="103">
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="104"/>
+									<ChildItems>
+										<InputField name="Код" id="1">
+											<DataPath>Объект.Code</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+										</InputField>
+										<CheckBoxField name="Согласовано" id="97">
+											<DataPath>Объект.Согласовано</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СогласованоКонтекстноеМеню" id="98"/>
+											<ExtendedTooltip name="СогласованоРасширеннаяПодсказка" id="99"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="Наименование" id="4">
+									<DataPath>Объект.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Задача" id="7">
+							<DataPath>Объект.Задача</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ЗадачаКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ЗадачаРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<UsualGroup name="Группа9" id="92">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="93"/>
+							<ChildItems>
+								<InputField name="ДатаНачала" id="22">
+									<DataPath>Объект.ДатаНачала</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="24"/>
+								</InputField>
+								<InputField name="Автор" id="19">
+									<DataPath>Объект.Автор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АвторКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="21"/>
+								</InputField>
+								<UsualGroup name="Группа2" id="39">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="40"/>
+									<ChildItems>
+										<InputField name="Приоритет" id="10">
+											<DataPath>Объект.Приоритет</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПриоритетКонтекстноеМеню" id="11"/>
+											<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="12"/>
+										</InputField>
+										<InputField name="ПричинаОбращения" id="13">
+											<DataPath>Объект.ПричинаОбращения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПричинаОбращенияКонтекстноеМеню" id="14"/>
+											<ExtendedTooltip name="ПричинаОбращенияРасширеннаяПодсказка" id="15"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа3" id="41">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="42"/>
+									<ChildItems>
+										<InputField name="СтатусВыполнения" id="16">
+											<DataPath>Объект.СтатусВыполнения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СтатусВыполненияКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="СтатусВыполненияРасширеннаяПодсказка" id="18"/>
+											<Events>
+												<Event name="OnChange">СтатусВыполненияПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ДатаВыполнения" id="25">
+											<DataPath>Объект.ДатаВыполнения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДатаВыполненияКонтекстноеМеню" id="26"/>
+											<ExtendedTooltip name="ДатаВыполненияРасширеннаяПодсказка" id="27"/>
+										</InputField>
+										<InputField name="Исполнитель" id="94">
+											<DataPath>Объект.Исполнитель</DataPath>
+											<ContextMenu name="ИсполнительКонтекстноеМеню" id="95"/>
+											<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="96"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа4" id="43">
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="44"/>
+									<ChildItems>
+										<InputField name="КомментарийАдминистратора" id="31">
+											<DataPath>Объект.КомментарийАдминистратора</DataPath>
+											<Visible>false</Visible>
+											<TitleLocation>Left</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="КомментарийАдминистратораКонтекстноеМеню" id="32"/>
+											<ExtendedTooltip name="КомментарийАдминистратораРасширеннаяПодсказка" id="33"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа5" id="45">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="46"/>
+									<ChildItems>
+										<InputField name="КомментарийИсполнителя" id="34">
+											<DataPath>Объект.КомментарийИсполнителя</DataPath>
+											<TitleLocation>Left</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Height>4</Height>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="КомментарийИсполнителяКонтекстноеМеню" id="35"/>
+											<ExtendedTooltip name="КомментарийИсполнителяРасширеннаяПодсказка" id="36"/>
+										</InputField>
+										<InputField name="ЗатраченноеВремя" id="28">
+											<DataPath>Объект.ЗатраченноеВремя</DataPath>
+											<Visible>false</Visible>
+											<TitleLocation>Left</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗатраченноеВремяКонтекстноеМеню" id="29"/>
+											<ExtendedTooltip name="ЗатраченноеВремяРасширеннаяПодсказка" id="30"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа7" id="80">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарии</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Коментари</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="81"/>
+					<ChildItems>
+						<Button name="СоздатьКомментарий" id="90">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СоздатьКомментарий</CommandName>
+							<ExtendedTooltip name="СоздатьКомментарийРасширеннаяПодсказка" id="91"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ОбращенияТехническаяПоддержка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КомментарииАвтор</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КомментарииДата</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Комментарии.Комментарий</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#AAAAAA</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КомментарииКомментарий</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Комментарии.Прочитано</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьКомментарий" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать комментарий</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Створити коментар</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Создать комментарий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьКомментарий</Action>
+		</Command>
+	</Commands>
+</Form>

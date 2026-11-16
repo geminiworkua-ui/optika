@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="5e8edc26-6a6d-4fca-8ba2-35956bb57832">
+		<Name>ВидыВременныхИнтервалов</Name>
+		<Code>000000001</Code>
+		<Description>Виды временных интервалов</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="40c65ebe-933e-4430-8eb7-09fddfc00f13">
+		<Name>ВидыГруза</Name>
+		<Code>000000002</Code>
+		<Description>Виды груза</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="31041fbb-a485-4f5d-a036-be4ba3686457">
+		<Name>ВидыКонтрагентов</Name>
+		<Code>000000165</Code>
+		<Description>Виды контрагентов</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="ec04da47-989f-4a99-8b51-ce51a683c8c2">
+				<Name>Recipient</Name>
+				<Code>000000168</Code>
+				<Description>Recipient</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="38eb62be-9c76-4ada-8c01-bae60ce430d6">
+				<Name>Sender</Name>
+				<Code>000000166</Code>
+				<Description>Отправитель</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b227a02f-1d6a-498f-8dfd-5cd918421fa2">
+				<Name>ThirdPerson</Name>
+				<Code>000000167</Code>
+				<Description>Третья сторона</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="88036b0e-a315-441e-8b0c-7d96e031ed1f">
+		<Name>ВидыОбратнойДоставкиГруза</Name>
+		<Code>000000003</Code>
+		<Description>Виды обратной доставки груза</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="cd9e7af0-1384-43be-8527-2ee04a662c90">
+		<Name>ВидыПаллет</Name>
+		<Code>000000004</Code>
+		<Description>Виды паллет</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="ce79906b-f3a8-460e-8473-dbfaf728c54a">
+		<Name>ВидыПлательщиков</Name>
+		<Code>000000005</Code>
+		<Description>Виды плательщиков</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="58b391ec-bff2-4181-a5ad-8caf5c114344">
+		<Name>ВидыПлательщиковОбратнойДоставки</Name>
+		<Code>000000006</Code>
+		<Description>Виды плательщиков обратной доставки</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="3c16eddb-4b57-4131-959d-18951f545fb4">
+		<Name>ВидыРегионов</Name>
+		<Code>000000159</Code>
+		<Description>Виды регионов</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="633ce2c9-8b53-4cd9-bf3c-8940f0f8811d">
+		<Name>ВидыСобственности</Name>
+		<Code>000000160</Code>
+		<Description>Виды собственности</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="0feb0860-c0b6-4c60-aa24-abe005fefe47">
+		<Name>ВидыУпаковки</Name>
+		<Code>000000007</Code>
+		<Description>Виды упаковки</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="1a7615bb-59a4-410a-819e-d96d6d577769">
+		<Name>ВидыШинИДисков</Name>
+		<Code>000000008</Code>
+		<Description>Виды шин и дисков</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="8bb1d074-1f7e-4979-92d6-39fee78e47c1">
+		<Name>ДействиеВСлучаеНеврученияУкрпочта</Name>
+		<Code>000000028</Code>
+		<Description>Действие в случае невручения (Укрпочта)</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="c42f3d71-4d5e-4f8d-93fe-567db3b86ed4">
+				<Name>RETURN</Name>
+				<Code>000000029</Code>
+				<Description>Вернуть после истечения срока хранения</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5c6c783f-4d8c-4850-beff-6e6e84671f96">
+				<Name>RETURN_AFTER_7_DAYS</Name>
+				<Code>000000030</Code>
+				<Description>Вернуть через 7 календарных дней</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="f2c8f409-3622-4e61-9f79-4f02eddd1080">
+				<Name>PROCESS_AS_REFUSAL</Name>
+				<Code>000000031</Code>
+				<Description>Считать отправление таким, от которого отказался отправитель</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="cc094a26-56b9-4b97-a57f-79e11f8cfc3c">
+		<Name>ДополнительныеУслугиУкрпочта</Name>
+		<Code>000000023</Code>
+		<Description>Дополнительные услуги (Укрпочта)</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="2ddb3948-dc3b-4113-b966-de03f89729bf">
+				<Name>transferPostPayToBankAccount</Name>
+				<Code>000000025</Code>
+				<Description>Зачислять пост-оплату на IBAN</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="de634d9f-e957-4468-9fe8-0c4590baa748">
+				<Name>documentBack</Name>
+				<Code>000000026</Code>
+				<Description>Обратная доставка документов</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ac08c230-1c7d-4656-a464-5ed2b2bcc01b">
+				<Name>checkOnDelivery</Name>
+				<Code>000000027</Code>
+				<Description>Осмотр при вручении</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="71a0a6e0-f26e-4e07-a25c-9b2f81c64e33">
+				<Name>sms</Name>
+				<Code>000000024</Code>
+				<Description>СМС-Сообщение</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="7cd8ad6f-9bd6-4ee4-9e2f-26e415d0c483">
+		<Name>ОписанияГруза</Name>
+		<Code>000000009</Code>
+		<Description>Описания груза</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="a4252f41-23d6-4ecd-8520-d850cdd0269f">
+		<Name>ПереченьОшибок</Name>
+		<Code>000000010</Code>
+		<Description>Перечень ошибок</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="977a759c-57cd-4dfc-908f-42f81a318f57">
+		<Name>РайоныОбластей</Name>
+		<Code>000000040</Code>
+		<Description>Районы областей</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="3d5dd340-38ab-4ab7-bbc6-6d33b4f5eda0">
+		<Name>СтатусыЭкспрессНакладныхMeest</Name>
+		<Code>000000032</Code>
+		<Description>Статусы экспресс накладных (Meest)</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="8c448ec6-243c-432c-b766-a17611723eeb">
+		<Name>СтатусыЭкспрессНакладныхУкрпочта</Name>
+		<Code>000000022</Code>
+		<Description>Статусы экспресс накладных (Укрпочта)</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="f717ebcd-d6b4-4455-8c33-e3ee8af8a906">
+		<Name>СтатусыЭкспрессНакладныхJustin</Name>
+		<Code>000000033</Code>
+		<Description>Статусы экспресс-накладных (Justin)</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="0eb000e3-73d6-4465-b65b-24de966f74a8">
+		<Name>СтатусыЭкспрессНакладных</Name>
+		<Code>000000015</Code>
+		<Description>Статусы экспресс-накладных (Новая почта)</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="123493ce-9479-4a6f-9ed0-5aab8a7b1269">
+		<Name>ТехнологииДоставки</Name>
+		<Code>000000011</Code>
+		<Description>Технологии доставки</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="bd3baee1-2fb0-4688-82ec-3b43c5b88cfd">
+		<Name>ТипыДокументов</Name>
+		<Code>000000161</Code>
+		<Description>Типы документов (Новая Почта)</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="68d0317f-9e98-41dc-b61b-2818f5d2242b">
+				<Name>InternetDocument</Name>
+				<Code>000000162</Code>
+				<Description>Интернет Документ (Новая Почта)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="95964c20-b3a9-4486-b920-7c15c136406f">
+		<Name>ТипыКонтрагентов</Name>
+		<Code>000000012</Code>
+		<Description>Типы контрагентов (Новая почта)</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="25d746f9-2ebc-4a00-a1ef-00ad7eaa36d5">
+				<Name>Organization</Name>
+				<Code>000000164</Code>
+				<Description>Организация (НоваяПочта)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b510b333-30ec-481f-bcfa-829d79cfede2">
+				<Name>PrivatPerson</Name>
+				<Code>000000163</Code>
+				<Description>Частное лицо (Новая почта)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="a600c616-57f4-49df-bba7-4569744634c3">
+		<Name>ТипыКонтрагентовУкрпочта</Name>
+		<Code>000000019</Code>
+		<Description>Типы контрагентов (Укрпочта)</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="ef576549-a98a-41af-83f5-a191d2a8a40e">
+		<Name>ТипыНаселенныхПунктов</Name>
+		<Code>000000158</Code>
+		<Description>Типы населенных пунктов</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="d427b4c0-04b0-4366-ba0d-a0405cead791">
+		<Name>ТипыОтделений</Name>
+		<Code>000000034</Code>
+		<Description>Типы отделений</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="6df4a7fb-1e3b-4ce6-9c56-c86cc3d2d3e3">
+		<Name>ТипыОтправкиУкрпочта</Name>
+		<Code>000000020</Code>
+		<Description>Типы отправки (Укрпочта)</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="e7b10223-fdde-4b11-bcdb-40be0c547e22">
+		<Name>ТипыПостОплаты</Name>
+		<Code>000000016</Code>
+		<Description>Типы пост оплаты</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="eb9bfe2f-e626-4951-8853-0227e7e3763d">
+				<Name>ДенежныйПеревод</Name>
+				<Code>000000017</Code>
+				<Description>Денежный перевод</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="98dacbde-9dbf-4f1e-bc64-2186ca7f0a3b">
+				<Name>КонтрольОплаты</Name>
+				<Code>000000018</Code>
+				<Description>Контроль оплаты</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="6e731fcb-67a8-482f-a376-691a07ce6d1c">
+				<Name>ПостОплатаУкрПочта</Name>
+				<Code>000000021</Code>
+				<Description>Пост-оплата</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="037d8d55-b40d-4708-b457-ebcec8a46dc0">
+		<Name>ФормыОплаты</Name>
+		<Code>000000013</Code>
+		<Description>Формы оплаты</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="61b29dd3-3eb4-4667-a35f-b5b38defbff3">
+				<Name>NonCash</Name>
+				<Code>000000170</Code>
+				<Description>Безготівкова</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="f3f062bc-5899-4a15-bcd7-450376477e38">
+				<Name>Cash</Name>
+				<Code>000000169</Code>
+				<Description>Готівка</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="c8045c88-b5b1-46d9-8f33-0a73d1f9f3df">
+		<Name>ФормыСобственности</Name>
+		<Code>000000014</Code>
+		<Description>Формы собственности</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+</PredefinedData>

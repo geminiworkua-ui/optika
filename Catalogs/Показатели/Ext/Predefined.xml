@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="49ba3ff9-099a-477d-bce3-942f6e8f6f68">
+		<Name>КассаИнтернетМагазина</Name>
+		<Code>000000004</Code>
+		<Description>Касса интернет магазина</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d79b65a6-f43c-4a76-b90f-db61240747e2">
+		<Name>КомиссияНП_базСумма</Name>
+		<Code>000000002</Code>
+		<Description>Комиссия НП баз сумма</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="57722612-6da3-4e0e-abf0-7908f2458085">
+		<Name>КомиссияНП_процент</Name>
+		<Code>000000001</Code>
+		<Description>Комиссия НП процент</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2c4a11f3-55a9-49c3-b020-3386819bb925">
+		<Name>КонтрагентНП</Name>
+		<Code>000000008</Code>
+		<Description>Контрагент НП</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a685f6be-7351-4cd0-a920-8e57c83f0814">
+		<Name>ПодразделениеИнтМаг</Name>
+		<Code>000000003</Code>
+		<Description>Подразделение инт маг</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="557c2936-1678-4c46-973d-9968515ece46">
+		<Name>СтатьяДДСкомиссияНП</Name>
+		<Code>000000006</Code>
+		<Description>Статья ДДСкомиссия НП</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fdd8b7fa-d44c-4c61-bb6e-2d2c02e995d2">
+		<Name>СтатьяЗатратКомиссияНП</Name>
+		<Code>000000007</Code>
+		<Description>Статья затрат комиссия НП</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f343b687-241e-4736-80b4-913972a3a8d8">
+		<Name>СтатьяКомиссияНПденьги</Name>
+		<Code>000000005</Code>
+		<Description>Статья комиссия н пденьги</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5ea4dda2-0cfc-4dac-820e-409e18ce1b0d">
+		<Name>ЭквТерминалСайта</Name>
+		<Code>000000009</Code>
+		<Description>Экв терминал сайта</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

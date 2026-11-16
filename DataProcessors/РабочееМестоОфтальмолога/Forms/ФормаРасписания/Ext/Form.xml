@@ -1,0 +1,776 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="50">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<InputField name="Дата" id="55">
+					<DataPath>Дата</DataPath>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="57"/>
+					<Events>
+						<Event name="OnChange">ВрачПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="ОчиститьДату" id="82">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.ОчиститьДату</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.СерыйКрестикСредний</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОчиститьДатуРасширеннаяПодсказка" id="83"/>
+				</Button>
+				<InputField name="Врач" id="52">
+					<DataPath>Врач</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Врач</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Лікар</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ВрачКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ВрачРасширеннаяПодсказка" id="54"/>
+					<Events>
+						<Event name="OnChange">ВрачПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Магазин" id="58">
+					<DataPath>Магазин</DataPath>
+					<ContextMenu name="МагазинКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="МагазинРасширеннаяПодсказка" id="60"/>
+					<Events>
+						<Event name="OnChange">ВрачПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="ЗапомнитьПривязку" id="149">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.ЗапомнитьПривязку</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ВнешняяСсылкаНаОбъектИнформационнойБазы</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ЗапомнитьПривязкуРасширеннаяПодсказка" id="150"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа4" id="145">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="146"/>
+			<ChildItems>
+				<InputField name="ПолеПоиска" id="135">
+					<DataPath>ПолеПоиска</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пошук</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПолеПоискаКонтекстноеМеню" id="136"/>
+					<ExtendedTooltip name="ПолеПоискаРасширеннаяПодсказка" id="137"/>
+					<Events>
+						<Event name="OnChange">ОтборТелефон1ПриИзменении</Event>
+						<Event name="AutoComplete">ОтборТелефонАвтоПодбор</Event>
+						<Event name="ChoiceProcessing">ОтборТелефонОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+				<LabelField name="Пациент" id="138">
+					<DataPath>Пациент</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пациент</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пацієнт</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПациентКонтекстноеМеню" id="139"/>
+					<ExtendedTooltip name="ПациентРасширеннаяПодсказка" id="140"/>
+					<Events>
+						<Event name="Click">ПациентНажатие</Event>
+					</Events>
+				</LabelField>
+				<Button name="Очистить" id="147">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>3</Width>
+					<CommandName>Form.Command.Очистить</CommandName>
+					<ExtendedTooltip name="ОчиститьРасширеннаяПодсказка" id="148"/>
+				</Button>
+				<Button name="ОткрытьИнфоПоПациенту" id="141">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ОткрытьИнфоПоПациенту</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Help</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инфо</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Інформація</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОткрытьИнфоПоПациентуРасширеннаяПодсказка" id="142"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Группа2" id="84">
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="85"/>
+			<ChildItems>
+				<Page name="ГруппаРасписание" id="86">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расписание приема</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Розклад приймання</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа расписание</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаРасписаниеРасширеннаяПодсказка" id="87"/>
+					<ChildItems>
+						<Table name="РасписаниеНаДень" id="1">
+							<ReadOnly>true</ReadOnly>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>РасписаниеНаДень</DataPath>
+							<RowPictureDataPath>РасписаниеНаДень.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="РасписаниеНаДеньКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="РасписаниеНаДеньКоманднаяПанель" id="3">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="РасписаниеНаДеньРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="РасписаниеНаДеньСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>РасписаниеНаДень</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РасписаниеНаДеньСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="РасписаниеНаДеньСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РасписаниеНаДеньСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>РасписаниеНаДень</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РасписаниеНаДеньСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="РасписаниеНаДеньСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РасписаниеНаДеньУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>РасписаниеНаДень</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РасписаниеНаДеньУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="РасписаниеНаДеньУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">РасписаниеНаДеньВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="РасписаниеНаДеньПациент" id="79">
+									<DataPath>РасписаниеНаДень.Пациент</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пациент</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Пацієнт</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РасписаниеНаДеньПациентКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="РасписаниеНаДеньПациентРасширеннаяПодсказка" id="81"/>
+									<Events>
+										<Event name="Click">РасписаниеНаДеньПациентНажатие</Event>
+									</Events>
+								</LabelField>
+								<LabelField name="РасписаниеНаДеньНоменклатура" id="118">
+									<DataPath>РасписаниеНаДень.Номенклатура</DataPath>
+									<ContextMenu name="РасписаниеНаДеньНоменклатураКонтекстноеМеню" id="119"/>
+									<ExtendedTooltip name="РасписаниеНаДеньНоменклатураРасширеннаяПодсказка" id="120"/>
+								</LabelField>
+								<LabelField name="РасписаниеНаДеньВремяНачалаПриема1" id="115">
+									<DataPath>РасписаниеНаДень.ВремяНачалаПриема1</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>День</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>День</v8:content>
+										</v8:item>
+									</Title>
+									<Format>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>ДФ=dd.MM.yyyy</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="РасписаниеНаДеньВремяНачалаПриема1КонтекстноеМеню" id="116"/>
+									<ExtendedTooltip name="РасписаниеНаДеньВремяНачалаПриема1РасширеннаяПодсказка" id="117"/>
+								</LabelField>
+								<LabelField name="РасписаниеНаДеньВремяНачалаПриема" id="73">
+									<DataPath>РасписаниеНаДень.ВремяНачалаПриема</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Начало</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Початок</v8:content>
+										</v8:item>
+									</Title>
+									<Format>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>ДФ=ЧЧ:мм</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="РасписаниеНаДеньВремяНачалаПриемаКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="РасписаниеНаДеньВремяНачалаПриемаРасширеннаяПодсказка" id="75"/>
+								</LabelField>
+								<LabelField name="РасписаниеНаДеньВремяОкончанияПриема" id="76">
+									<DataPath>РасписаниеНаДень.ВремяОкончанияПриема</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Окончание</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Закінчення</v8:content>
+										</v8:item>
+									</Title>
+									<Format>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>ДФ=ЧЧ:мм</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="РасписаниеНаДеньВремяОкончанияПриемаКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="РасписаниеНаДеньВремяОкончанияПриемаРасширеннаяПодсказка" id="78"/>
+								</LabelField>
+								<LabelField name="РасписаниеНаДеньЗаписьНаПрием" id="121">
+									<DataPath>РасписаниеНаДень.ЗаписьНаПрием</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Запись на прием</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Запис на прийом</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РасписаниеНаДеньЗаписьНаПриемКонтекстноеМеню" id="122"/>
+									<ExtendedTooltip name="РасписаниеНаДеньЗаписьНаПриемРасширеннаяПодсказка" id="123"/>
+								</LabelField>
+								<LabelField name="РасписаниеНаДеньВрач" id="70">
+									<DataPath>РасписаниеНаДень.Врач</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Врач</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Лікар</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РасписаниеНаДеньВрачКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="РасписаниеНаДеньВрачРасширеннаяПодсказка" id="72"/>
+								</LabelField>
+								<LabelField name="РасписаниеНаДеньРегистратор" id="67">
+									<DataPath>РасписаниеНаДень.Recorder</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Регистратор</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Реєстратор</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РасписаниеНаДеньРегистраторКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="РасписаниеНаДеньРегистраторРасширеннаяПодсказка" id="69"/>
+								</LabelField>
+								<LabelField name="РасписаниеНаДеньКодСтроки" id="124">
+									<DataPath>РасписаниеНаДень.КодСтроки</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Код строки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Код строки</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РасписаниеНаДеньКодСтрокиКонтекстноеМеню" id="125"/>
+									<ExtendedTooltip name="РасписаниеНаДеньКодСтрокиРасширеннаяПодсказка" id="126"/>
+								</LabelField>
+								<LabelField name="РасписаниеНаДеньМестоПриема" id="127">
+									<DataPath>РасписаниеНаДень.МестоПриема</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Место приема</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Місце приймання</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РасписаниеНаДеньМестоПриемаКонтекстноеМеню" id="128"/>
+									<ExtendedTooltip name="РасписаниеНаДеньМестоПриемаРасширеннаяПодсказка" id="129"/>
+								</LabelField>
+								<LabelField name="РасписаниеНаДеньДолжность" id="130">
+									<DataPath>РасписаниеНаДень.Должность</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Длолжность</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Посада</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РасписаниеНаДеньДолжностьКонтекстноеМеню" id="131"/>
+									<ExtendedTooltip name="РасписаниеНаДеньДолжностьРасширеннаяПодсказка" id="132"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ИсторияДокументов" id="88">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>История документов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Історія документів</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>История документов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ИсторияДокументовРасширеннаяПодсказка" id="89"/>
+					<ChildItems>
+						<Table name="ИсторияРаботы" id="90">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ИсторияРаботы</DataPath>
+							<RowPictureDataPath>ИсторияРаботы.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ИсторияРаботыКонтекстноеМеню" id="91"/>
+							<AutoCommandBar name="ИсторияРаботыКоманднаяПанель" id="92"/>
+							<ExtendedTooltip name="ИсторияРаботыРасширеннаяПодсказка" id="93"/>
+							<SearchStringAddition name="ИсторияРаботыСтрокаПоиска" id="94">
+								<AdditionSource>
+									<Item>ИсторияРаботы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияРаботыСтрокаПоискаКонтекстноеМеню" id="95"/>
+								<ExtendedTooltip name="ИсторияРаботыСтрокаПоискаРасширеннаяПодсказка" id="96"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИсторияРаботыСостояниеПросмотра" id="97">
+								<AdditionSource>
+									<Item>ИсторияРаботы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияРаботыСостояниеПросмотраКонтекстноеМеню" id="98"/>
+								<ExtendedTooltip name="ИсторияРаботыСостояниеПросмотраРасширеннаяПодсказка" id="99"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИсторияРаботыУправлениеПоиском" id="100">
+								<AdditionSource>
+									<Item>ИсторияРаботы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияРаботыУправлениеПоискомКонтекстноеМеню" id="101"/>
+								<ExtendedTooltip name="ИсторияРаботыУправлениеПоискомРасширеннаяПодсказка" id="102"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ИсторияРаботыДата" id="103">
+									<DataPath>ИсторияРаботы.Date</DataPath>
+									<ContextMenu name="ИсторияРаботыДатаКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="ИсторияРаботыДатаРасширеннаяПодсказка" id="105"/>
+								</LabelField>
+								<LabelField name="ИсторияРаботыСсылка" id="106">
+									<DataPath>ИсторияРаботы.Ref</DataPath>
+									<ContextMenu name="ИсторияРаботыСсылкаКонтекстноеМеню" id="107"/>
+									<ExtendedTooltip name="ИсторияРаботыСсылкаРасширеннаяПодсказка" id="108"/>
+								</LabelField>
+								<LabelField name="ИсторияРаботыПациент" id="109">
+									<DataPath>ИсторияРаботы.Пациент</DataPath>
+									<ContextMenu name="ИсторияРаботыПациентКонтекстноеМеню" id="110"/>
+									<ExtendedTooltip name="ИсторияРаботыПациентРасширеннаяПодсказка" id="111"/>
+								</LabelField>
+								<LabelField name="ИсторияРаботыСтандартнаяКартинка" id="112">
+									<DataPath>ИсторияРаботы.DefaultPicture</DataPath>
+									<ContextMenu name="ИсторияРаботыСтандартнаяКартинкаКонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="ИсторияРаботыСтандартнаяКартинкаРасширеннаяПодсказка" id="114"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПоискПациентов" id="133">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация о пациентах</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Інформація щодо пацієнтів</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа поиск пациентов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПоискПациентовРасширеннаяПодсказка" id="134"/>
+					<ChildItems>
+						<UsualGroup name="Группа3" id="143">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="144"/>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМестоОфтальмолога</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Врач" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Врач</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РасписаниеНаДень" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Расписание на день</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийРасписаниеПриемаВрача.Регистратор,
+	РегистрСведенийРасписаниеПриемаВрача.НомерСтроки,
+	РегистрСведенийРасписаниеПриемаВрача.Активность,
+	РегистрСведенийРасписаниеПриемаВрача.ВремяНачалаПриема,
+	РегистрСведенийРасписаниеПриемаВрача.ВремяОкончанияПриема,
+	РегистрСведенийРасписаниеПриемаВрача.Врач,
+	РегистрСведенийРасписаниеПриемаВрача.МестоПриема,
+	РегистрСведенийРасписаниеПриемаВрача.КодСтроки,
+	РегистрСведенийРасписаниеПриемаВрача.Должность,
+	РегистрСведенийРасписаниеПриемаВрача.ЕстьЗапись,
+	РегистрСведенийРасписаниеПриемаВрача.ЗаписьНаПрием,
+	РегистрСведенийРасписаниеПриемаВрача.ЗаписьНаПрием.Клиент КАК Пациент,
+	РегистрСведенийРасписаниеПриемаВрача.ВремяНачалаПриема КАК ВремяНачалаПриема1,
+	РегистрСведенийРасписаниеПриемаВрача.Номенклатура
+ИЗ
+	РегистрСведений.РасписаниеПриемаВрача КАК РегистрСведенийРасписаниеПриемаВрача
+ГДЕ
+	ВЫБОР
+			КОГДА РегистрСведенийРасписаниеПриемаВрача.Врач = &amp;Врач
+					ИЛИ &amp;ОтборПоВрачу = ЛОЖЬ
+				ТОГДА ИСТИНА
+			ИНАЧЕ ЛОЖЬ
+		КОНЕЦ
+	И ВЫБОР
+			КОГДА РегистрСведенийРасписаниеПриемаВрача.МестоПриема = &amp;Магазин
+					ИЛИ &amp;ОтборПоМагазину = ЛОЖЬ
+				ТОГДА ИСТИНА
+			ИНАЧЕ ЛОЖЬ
+		КОНЕЦ
+	И РегистрСведенийРасписаниеПриемаВрача.ВремяНачалаПриема &gt;= &amp;ВремяНачалаПриема
+	И РегистрСведенийРасписаниеПриемаВрача.ВремяОкончанияПриема &lt;= &amp;ВремяОкончанияПриема</QueryText>
+				<MainTable>InformationRegister.РасписаниеПриемаВрача</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Магазин" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Магазин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Дата" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИсторияРаботы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>История работы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	КарточкаПациента.Ссылка,
+	КарточкаПациента.Дата,
+	КарточкаПациента.Пациент
+ИЗ
+	Документ.КарточкаПациента КАК КарточкаПациента
+ГДЕ
+	КарточкаПациента.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+	И КарточкаПациента.Исполнитель = &amp;Исполнитель
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВыполнениеПроцедуры.Ссылка,
+	ВыполнениеПроцедуры.Дата,
+	ВыполнениеПроцедуры.Пациент
+ИЗ
+	Документ.ВыполнениеПроцедуры КАК ВыполнениеПроцедуры
+ГДЕ
+	ВыполнениеПроцедуры.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+	И ВыполнениеПроцедуры.Исполнитель = &amp;Исполнитель</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ПолеПоиска" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Поле поиска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Пациент" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Пациент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Партнеры</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОчиститьДату" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очистить дату</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очистить дату</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьДату</Action>
+		</Command>
+		<Command name="ОткрытьИнфоПоПациенту" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть информацию по пациенту</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити інформацію щодо пацієнта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Открыть инфо по пациенту</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьИнфоПоПациенту</Action>
+		</Command>
+		<Command name="Очистить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СерыйКрестикСредний</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Очистить</Action>
+		</Command>
+		<Command name="ЗапомнитьПривязку" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Запомнить привязку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Запомнить привязку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапомнитьПривязку</Action>
+		</Command>
+	</Commands>
+</Form>

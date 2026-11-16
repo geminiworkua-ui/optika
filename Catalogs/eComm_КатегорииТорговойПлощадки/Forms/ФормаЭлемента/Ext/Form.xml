@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ТорговаяПлощадка" id="10">
+			<DataPath>Объект.ТорговаяПлощадка</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТорговаяПлощадкаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ТорговаяПлощадкаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Родитель" id="7">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ИдентификаторСервиса" id="13">
+			<DataPath>Объект.ИдентификаторСервиса</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИдентификаторСервисаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ИдентификаторСервисаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ЛимитИзображений" id="16">
+			<DataPath>Объект.ЛимитИзображений</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ЛимитИзображенийКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ЛимитИзображенийРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<Table name="СвойстваКатегории" id="19">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.СвойстваКатегории</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СвойстваКатегорииКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="СвойстваКатегорииКоманднаяПанель" id="21"/>
+			<ExtendedTooltip name="СвойстваКатегорииРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="СвойстваКатегорииСтрокаПоиска" id="23">
+				<AdditionSource>
+					<Item>СвойстваКатегории</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СвойстваКатегорииСтрокаПоискаКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="СвойстваКатегорииСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СвойстваКатегорииСостояниеПросмотра" id="26">
+				<AdditionSource>
+					<Item>СвойстваКатегории</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СвойстваКатегорииСостояниеПросмотраКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="СвойстваКатегорииСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СвойстваКатегорииУправлениеПоиском" id="29">
+				<AdditionSource>
+					<Item>СвойстваКатегории</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СвойстваКатегорииУправлениеПоискомКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="СвойстваКатегорииУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СвойстваКатегорииНомерСтроки" id="32">
+					<DataPath>Объект.СвойстваКатегории.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвойстваКатегорииНомерСтрокиКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СвойстваКатегорииНомерСтрокиРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<InputField name="СвойстваКатегорииИмя" id="35">
+					<DataPath>Объект.СвойстваКатегории.Имя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвойстваКатегорииИмяКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СвойстваКатегорииИмяРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="СвойстваКатегорииПредставление" id="38">
+					<DataPath>Объект.СвойстваКатегории.Представление</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвойстваКатегорииПредставлениеКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СвойстваКатегорииПредставлениеРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<CheckBoxField name="СвойстваКатегорииОбязательное" id="41">
+					<DataPath>Объект.СвойстваКатегории.Обязательное</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваКатегорииОбязательноеКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="СвойстваКатегорииОбязательноеРасширеннаяПодсказка" id="43"/>
+				</CheckBoxField>
+				<CheckBoxField name="СвойстваКатегорииМножественное" id="44">
+					<DataPath>Объект.СвойстваКатегории.Множественное</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваКатегорииМножественноеКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="СвойстваКатегорииМножественноеРасширеннаяПодсказка" id="46"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.eComm_КатегорииТорговойПлощадки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

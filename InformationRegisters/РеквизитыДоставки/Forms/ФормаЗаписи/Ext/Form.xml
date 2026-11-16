@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСоздатьЭкспрессНакладную" id="54" DisplayImportance="High">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьЭкспрессНакладную</CommandName>
+				<BackColor>#DDFFCC</BackColor>
+				<ExtendedTooltip name="ФормаСоздатьЭкспрессНакладнуюРасширеннаяПодсказка" id="55"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="СлужбаДоставки" id="4">
+			<DataPath>Запись.СлужбаДоставки</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="СлужбаДоставкиКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="СлужбаДоставкиРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ОбъектВладелец" id="1">
+			<DataPath>Запись.ОбъектВладелец</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ОбъектВладелецКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ОбъектВладелецРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<UsualGroup name="Группа4" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправитель</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відправник</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="57"/>
+			<ChildItems>
+				<InputField name="УчетнаяЗапись" id="10">
+					<DataPath>Запись.УчетнаяЗапись</DataPath>
+					<ContextMenu name="УчетнаяЗаписьКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="УчетнаяЗаписьРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<CheckBoxField name="ОтправительПоУмолчанию" id="69">
+					<DataPath>Запись.ОтправительПоУмолчанию</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтправительПоУмолчаниюКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ОтправительПоУмолчаниюРасширеннаяПодсказка" id="71"/>
+					<Events>
+						<Event name="OnChange">ОтправительПоУмолчаниюПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<UsualGroup name="ГруппаРеквизитыОтправителя" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа реквизиты отправителя</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа реквизиты отправителя</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРеквизитыОтправителяРасширеннаяПодсказка" id="73"/>
+					<ChildItems>
+						<InputField name="НаселенныйПунктОтправителя" id="58">
+							<DataPath>Запись.НаселенныйПунктОтправителя</DataPath>
+							<ContextMenu name="НаселенныйПунктОтправителяКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="НаселенныйПунктОтправителяРасширеннаяПодсказка" id="60"/>
+						</InputField>
+						<InputField name="ОтделениеОтправителя" id="61">
+							<DataPath>Запись.ОтделениеОтправителя</DataPath>
+							<ContextMenu name="ОтделениеОтправителяКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ОтделениеОтправителяРасширеннаяПодсказка" id="63"/>
+						</InputField>
+						<InputField name="ФизическоеЛицоОтправитель" id="66">
+							<DataPath>Запись.ФизическоеЛицоОтправитель</DataPath>
+							<ContextMenu name="ФизическоеЛицоОтправительКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ФизическоеЛицоОтправительРасширеннаяПодсказка" id="68"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа5" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получатель</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Отримувач</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<InputField name="СпособДоставки" id="7">
+					<DataPath>Запись.ТехнологияДоставки</DataPath>
+					<ContextMenu name="СпособДоставкиКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="СпособДоставкиРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<UsualGroup name="Группа2" id="48">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<InputField name="ПолучательФИО" id="13">
+							<DataPath>Запись.ПолучательФИО</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ПолучательФИОКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ПолучательФИОРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="ПолучательТелефон" id="25">
+							<DataPath>Запись.ПолучательТелефон</DataPath>
+							<ContextMenu name="ПолучательТелефонКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ПолучательТелефонРасширеннаяПодсказка" id="27"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа1" id="46">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="47"/>
+					<ChildItems>
+						<InputField name="ПолучательФамилия" id="16">
+							<DataPath>Запись.ПолучательФамилия</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Фамилия</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Прізвище</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="ПолучательФамилияКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ПолучательФамилияРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="ПолучательИмя" id="19">
+							<DataPath>Запись.ПолучательИмя</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Ім'я</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="ПолучательИмяКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ПолучательИмяРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="ПолучательОтчество" id="22">
+							<DataPath>Запись.ПолучательОтчество</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отчество</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>По-батькові</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="ПолучательОтчествоКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ПолучательОтчествоРасширеннаяПодсказка" id="24"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="НаселенныйПунктПолучателя" id="28">
+					<DataPath>Запись.НаселенныйПунктПолучателя</DataPath>
+					<ContextMenu name="НаселенныйПунктПолучателяКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="НаселенныйПунктПолучателяРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<CheckBoxField name="ДоставкаКурьером" id="37">
+					<DataPath>Запись.ДоставкаКурьером</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДоставкаКурьеромКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ДоставкаКурьеромРасширеннаяПодсказка" id="39"/>
+					<Events>
+						<Event name="OnChange">ДоставкаКурьеромПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ОтделениеПолучателя" id="34">
+					<DataPath>Запись.ОтделениеПолучателя</DataPath>
+					<ContextMenu name="ОтделениеПолучателяКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ОтделениеПолучателяРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<UsualGroup name="ГруппаАдреснаяДоставка" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа адресная доставка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа адресная доставка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАдреснаяДоставкаРасширеннаяПодсказка" id="51"/>
+					<ChildItems>
+						<InputField name="УлицаПолучателя" id="31">
+							<DataPath>Запись.УлицаПолучателя</DataPath>
+							<ContextMenu name="УлицаПолучателяКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="УлицаПолучателяРасширеннаяПодсказка" id="33"/>
+						</InputField>
+						<UsualGroup name="Группа3" id="52">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="53"/>
+							<ChildItems>
+								<InputField name="НомерДомаПолучателя" id="40">
+									<DataPath>Запись.НомерДомаПолучателя</DataPath>
+									<ContextMenu name="НомерДомаПолучателяКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="НомерДомаПолучателяРасширеннаяПодсказка" id="42"/>
+								</InputField>
+								<InputField name="НомерКвартирыПолучателя" id="43">
+									<DataPath>Запись.НомерКвартирыПолучателя</DataPath>
+									<ContextMenu name="НомерКвартирыПолучателяКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="НомерКвартирыПолучателяРасширеннаяПодсказка" id="45"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.РеквизитыДоставки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьЭкспрессНакладную" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать экспресс накладную</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Створити експрес накладну</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Создать экспресс накладную</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьЭкспрессНакладную</Action>
+		</Command>
+	</Commands>
+</Form>

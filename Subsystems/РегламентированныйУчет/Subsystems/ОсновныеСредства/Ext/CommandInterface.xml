@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<CommandsVisibility>
+		<Command name="0:b5a9351e-2254-4164-b0fc-f7b1b4f768ac">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:ee7d5299-346e-4d8b-9780-3f4b79fd44b9">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:a957c598-61a3-473c-9e30-04b4eee4953f">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:fc2e446d-a5f5-4d5e-bdf8-3f7f9f85c71f">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:5811f23c-37b1-4a65-b35b-2e08152a6867">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:3f95c756-4290-487c-9221-44ddd082bcd6">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:4d561076-1105-49ba-8b64-96e0cd2fcfa0">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:c13677c9-7ca2-4ac6-9221-d75292fa9c60">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:eec7668e-17e7-4c3d-a4f5-7d0f7a6f80a5">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:2d649f38-2da2-4644-aa2d-5b12d0740a90">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:58f0b4d1-6975-4043-b1f7-e8c0baefcd42">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:0396cda1-7c93-4220-8a4a-8ebf638dbf25">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:fe42f3ac-1d41-41b5-929d-b6eb5d52968b">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:386ef0f2-3498-4dda-af3a-c105272d9734">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:22d39da4-403d-480e-a9cb-4e595f7eb5dd">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:ee26bc28-7f3b-4f8d-8cba-8da479971bd9">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:1c96a36b-f08d-47bc-8055-ff1e776a8bf4">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:210e222b-329e-41e3-8f53-b162dbbe3b5b">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:b16475cf-19d0-4091-9f31-4d3c76d74bc5">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="0:a957c598-61a3-473c-9e30-04b4eee4953f">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="0:a957c598-61a3-473c-9e30-04b4eee4953f">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:a6426f9c-5451-4df3-b63d-2e6dcf1e3830">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:ccfa290f-41cd-4fbc-b35f-e184a7765f7e">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:164414a6-6203-45c4-94d3-1a18dfcd681d">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:158ce8d6-b306-44e1-acc8-ff09e7a2c815">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:fc2e446d-a5f5-4d5e-bdf8-3f7f9f85c71f">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:5811f23c-37b1-4a65-b35b-2e08152a6867">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:3f95c756-4290-487c-9221-44ddd082bcd6">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:4d561076-1105-49ba-8b64-96e0cd2fcfa0">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:c13677c9-7ca2-4ac6-9221-d75292fa9c60">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:eec7668e-17e7-4c3d-a4f5-7d0f7a6f80a5">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:2d649f38-2da2-4644-aa2d-5b12d0740a90">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:58f0b4d1-6975-4043-b1f7-e8c0baefcd42">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:0396cda1-7c93-4220-8a4a-8ebf638dbf25">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:fe42f3ac-1d41-41b5-929d-b6eb5d52968b">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:386ef0f2-3498-4dda-af3a-c105272d9734">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:22d39da4-403d-480e-a9cb-4e595f7eb5dd">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:ee26bc28-7f3b-4f8d-8cba-8da479971bd9">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:1c96a36b-f08d-47bc-8055-ff1e776a8bf4">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:210e222b-329e-41e3-8f53-b162dbbe3b5b">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:6e0c4485-9ddd-402a-a8ce-3df02c3847c2">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:b16475cf-19d0-4091-9f31-4d3c76d74bc5">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>NavigationPanelOrdinary</Group>
+	</GroupsOrder>
+</CommandInterface>

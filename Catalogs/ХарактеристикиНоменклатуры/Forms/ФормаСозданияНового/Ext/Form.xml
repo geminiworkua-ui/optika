@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="Закрыть" id="95">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.Command.Закрыть</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.AppearanceCross</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="96"/>
+			</Button>
+			<Button name="СохранитьЗакрыть" id="93">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.СохранитьЗакрыть</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.AppearanceCheckBox</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сохранить закрыть</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Зберегти та зачинити</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="СохранитьЗакрытьРасширеннаяПодсказка" id="94"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="97">
+			<HorizontalStretch>true</HorizontalStretch>
+			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="98"/>
+		</UsualGroup>
+		<InputField name="Владелец" id="4">
+			<DataPath>Объект.Owner</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="НаименованиеПолное" id="7">
+			<DataPath>Объект.НаименованиеПолное</DataPath>
+			<Visible>false</Visible>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеПолноеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="НаименованиеПолноеРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="88">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="89"/>
+		</UsualGroup>
+		<LabelDecoration name="Декорация1" id="90">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>&lt;colorstyle -16&gt;Позиція характерістики вже існує&lt;/&gt;</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;colorstyle -16&gt;Такая позиция ужде существует&lt;/&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="91"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="92"/>
+		</LabelDecoration>
+		<InputField name="_Сфера" id="64">
+			<DataPath>Объект._Сфера</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="_СфераКонтекстноеМеню" id="65"/>
+			<ExtendedTooltip name="_СфераРасширеннаяПодсказка" id="66"/>
+			<Events>
+				<Event name="OnChange">_СфераПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="_Аддідація" id="67">
+			<DataPath>Объект._Аддідація</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="_АддідаціяКонтекстноеМеню" id="68"/>
+			<ExtendedTooltip name="_АддідаціяРасширеннаяПодсказка" id="69"/>
+		</InputField>
+		<InputField name="_Циліндр" id="70">
+			<DataPath>Объект._Циліндр</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="_ЦиліндрКонтекстноеМеню" id="71"/>
+			<ExtendedTooltip name="_ЦиліндрРасширеннаяПодсказка" id="72"/>
+			<Events>
+				<Event name="OnChange">_ЦиліндрПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="_Диаметр" id="73">
+			<DataPath>Объект._Диаметр</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="_ДиаметрКонтекстноеМеню" id="74"/>
+			<ExtendedTooltip name="_ДиаметрРасширеннаяПодсказка" id="75"/>
+			<Events>
+				<Event name="OnChange">_ДиаметрПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="_Радіус" id="76">
+			<DataPath>Объект._Радіус</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="_РадіусКонтекстноеМеню" id="77"/>
+			<ExtendedTooltip name="_РадіусРасширеннаяПодсказка" id="78"/>
+			<Events>
+				<Event name="OnChange">_РадіусПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="_Вісь" id="79">
+			<DataPath>Объект._Вісь</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="_ВісьКонтекстноеМеню" id="80"/>
+			<ExtendedTooltip name="_ВісьРасширеннаяПодсказка" id="81"/>
+			<Events>
+				<Event name="OnChange">_ВісьПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="_Дегресія" id="82">
+			<DataPath>Объект._Дегресія</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="_ДегресіяКонтекстноеМеню" id="83"/>
+			<ExtendedTooltip name="_ДегресіяРасширеннаяПодсказка" id="84"/>
+			<Events>
+				<Event name="OnChange">_ДегресіяПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="_Цвет" id="85">
+			<DataPath>Объект._Цвет</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="_ЦветКонтекстноеМеню" id="86"/>
+			<ExtendedTooltip name="_ЦветРасширеннаяПодсказка" id="87"/>
+			<Events>
+				<Event name="OnChange">_ЦветПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="_ВидЛинзы" id="99">
+			<DataPath>Объект._ВидЛинзы</DataPath>
+			<Visible>false</Visible>
+			<ContextMenu name="_ВидЛинзыКонтекстноеМеню" id="100"/>
+			<ExtendedTooltip name="_ВидЛинзыРасширеннаяПодсказка" id="101"/>
+			<Events>
+				<Event name="OnChange">_ВидЛинзыПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="_Покрытие" id="102">
+			<DataPath>Объект._Покрытие</DataPath>
+			<Visible>false</Visible>
+			<ContextMenu name="_ПокрытиеКонтекстноеМеню" id="103"/>
+			<ExtendedTooltip name="_ПокрытиеРасширеннаяПодсказка" id="104"/>
+		</InputField>
+		<InputField name="_Тонирование" id="105">
+			<DataPath>Объект._Тонирование</DataPath>
+			<Visible>false</Visible>
+			<ContextMenu name="_ТонированиеКонтекстноеМеню" id="106"/>
+			<ExtendedTooltip name="_ТонированиеРасширеннаяПодсказка" id="107"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ХарактеристикиНоменклатуры</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьЗакрыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сохранить закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сохранить закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьЗакрыть</Action>
+		</Command>
+		<Command name="Закрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Скасувати</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+	</Commands>
+</Form>

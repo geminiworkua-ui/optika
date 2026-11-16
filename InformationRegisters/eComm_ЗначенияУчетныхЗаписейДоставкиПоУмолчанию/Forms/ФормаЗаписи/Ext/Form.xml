@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="22">
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<InputField name="СлужбаДоставки" id="7">
+					<DataPath>Запись.СлужбаДоставки</DataPath>
+					<ContextMenu name="СлужбаДоставкиКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="СлужбаДоставкиРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="Организация" id="1">
+					<DataPath>Запись.Организация</DataPath>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ЭквайринговыйТерминал" id="4">
+					<DataPath>Запись.ЭквайринговыйТерминал</DataPath>
+					<ContextMenu name="ЭквайринговыйТерминалКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ЭквайринговыйТерминалРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<CheckBoxField name="ПоказыватьВсеНастройки" id="19">
+					<DataPath>Запись.ПоказыватьВсеНастройки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Налаштування</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Tumbler</CheckBoxType>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ=Стандартные; БИ=Расширенные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>БЛ=Стандартні; БИ=Розширені</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ПоказыватьВсеНастройкиКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ПоказыватьВсеНастройкиРасширеннаяПодсказка" id="21"/>
+					<Events>
+						<Event name="OnChange">ПоказыватьВсеНастройкиПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="24">
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<InputField name="УчетнаяЗапись" id="10">
+					<DataPath>Запись.УчетнаяЗапись</DataPath>
+					<ContextMenu name="УчетнаяЗаписьКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="УчетнаяЗаписьРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="Отправитель" id="13">
+					<DataPath>Запись.Отправитель</DataPath>
+					<ContextMenu name="ОтправительКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ОтправительРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="КонтактноеЛицоОтправителя" id="16">
+					<DataPath>Запись.КонтактноеЛицоОтправителя</DataPath>
+					<ContextMenu name="КонтактноеЛицоОтправителяКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="КонтактноеЛицоОтправителяРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.eComm_ЗначенияУчетныхЗаписейДоставкиПоУмолчанию</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

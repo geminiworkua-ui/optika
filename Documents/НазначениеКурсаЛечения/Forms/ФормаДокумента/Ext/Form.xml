@@ -1,0 +1,737 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="NavigationProcessing">ОбработкаПерехода</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="81">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="82"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРеквизиты" id="77">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа реквизиты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа реквизиты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРеквизитыРасширеннаяПодсказка" id="78"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="69">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="70"/>
+							<ChildItems>
+								<InputField name="Дата" id="4">
+									<DataPath>Объект.Date</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+								</InputField>
+								<InputField name="Номер" id="1">
+									<DataPath>Объект.Number</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПациент" id="79">
+							<Title>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Группа пациент</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Группа пациент</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПациентРасширеннаяПодсказка" id="80"/>
+							<ChildItems>
+								<InputField name="Пациент" id="7">
+									<DataPath>Объект.Пациент</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПациентКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ПациентРасширеннаяПодсказка" id="9"/>
+								</InputField>
+								<InputField name="Подразделение" id="148">
+									<DataPath>Объект.Подразделение</DataPath>
+									<ContextMenu name="ПодразделениеКонтекстноеМеню" id="149"/>
+									<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="150"/>
+								</InputField>
+								<UsualGroup name="Группа4" id="141">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="142"/>
+									<ChildItems>
+										<InputField name="ПрименениеДляГлаз" id="138">
+											<DataPath>Объект.ПрименениеДляГлаз</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проведение лечения</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Проведення лікування</v8:content>
+												</v8:item>
+											</Title>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>8</MaxWidth>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ПрименениеДляГлазКонтекстноеМеню" id="139"/>
+											<ExtendedTooltip name="ПрименениеДляГлазРасширеннаяПодсказка" id="140"/>
+											<Events>
+												<Event name="OnChange">ПрименениеДляГлазПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ДлительностьКурса" id="19">
+											<DataPath>Объект.ДлительностьКурса</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Курс 5 процедур</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>Курс 5 процедур</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">5</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Курс 10 процедур</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>Курс 10 процедур</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">10</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Курс 15 процедур</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>Курс 15 процедур</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">15</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ДлительностьКурсаКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="ДлительностьКурсаРасширеннаяПодсказка" id="21"/>
+											<Events>
+												<Event name="OnChange">ДлительностьКурсаПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа3" id="88">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="89"/>
+									<ChildItems>
+										<InputField name="ДиагнозOD" id="71">
+											<DataPath>Объект.ДиагнозOD</DataPath>
+											<ContextMenu name="ДиагнозODКонтекстноеМеню" id="72"/>
+											<ExtendedTooltip name="ДиагнозODРасширеннаяПодсказка" id="73"/>
+										</InputField>
+										<InputField name="ДиагнозOS" id="74">
+											<DataPath>Объект.ДиагнозOS</DataPath>
+											<ContextMenu name="ДиагнозOSКонтекстноеМеню" id="75"/>
+											<ExtendedTooltip name="ДиагнозOSРасширеннаяПодсказка" id="76"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="Комментарий" id="10">
+									<DataPath>Объект.Комментарий</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="КомментарийКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="12"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="НазначениеЛечебныхПроцедур" id="50">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.НазначениеЛечебныхПроцедур</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Состав лечебных процедур</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Склад лікарняних процедур</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="НазначениеЛечебныхПроцедурКонтекстноеМеню" id="51"/>
+							<AutoCommandBar name="НазначениеЛечебныхПроцедурКоманднаяПанель" id="52"/>
+							<ExtendedTooltip name="НазначениеЛечебныхПроцедурРасширеннаяПодсказка" id="53"/>
+							<SearchStringAddition name="НазначениеЛечебныхПроцедурСтрокаПоиска" id="54">
+								<AdditionSource>
+									<Item>НазначениеЛечебныхПроцедур</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НазначениеЛечебныхПроцедурСтрокаПоискаКонтекстноеМеню" id="55"/>
+								<ExtendedTooltip name="НазначениеЛечебныхПроцедурСтрокаПоискаРасширеннаяПодсказка" id="56"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НазначениеЛечебныхПроцедурСостояниеПросмотра" id="57">
+								<AdditionSource>
+									<Item>НазначениеЛечебныхПроцедур</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НазначениеЛечебныхПроцедурСостояниеПросмотраКонтекстноеМеню" id="58"/>
+								<ExtendedTooltip name="НазначениеЛечебныхПроцедурСостояниеПросмотраРасширеннаяПодсказка" id="59"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НазначениеЛечебныхПроцедурУправлениеПоиском" id="60">
+								<AdditionSource>
+									<Item>НазначениеЛечебныхПроцедур</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НазначениеЛечебныхПроцедурУправлениеПоискомКонтекстноеМеню" id="61"/>
+								<ExtendedTooltip name="НазначениеЛечебныхПроцедурУправлениеПоискомРасширеннаяПодсказка" id="62"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="НазначениеЛечебныхПроцедурНомерСтроки" id="63">
+									<DataPath>Объект.НазначениеЛечебныхПроцедур.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НазначениеЛечебныхПроцедурНомерСтрокиКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="НазначениеЛечебныхПроцедурНомерСтрокиРасширеннаяПодсказка" id="65"/>
+								</LabelField>
+								<InputField name="НазначениеЛечебныхПроцедурЛечебнаяПроцедура" id="66">
+									<DataPath>Объект.НазначениеЛечебныхПроцедур.ЛечебнаяПроцедура</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Лечебная процедура</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Лікарняна процедура</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>7</Width>
+									<CreateButton>false</CreateButton>
+									<ContextMenu name="НазначениеЛечебныхПроцедурЛечебнаяПроцедураКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="НазначениеЛечебныхПроцедурЛечебнаяПроцедураРасширеннаяПодсказка" id="68"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="Группа9" id="128">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="129"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаОстротаЗренияДоЛечения" id="92">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Острота зрения до лечения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Гострота зору до лікування</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Группа острота зрения до лечения</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<United>false</United>
+									<BackColor>#FFFBEF</BackColor>
+									<ExtendedTooltip name="ГруппаОстротаЗренияДоЛеченияРасширеннаяПодсказка" id="93"/>
+									<ChildItems>
+										<UsualGroup name="Группа6" id="100">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>без коррекции</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>без корекції</v8:content>
+												</v8:item>
+											</Title>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="101"/>
+											<ChildItems>
+												<InputField name="СсылкаОстротаЗренияODбкДоЛечения" id="94">
+													<DataPath>Объект.ОстротаЗренияODбкДоЛечения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>OD</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>OD</v8:content>
+														</v8:item>
+													</Title>
+													<ChooseType>false</ChooseType>
+													<ContextMenu name="СсылкаОстротаЗренияODбкДоЛеченияКонтекстноеМеню" id="95"/>
+													<ExtendedTooltip name="СсылкаОстротаЗренияODбкДоЛеченияРасширеннаяПодсказка" id="96"/>
+												</InputField>
+												<InputField name="ОстротаЗренияOSбкДоЛечения" id="135">
+													<DataPath>Объект.ОстротаЗренияOSбкДоЛечения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>OS</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>OS</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ОстротаЗренияOSбкДоЛеченияКонтекстноеМеню" id="136"/>
+													<ExtendedTooltip name="ОстротаЗренияOSбкДоЛеченияРасширеннаяПодсказка" id="137"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа7" id="102">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>с коррекцией</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>з корекцією</v8:content>
+												</v8:item>
+											</Title>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="103"/>
+											<ChildItems>
+												<InputField name="СсылкаОстротаЗренияODcкДоЛечения" id="104">
+													<DataPath>Объект.ОстротаЗренияODcкДоЛечения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>OD</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>OD</v8:content>
+														</v8:item>
+													</Title>
+													<ChoiceButton>true</ChoiceButton>
+													<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+													<ContextMenu name="СсылкаОстротаЗренияODcкДоЛеченияКонтекстноеМеню" id="105"/>
+													<ExtendedTooltip name="СсылкаОстротаЗренияODcкДоЛеченияРасширеннаяПодсказка" id="106"/>
+												</InputField>
+												<InputField name="СсылкаОстротаЗренияODcкДоЛечения1" id="107">
+													<DataPath>Объект.ОстротаЗренияOScкДоЛечения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>OS</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>OS</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="СсылкаОстротаЗренияODcкДоЛечения1КонтекстноеМеню" id="108"/>
+													<ExtendedTooltip name="СсылкаОстротаЗренияODcкДоЛечения1РасширеннаяПодсказка" id="109"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаОстротаЗренияПослеЛечения" id="110">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Острота зрения после лечения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Гострота зору після лікування</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Группа острота зрения после лечения</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<BackColor>#ECFFF6</BackColor>
+									<ExtendedTooltip name="ГруппаОстротаЗренияПослеЛеченияРасширеннаяПодсказка" id="111"/>
+									<ChildItems>
+										<UsualGroup name="Группа5" id="112">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>без коррекции</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>без корекції</v8:content>
+												</v8:item>
+											</Title>
+											<Representation>None</Representation>
+											<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="113"/>
+											<ChildItems>
+												<InputField name="СсылкаОстротаЗренияOSбкПослеЛечения" id="117">
+													<DataPath>Объект.ОстротаЗренияODбкПослеЛечения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>OD</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>OD</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="СсылкаОстротаЗренияOSбкПослеЛеченияКонтекстноеМеню" id="118"/>
+													<ExtendedTooltip name="СсылкаОстротаЗренияOSбкПослеЛеченияРасширеннаяПодсказка" id="119"/>
+												</InputField>
+												<InputField name="СсылкаОстротаЗренияODбкПослеЛечения" id="114">
+													<DataPath>Объект.ОстротаЗренияOSбкПослеЛечения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>OS</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>OS</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="СсылкаОстротаЗренияODбкПослеЛеченияКонтекстноеМеню" id="115"/>
+													<ExtendedTooltip name="СсылкаОстротаЗренияODбкПослеЛеченияРасширеннаяПодсказка" id="116"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа8" id="120">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>с коррекцией</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>з корекцією</v8:content>
+												</v8:item>
+											</Title>
+											<Representation>None</Representation>
+											<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="121"/>
+											<ChildItems>
+												<InputField name="СсылкаОстротаЗренияODcкПослеЛечения" id="122">
+													<DataPath>Объект.ОстротаЗренияODcкПослеЛечения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>OD</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>OD</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="СсылкаОстротаЗренияODcкПослеЛеченияКонтекстноеМеню" id="123"/>
+													<ExtendedTooltip name="СсылкаОстротаЗренияODcкПослеЛеченияРасширеннаяПодсказка" id="124"/>
+												</InputField>
+												<InputField name="СсылкаОстротаЗренияOScкПослеЛечения" id="125">
+													<DataPath>Объект.ОстротаЗренияOScкПослеЛечения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>OS</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>OS</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="СсылкаОстротаЗренияOScкПослеЛеченияКонтекстноеМеню" id="126"/>
+													<ExtendedTooltip name="СсылкаОстротаЗренияOScкПослеЛеченияРасширеннаяПодсказка" id="127"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКурсЛечения" id="90">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа курс лечения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа курс лечения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКурсЛеченияРасширеннаяПодсказка" id="91"/>
+					<ChildItems>
+						<Button name="ВыполнитьПроцедуру" id="130">
+							<Type>UsualButton</Type>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ВыполнитьПроцедуру</CommandName>
+							<BackColor>#EBFFE6</BackColor>
+							<ExtendedTooltip name="ВыполнитьПроцедуруРасширеннаяПодсказка" id="131"/>
+						</Button>
+						<Table name="РасписаниеКурсаЛечений" id="29">
+							<Representation>List</Representation>
+							<Width>33</Width>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.РасписаниеКурсаЛечений</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РасписаниеКурсаЛеченийКонтекстноеМеню" id="30"/>
+							<AutoCommandBar name="РасписаниеКурсаЛеченийКоманднаяПанель" id="31">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="РасписаниеКурсаЛеченийРасширеннаяПодсказка" id="32"/>
+							<SearchStringAddition name="РасписаниеКурсаЛеченийСтрокаПоиска" id="33">
+								<AdditionSource>
+									<Item>РасписаниеКурсаЛечений</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РасписаниеКурсаЛеченийСтрокаПоискаКонтекстноеМеню" id="34"/>
+								<ExtendedTooltip name="РасписаниеКурсаЛеченийСтрокаПоискаРасширеннаяПодсказка" id="35"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РасписаниеКурсаЛеченийСостояниеПросмотра" id="36">
+								<AdditionSource>
+									<Item>РасписаниеКурсаЛечений</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РасписаниеКурсаЛеченийСостояниеПросмотраКонтекстноеМеню" id="37"/>
+								<ExtendedTooltip name="РасписаниеКурсаЛеченийСостояниеПросмотраРасширеннаяПодсказка" id="38"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РасписаниеКурсаЛеченийУправлениеПоиском" id="39">
+								<AdditionSource>
+									<Item>РасписаниеКурсаЛечений</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РасписаниеКурсаЛеченийУправлениеПоискомКонтекстноеМеню" id="40"/>
+								<ExtendedTooltip name="РасписаниеКурсаЛеченийУправлениеПоискомРасширеннаяПодсказка" id="41"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">РасписаниеКурсаЛеченийВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="РасписаниеКурсаЛеченийНомерСтроки" id="42">
+									<DataPath>Объект.РасписаниеКурсаЛечений.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РасписаниеКурсаЛеченийНомерСтрокиКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="РасписаниеКурсаЛеченийНомерСтрокиРасширеннаяПодсказка" id="44"/>
+								</LabelField>
+								<InputField name="РасписаниеКурсаЛеченийДата" id="45">
+									<DataPath>Объект.РасписаниеКурсаЛечений.Дата</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата по расписанию</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Дата за розкладом</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ='dd.MM.yy HH:mm'</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>ДФ='dd.MM.yy HH:mm'</v8:content>
+										</v8:item>
+									</Format>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ='dd.MM.yy HH:mm'</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>ДФ='dd.MM.yy HH:mm'</v8:content>
+										</v8:item>
+									</EditFormat>
+									<ContextMenu name="РасписаниеКурсаЛеченийДатаКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="РасписаниеКурсаЛеченийДатаРасширеннаяПодсказка" id="47"/>
+									<Events>
+										<Event name="OnChange">РасписаниеКурсаЛеченийДатаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelField name="РасписаниеКурсаЛеченийКоличествоПроцедур" id="132">
+									<DataPath>Объект.РасписаниеКурсаЛечений.КоличествоПроцедур</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>N</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>N</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<ContextMenu name="РасписаниеКурсаЛеченийКоличествоПроцедурКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="РасписаниеКурсаЛеченийКоличествоПроцедурРасширеннаяПодсказка" id="134"/>
+								</LabelField>
+								<InputField name="РасписаниеКурсаЛеченийВыполнено" id="85">
+									<DataPath>Объект.РасписаниеКурсаЛечений.Выполнено</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выполнено</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Виконано</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<CellHyperlink>true</CellHyperlink>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>false</ChoiceButton>
+									<ClearButton>false</ClearButton>
+									<SpinButton>false</SpinButton>
+									<OpenButton>true</OpenButton>
+									<CreateButton>false</CreateButton>
+									<ContextMenu name="РасписаниеКурсаЛеченийВыполненоКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="РасписаниеКурсаЛеченийВыполненоРасширеннаяПодсказка" id="87"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа10" id="146">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="147"/>
+			<ChildItems>
+				<InputField name="ДатаСледующегоЛечения" id="143">
+					<DataPath>Объект.ДатаСледующегоЛечения</DataPath>
+					<ContextMenu name="ДатаСледующегоЛеченияКонтекстноеМеню" id="144"/>
+					<ExtendedTooltip name="ДатаСледующегоЛеченияРасширеннаяПодсказка" id="145"/>
+				</InputField>
+				<InputField name="Исполнитель" id="16">
+					<DataPath>Объект.Исполнитель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИсполнительКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.НазначениеКурсаЛечения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Объект.РасписаниеКурсаЛечений"/>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьПроцедуру" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить процедуру</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Виконати процедуру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Выполнить процедуру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьПроцедуру</Action>
+		</Command>
+	</Commands>
+</Form>

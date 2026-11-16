@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="7f3cd169-e8f2-4b46-bdbe-3fba6b19b72b">
+		<Name>АппаратноеЛечение</Name>
+		<Code/>
+		<Description>Апартне лікування</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="82dcd535-3c36-499d-b513-ff1932ebf5ca">
+		<Name>УслугиВрача</Name>
+		<Code/>
+		<Description>Послуги лікаря</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="86500efa-c4b0-44e8-8b48-50496258b9cf">
+		<Name>РоботиМастера</Name>
+		<Code/>
+		<Description>Роботи мастера</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

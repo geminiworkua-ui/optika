@@ -1,0 +1,874 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Клиент" id="1">
+			<DataPath>Клиент</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Клієнт</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="КлиентКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<UsualGroup name="Группа2" id="174">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="175"/>
+			<ChildItems>
+				<LabelField name="КлиентВажнаяМедИнформация" id="179">
+					<DataPath>Клиент.ВажнаяМедИнформация</DataPath>
+					<ContextMenu name="КлиентВажнаяМедИнформацияКонтекстноеМеню" id="180"/>
+					<ExtendedTooltip name="КлиентВажнаяМедИнформацияРасширеннаяПодсказка" id="181"/>
+				</LabelField>
+				<LabelField name="КлиентАрхивнаяМедИнформация" id="176">
+					<DataPath>Клиент.АрхивнаяМедИнформация</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="КлиентАрхивнаяМедИнформацияКонтекстноеМеню" id="177"/>
+					<ExtendedTooltip name="КлиентАрхивнаяМедИнформацияРасширеннаяПодсказка" id="178"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Группа1" id="38">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<Page name="ГруппаИсториЗаказов" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>История заказов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Історія замовлень</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа истори заказов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаИсториЗаказовРасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<Table name="ИсторияПокупок" id="4">
+							<MaxHeight>15</MaxHeight>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ИсторияПокупок</DataPath>
+							<RowPictureDataPath>ИсторияПокупок.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ИсторияПокупокКонтекстноеМеню" id="5"/>
+							<AutoCommandBar name="ИсторияПокупокКоманднаяПанель" id="6"/>
+							<ExtendedTooltip name="ИсторияПокупокРасширеннаяПодсказка" id="7"/>
+							<SearchStringAddition name="ИсторияПокупокСтрокаПоиска" id="8">
+								<AdditionSource>
+									<Item>ИсторияПокупок</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияПокупокСтрокаПоискаКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ИсторияПокупокСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИсторияПокупокСостояниеПросмотра" id="11">
+								<AdditionSource>
+									<Item>ИсторияПокупок</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияПокупокСостояниеПросмотраКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ИсторияПокупокСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИсторияПокупокУправлениеПоиском" id="14">
+								<AdditionSource>
+									<Item>ИсторияПокупок</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияПокупокУправлениеПоискомКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="ИсторияПокупокУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ИсторияПокупокЗаказаноПриход" id="17">
+									<DataPath>ИсторияПокупок.ЗаказаноReceipt</DataPath>
+									<ContextMenu name="ИсторияПокупокЗаказаноПриходКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="ИсторияПокупокЗаказаноПриходРасширеннаяПодсказка" id="19"/>
+								</LabelField>
+								<LabelField name="ИсторияПокупокЗаказКлиентаДата" id="20">
+									<DataPath>ИсторияПокупок.ЗаказКлиентаDate</DataPath>
+									<ContextMenu name="ИсторияПокупокЗаказКлиентаДатаКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ИсторияПокупокЗаказКлиентаДатаРасширеннаяПодсказка" id="22"/>
+								</LabelField>
+								<LabelField name="ИсторияПокупокЗаказКлиентаСтатус" id="23">
+									<DataPath>ИсторияПокупок.ЗаказКлиентаСтатус</DataPath>
+									<ContextMenu name="ИсторияПокупокЗаказКлиентаСтатусКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ИсторияПокупокЗаказКлиентаСтатусРасширеннаяПодсказка" id="25"/>
+								</LabelField>
+								<LabelField name="ИсторияПокупокНоменклатура" id="26">
+									<DataPath>ИсторияПокупок.Номенклатура</DataPath>
+									<ContextMenu name="ИсторияПокупокНоменклатураКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ИсторияПокупокНоменклатураРасширеннаяПодсказка" id="28"/>
+								</LabelField>
+								<LabelField name="ИсторияПокупокСклад" id="29">
+									<DataPath>ИсторияПокупок.Склад</DataPath>
+									<ContextMenu name="ИсторияПокупокСкладКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ИсторияПокупокСкладРасширеннаяПодсказка" id="31"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаИсторияВозратов" id="138">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>История возратов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Історія повернень</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа история возратов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаИсторияВозратовРасширеннаяПодсказка" id="139"/>
+					<ChildItems>
+						<Table name="ИсторияВозвратов" id="140">
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ИсторияВозвратов</DataPath>
+							<RowPictureDataPath>ИсторияВозвратов.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ИсторияВозвратовКонтекстноеМеню" id="141"/>
+							<AutoCommandBar name="ИсторияВозвратовКоманднаяПанель" id="142"/>
+							<ExtendedTooltip name="ИсторияВозвратовРасширеннаяПодсказка" id="143"/>
+							<SearchStringAddition name="ИсторияВозвратовСтрокаПоиска" id="144">
+								<AdditionSource>
+									<Item>ИсторияВозвратов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияВозвратовСтрокаПоискаКонтекстноеМеню" id="145"/>
+								<ExtendedTooltip name="ИсторияВозвратовСтрокаПоискаРасширеннаяПодсказка" id="146"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИсторияВозвратовСостояниеПросмотра" id="147">
+								<AdditionSource>
+									<Item>ИсторияВозвратов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияВозвратовСостояниеПросмотраКонтекстноеМеню" id="148"/>
+								<ExtendedTooltip name="ИсторияВозвратовСостояниеПросмотраРасширеннаяПодсказка" id="149"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИсторияВозвратовУправлениеПоиском" id="150">
+								<AdditionSource>
+									<Item>ИсторияВозвратов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияВозвратовУправлениеПоискомКонтекстноеМеню" id="151"/>
+								<ExtendedTooltip name="ИсторияВозвратовУправлениеПоискомРасширеннаяПодсказка" id="152"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ИсторияВозвратовСсылка" id="153">
+									<DataPath>ИсторияВозвратов.Ref</DataPath>
+									<ContextMenu name="ИсторияВозвратовСсылкаКонтекстноеМеню" id="154"/>
+									<ExtendedTooltip name="ИсторияВозвратовСсылкаРасширеннаяПодсказка" id="155"/>
+								</LabelField>
+								<LabelField name="ИсторияВозвратовДокументРеализации" id="156">
+									<DataPath>ИсторияВозвратов.ДокументРеализации</DataPath>
+									<ContextMenu name="ИсторияВозвратовДокументРеализацииКонтекстноеМеню" id="157"/>
+									<ExtendedTooltip name="ИсторияВозвратовДокументРеализацииРасширеннаяПодсказка" id="158"/>
+								</LabelField>
+								<LabelField name="ИсторияВозвратовНоменклатура" id="162">
+									<DataPath>ИсторияВозвратов.Номенклатура</DataPath>
+									<ContextMenu name="ИсторияВозвратовНоменклатураКонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="ИсторияВозвратовНоменклатураРасширеннаяПодсказка" id="164"/>
+								</LabelField>
+								<LabelField name="ИсторияВозвратовПричинаВозврата" id="165">
+									<DataPath>ИсторияВозвратов.ПричинаВозврата</DataPath>
+									<ContextMenu name="ИсторияВозвратовПричинаВозвратаКонтекстноеМеню" id="166"/>
+									<ExtendedTooltip name="ИсторияВозвратовПричинаВозвратаРасширеннаяПодсказка" id="167"/>
+								</LabelField>
+								<LabelField name="ИсторияВозвратовКоличество" id="159">
+									<DataPath>ИсторияВозвратов.Количество</DataPath>
+									<ContextMenu name="ИсторияВозвратовКоличествоКонтекстноеМеню" id="160"/>
+									<ExtendedTooltip name="ИсторияВозвратовКоличествоРасширеннаяПодсказка" id="161"/>
+								</LabelField>
+								<LabelField name="ИсторияВозвратовЦена" id="171">
+									<DataPath>ИсторияВозвратов.Цена</DataPath>
+									<ContextMenu name="ИсторияВозвратовЦенаКонтекстноеМеню" id="172"/>
+									<ExtendedTooltip name="ИсторияВозвратовЦенаРасширеннаяПодсказка" id="173"/>
+								</LabelField>
+								<LabelField name="ИсторияВозвратовСуммаСНДС" id="168">
+									<DataPath>ИсторияВозвратов.СуммаСНДС</DataPath>
+									<ContextMenu name="ИсторияВозвратовСуммаСНДСКонтекстноеМеню" id="169"/>
+									<ExtendedTooltip name="ИсторияВозвратовСуммаСНДСРасширеннаяПодсказка" id="170"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ИсторияНазначений" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>История назначений врача</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Історія призначень лікаря</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>История назначений</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ИсторияНазначенийРасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<Table name="ИсторияНазначенийОптика" id="108">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ИсторияНазначенийОптика</DataPath>
+							<RowPictureDataPath>ИсторияНазначенийОптика.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ИсторияНазначенийОптикаКонтекстноеМеню" id="109"/>
+							<AutoCommandBar name="ИсторияНазначенийОптикаКоманднаяПанель" id="110"/>
+							<ExtendedTooltip name="ИсторияНазначенийОптикаРасширеннаяПодсказка" id="111"/>
+							<SearchStringAddition name="ИсторияНазначенийОптикаСтрокаПоиска" id="112">
+								<AdditionSource>
+									<Item>ИсторияНазначенийОптика</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияНазначенийОптикаСтрокаПоискаКонтекстноеМеню" id="113"/>
+								<ExtendedTooltip name="ИсторияНазначенийОптикаСтрокаПоискаРасширеннаяПодсказка" id="114"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИсторияНазначенийОптикаСостояниеПросмотра" id="115">
+								<AdditionSource>
+									<Item>ИсторияНазначенийОптика</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияНазначенийОптикаСостояниеПросмотраКонтекстноеМеню" id="116"/>
+								<ExtendedTooltip name="ИсторияНазначенийОптикаСостояниеПросмотраРасширеннаяПодсказка" id="117"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИсторияНазначенийОптикаУправлениеПоиском" id="118">
+								<AdditionSource>
+									<Item>ИсторияНазначенийОптика</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияНазначенийОптикаУправлениеПоискомКонтекстноеМеню" id="119"/>
+								<ExtendedTooltip name="ИсторияНазначенийОптикаУправлениеПоискомРасширеннаяПодсказка" id="120"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ИсторияНазначенийОптикаДата" id="121">
+									<DataPath>ИсторияНазначенийОптика.Date</DataPath>
+									<ContextMenu name="ИсторияНазначенийОптикаДатаКонтекстноеМеню" id="122"/>
+									<ExtendedTooltip name="ИсторияНазначенийОптикаДатаРасширеннаяПодсказка" id="123"/>
+								</LabelField>
+								<LabelField name="ИсторияНазначенийОптикаНазначение" id="124">
+									<DataPath>ИсторияНазначенийОптика.Назначение</DataPath>
+									<AutoCellHeight>true</AutoCellHeight>
+									<ContextMenu name="ИсторияНазначенийОптикаНазначениеКонтекстноеМеню" id="125"/>
+									<ExtendedTooltip name="ИсторияНазначенийОптикаНазначениеРасширеннаяПодсказка" id="126"/>
+								</LabelField>
+								<LabelField name="ИсторияНазначенийОптикаНазначениеМКЛпредставление" id="127">
+									<DataPath>ИсторияНазначенийОптика.НазначениеМКЛпредставление</DataPath>
+									<AutoCellHeight>true</AutoCellHeight>
+									<ContextMenu name="ИсторияНазначенийОптикаНазначениеМКЛпредставлениеКонтекстноеМеню" id="128"/>
+									<ExtendedTooltip name="ИсторияНазначенийОптикаНазначениеМКЛпредставлениеРасширеннаяПодсказка" id="129"/>
+								</LabelField>
+								<LabelField name="ИсторияНазначенийОптикаНазначениеНЛпредставление" id="130">
+									<DataPath>ИсторияНазначенийОптика.НазначениеНЛпредставление</DataPath>
+									<AutoCellHeight>true</AutoCellHeight>
+									<ContextMenu name="ИсторияНазначенийОптикаНазначениеНЛпредставлениеКонтекстноеМеню" id="131"/>
+									<ExtendedTooltip name="ИсторияНазначенийОптикаНазначениеНЛпредставлениеРасширеннаяПодсказка" id="132"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Назначения" id="136">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Призначенння</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Назначения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НазначенияРасширеннаяПодсказка" id="137"/>
+					<ChildItems>
+						<Table name="ИсторияНазначений1" id="74">
+							<Height>12</Height>
+							<HeightInTableRows>10</HeightInTableRows>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ИсторияНазначений</DataPath>
+							<RowPictureDataPath>ИсторияНазначений.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ИсторияНазначений1КонтекстноеМеню" id="75"/>
+							<AutoCommandBar name="ИсторияНазначений1КоманднаяПанель" id="76"/>
+							<ExtendedTooltip name="ИсторияНазначений1РасширеннаяПодсказка" id="77"/>
+							<SearchStringAddition name="ИсторияНазначений1СтрокаПоиска" id="78">
+								<AdditionSource>
+									<Item>ИсторияНазначений1</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияНазначений1СтрокаПоискаКонтекстноеМеню" id="79"/>
+								<ExtendedTooltip name="ИсторияНазначений1СтрокаПоискаРасширеннаяПодсказка" id="80"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИсторияНазначений1СостояниеПросмотра" id="81">
+								<AdditionSource>
+									<Item>ИсторияНазначений1</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияНазначений1СостояниеПросмотраКонтекстноеМеню" id="82"/>
+								<ExtendedTooltip name="ИсторияНазначений1СостояниеПросмотраРасширеннаяПодсказка" id="83"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИсторияНазначений1УправлениеПоиском" id="84">
+								<AdditionSource>
+									<Item>ИсторияНазначений1</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияНазначений1УправлениеПоискомКонтекстноеМеню" id="85"/>
+								<ExtendedTooltip name="ИсторияНазначений1УправлениеПоискомРасширеннаяПодсказка" id="86"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ИсторияНазначений1Дата" id="87">
+									<DataPath>ИсторияНазначений.Дата</DataPath>
+									<ContextMenu name="ИсторияНазначений1ДатаКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ИсторияНазначений1ДатаРасширеннаяПодсказка" id="89"/>
+								</LabelField>
+								<LabelField name="ИсторияНазначений1ЕдИзм" id="90">
+									<DataPath>ИсторияНазначений.ЕдИзм</DataPath>
+									<ContextMenu name="ИсторияНазначений1ЕдИзмКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ИсторияНазначений1ЕдИзмРасширеннаяПодсказка" id="92"/>
+								</LabelField>
+								<LabelField name="ИсторияНазначений1Количество" id="93">
+									<DataPath>ИсторияНазначений.Количество</DataPath>
+									<ContextMenu name="ИсторияНазначений1КоличествоКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ИсторияНазначений1КоличествоРасширеннаяПодсказка" id="95"/>
+								</LabelField>
+								<LabelField name="ИсторияНазначений1Назначение" id="96">
+									<DataPath>ИсторияНазначений.Назначение</DataPath>
+									<ContextMenu name="ИсторияНазначений1НазначениеКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ИсторияНазначений1НазначениеРасширеннаяПодсказка" id="98"/>
+								</LabelField>
+								<LabelField name="ИсторияНазначений1ПорядокПрименения" id="99">
+									<DataPath>ИсторияНазначений.ПорядокПрименения</DataPath>
+									<ContextMenu name="ИсторияНазначений1ПорядокПримененияКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ИсторияНазначений1ПорядокПримененияРасширеннаяПодсказка" id="101"/>
+								</LabelField>
+								<LabelField name="ИсторияНазначений1Характеристика" id="102">
+									<DataPath>ИсторияНазначений.Характеристика</DataPath>
+									<ContextMenu name="ИсторияНазначений1ХарактеристикаКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="ИсторияНазначений1ХарактеристикаРасширеннаяПодсказка" id="104"/>
+								</LabelField>
+								<LabelField name="ИсторияНазначений1СтандартнаяКартинка" id="105">
+									<DataPath>ИсторияНазначений.DefaultPicture</DataPath>
+									<ContextMenu name="ИсторияНазначений1СтандартнаяКартинкаКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ИсторияНазначений1СтандартнаяКартинкаРасширеннаяПодсказка" id="107"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="АктивныеЗаписиКВрачу" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Активные записи к врачу</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Активні записи до лікаря</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Активные записи к врачу</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="АктивныеЗаписиКВрачуРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<Table name="ЗаписиКВрачу" id="46">
+							<Height>12</Height>
+							<HeightInTableRows>10</HeightInTableRows>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ЗаписиКВрачу</DataPath>
+							<RowPictureDataPath>ЗаписиКВрачу.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ЗаписиКВрачуКонтекстноеМеню" id="47"/>
+							<AutoCommandBar name="ЗаписиКВрачуКоманднаяПанель" id="48">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЗаписиКВрачуРасширеннаяПодсказка" id="49"/>
+							<SearchStringAddition name="ЗаписиКВрачуСтрокаПоиска" id="50">
+								<AdditionSource>
+									<Item>ЗаписиКВрачу</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаписиКВрачуСтрокаПоискаКонтекстноеМеню" id="51"/>
+								<ExtendedTooltip name="ЗаписиКВрачуСтрокаПоискаРасширеннаяПодсказка" id="52"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗаписиКВрачуСостояниеПросмотра" id="53">
+								<AdditionSource>
+									<Item>ЗаписиКВрачу</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаписиКВрачуСостояниеПросмотраКонтекстноеМеню" id="54"/>
+								<ExtendedTooltip name="ЗаписиКВрачуСостояниеПросмотраРасширеннаяПодсказка" id="55"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗаписиКВрачуУправлениеПоиском" id="56">
+								<AdditionSource>
+									<Item>ЗаписиКВрачу</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаписиКВрачуУправлениеПоискомКонтекстноеМеню" id="57"/>
+								<ExtendedTooltip name="ЗаписиКВрачуУправлениеПоискомРасширеннаяПодсказка" id="58"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ЗаписиКВрачуЗаписьНаПриемДата" id="59">
+									<DataPath>~ЗаписиКВрачу.ЗаписьНаПриемDate</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Дата</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаписиКВрачуЗаписьНаПриемДатаКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="ЗаписиКВрачуЗаписьНаПриемДатаРасширеннаяПодсказка" id="61"/>
+								</LabelField>
+								<LabelField name="ЗаписиКВрачуВрач" id="133">
+									<DataPath>ЗаписиКВрачу.Врач</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Врач</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Лікар</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаписиКВрачуВрачКонтекстноеМеню" id="134"/>
+									<ExtendedTooltip name="ЗаписиКВрачуВрачРасширеннаяПодсказка" id="135"/>
+								</LabelField>
+								<LabelField name="ЗаписиКВрачуЗаписьНаПриемДолжность" id="62">
+									<DataPath>ЗаписиКВрачу.ЗаписьНаПриемДолжность</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Должность</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Посада</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаписиКВрачуЗаписьНаПриемДолжностьКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="ЗаписиКВрачуЗаписьНаПриемДолжностьРасширеннаяПодсказка" id="64"/>
+								</LabelField>
+								<LabelField name="ЗаписиКВрачуЗаписьНаПриемНоменклатура" id="65">
+									<DataPath>ЗаписиКВрачу.ЗаписьНаПриемНоменклатура</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номенклатура</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Номенклатура</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаписиКВрачуЗаписьНаПриемНоменклатураКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="ЗаписиКВрачуЗаписьНаПриемНоменклатураРасширеннаяПодсказка" id="67"/>
+								</LabelField>
+								<LabelField name="ЗаписиКВрачуЗаписьНаПриемПодразделение" id="68">
+									<DataPath>ЗаписиКВрачу.ЗаписьНаПриемПодразделение</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Место приема</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Місце приймання</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаписиКВрачуЗаписьНаПриемПодразделениеКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ЗаписиКВрачуЗаписьНаПриемПодразделениеРасширеннаяПодсказка" id="70"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Клиент" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Партнеры</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИсторияПокупок" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>История покупок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЗаказыКлиентовОбороты.ЗаказКлиента.Дата,
+	ЗаказыКлиентовОбороты.Номенклатура,
+	ЗаказыКлиентовОбороты.Характеристика,
+	ЗаказыКлиентовОбороты.ЗаказКлиента.Статус,
+	ЗаказыКлиентовОбороты.ЗаказаноПриход,
+	ЗаказыКлиентовОбороты.Склад
+ИЗ
+	РегистрНакопления.ЗаказыКлиентов.Обороты КАК ЗаказыКлиентовОбороты
+ГДЕ
+	ЗаказыКлиентовОбороты.ЗаказКлиента.Партнер = &amp;Клиент</QueryText>
+				<MainTable>AccumulationRegister.ЗаказыКлиентов.Turnovers</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ЗаписиКВрачу" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Записи к врачу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РасписаниеПриемаВрача.ВремяНачалаПриема,
+	РасписаниеПриемаВрача.ЗаписьНаПрием.Подразделение,
+	РасписаниеПриемаВрача.ЗаписьНаПрием.Должность,
+	РасписаниеПриемаВрача.ЗаписьНаПрием.Номенклатура,
+	РасписаниеПриемаВрача.Врач
+ИЗ
+	РегистрСведений.РасписаниеПриемаВрача КАК РасписаниеПриемаВрача
+ГДЕ
+	РасписаниеПриемаВрача.ЗаписьНаПрием.Клиент = &amp;Клиент
+	И РасписаниеПриемаВрача.ЗаписьНаПрием.Дата &gt;= &amp;ТекДата</QueryText>
+				<MainTable>InformationRegister.РасписаниеПриемаВрача</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИсторияНазначений" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>История назначений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	КарточкаПациента.Дата КАК Дата,
+	КарточкаПациента.НазначениеОчкиПредставление КАК Назначение,
+	NULL КАК Номенклатура,
+	NULL КАК Характеристика,
+	NULL КАК ЕдИзм,
+	NULL КАК Количество,
+	NULL КАК ПорядокПрименения
+ИЗ
+	Документ.КарточкаПациента КАК КарточкаПациента
+ГДЕ
+	КарточкаПациента.Пациент = &amp;Клиент
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	КарточкаПациента.Дата,
+	КарточкаПациента.НазначениеМКЛпредставление,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL
+ИЗ
+	Документ.КарточкаПациента КАК КарточкаПациента
+ГДЕ
+	КарточкаПациента.Пациент = &amp;Клиент
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	КарточкаПациента.Дата,
+	КарточкаПациента.НазначениеНЛпредставление,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL
+ИЗ
+	Документ.КарточкаПациента КАК КарточкаПациента
+ГДЕ
+	КарточкаПациента.Пациент = &amp;Клиент
+
+УПОРЯДОЧИТЬ ПО
+	Дата</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИсторияНазначенийОптика" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>История назначений оптика</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	КарточкаПациента.Дата,
+	КарточкаПациента.НазначениеОчкиПредставление КАК Назначение,
+	КарточкаПациента.НазначениеМКЛпредставление,
+	КарточкаПациента.НазначениеНЛпредставление
+ИЗ
+	Документ.КарточкаПациента КАК КарточкаПациента
+ГДЕ
+	КарточкаПациента.Пациент = &amp;Клиент</QueryText>
+				<MainTable>Document.КарточкаПациента</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Реквизит1" id="6">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Реквизит2" id="7">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИсторияВозвратов" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>История возвратов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ВозвратТоваровОтКлиентаТовары.Ссылка,
+	ВозвратТоваровОтКлиентаТовары.ДокументРеализации,
+	ВозвратТоваровОтКлиентаТовары.ПричинаВозврата,
+	ВозвратТоваровОтКлиентаТовары.Номенклатура,
+	ВозвратТоваровОтКлиентаТовары.Количество,
+	ВозвратТоваровОтКлиентаТовары.Цена,
+	ВозвратТоваровОтКлиентаТовары.СуммаСНДС
+ИЗ
+	Документ.ВозвратТоваровОтКлиента.Товары КАК ВозвратТоваровОтКлиентаТовары
+ГДЕ
+	ВозвратТоваровОтКлиентаТовары.ДокументРеализации.ЗаказКлиента.Партнер = &amp;Партнер
+	И ВозвратТоваровОтКлиентаТовары.Ссылка.Проведен</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

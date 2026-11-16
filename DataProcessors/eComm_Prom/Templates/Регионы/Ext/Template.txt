@@ -1,0 +1,510 @@
+﻿<regions>
+	<region id="194010017">
+		<value lang="uk">Петропавлівська Борщагівка</value>
+		<value lang="ru">Петропавловская Борщаговка </value>
+	</region>
+	<region id="194010016">
+		<value lang="uk">Софіївська Борщагівка</value>
+		<value lang="ru">Софиевская Борщаговка</value>
+	</region>
+	<region id="194004009">
+		<value lang="uk">Дружківка</value>
+		<value lang="ru">Дружковка</value>
+	</region>
+	<region id="194016004">
+		<value lang="uk">Горішні Плавні</value>
+		<value lang="ru">Горишние Плавни</value>
+	</region>
+	<region id="194023004">
+		<value lang="uk">Сміла</value>
+		<value lang="ru">Смела</value>
+	</region>
+	<region id="194010018">
+		<value lang="uk">Гостомель</value>
+		<value lang="ru">Гостомель</value>
+	</region>
+	<region id="194010010">
+		<value lang="uk">Славутич</value>
+		<value lang="ru">Славутич</value>
+	</region>
+	<region id="194007001">
+		<value lang="uk">Мелітополь</value>
+		<value lang="ru">Мелитополь</value>
+	</region>
+	<region id="194003005">
+		<value lang="uk">Марганець</value>
+		<value lang="ru">Марганец</value>
+	</region>
+	<region id="194010009">
+		<value lang="uk">Ржищів</value>
+		<value lang="ru">Ржищев</value>
+	</region>
+	<region id="194004001">
+		<value lang="uk">Маріуполь</value>
+		<value lang="ru">Мариуполь</value>
+	</region>
+	<region id="194024002">
+		<value lang="uk">Ніжин</value>
+		<value lang="ru">Нежин</value>
+	</region>
+	<region id="194001003">
+		<value lang="uk">Хмільник</value>
+		<value lang="ru">Хмельник</value>
+	</region>
+	<region id="194002001">
+		<value lang="uk">Ковель</value>
+		<value lang="ru">Ковель</value>
+	</region>
+	<region id="194007002">
+		<value lang="uk">Бердянськ</value>
+		<value lang="ru">Бердянск</value>
+	</region>
+	<region id="194010002">
+		<value lang="uk">Березань</value>
+		<value lang="ru">Березань</value>
+	</region>
+	<region id="194010008">
+		<value lang="uk">Переяслав-Хмельницький</value>
+		<value lang="ru">Переяслав-Хмельницкий</value>
+	</region>
+	<region id="194010014">
+		<value lang="uk">Українка</value>
+		<value lang="ru">Украинка</value>
+	</region>
+	<region id="194010013">
+		<value lang="uk">Яготин</value>
+		<value lang="ru">Яготин</value>
+	</region>
+	<region id="194004007">
+		<value lang="uk">Костянтинівка</value>
+		<value lang="ru">Константиновка</value>
+	</region>
+	<region id="194004005">
+		<value lang="uk">Слов'янськ</value>
+		<value lang="ru">Славянск</value>
+	</region>
+	<region id="194012002">
+		<value lang="uk">Лисичанськ</value>
+		<value lang="ru">Лисичанск</value>
+	</region>
+	<region id="194010004">
+		<value lang="uk">Буча</value>
+		<value lang="ru">Буча</value>
+	</region>
+	<region id="194010015">
+		<value lang="uk">Вишневе</value>
+		<value lang="ru">Вишнёвое </value>
+	</region>
+	<region id="194024003">
+		<value lang="uk">Корюківка</value>
+		<value lang="ru">Корюковка</value>
+	</region>
+	<region id="194018003">
+		<value lang="uk">Охтирка</value>
+		<value lang="ru">Ахтырка</value>
+	</region>
+	<region id="194011002">
+		<value lang="uk">Гайворон</value>
+		<value lang="ru">Гайворон</value>
+	</region>
+	<region id="194011004">
+		<value lang="uk">Світловодськ</value>
+		<value lang="ru">Cветловодск</value>
+	</region>
+	<region id="194004010">
+		<value lang="uk">Селидове</value>
+		<value lang="ru">Селидово</value>
+	</region>
+	<region id="194010006">
+		<value lang="uk">Ірпінь</value>
+		<value lang="ru">Ирпень</value>
+	</region>
+	<region id="194024000">
+		<value lang="uk">Чернігів</value>
+		<value lang="ru">Чернигов</value>
+	</region>
+	<region id="194012005">
+		<value lang="uk">Стаханов</value>
+		<value lang="ru">Кадиевка</value>
+	</region>
+	<region id="194006003">
+		<value lang="uk">Виноградів</value>
+		<value lang="ru">Виноградов</value>
+	</region>
+	<region id="194019002">
+		<value lang="uk">Кременець</value>
+		<value lang="ru">Кременец</value>
+	</region>
+	<region id="194014001">
+		<value lang="uk">Вознесенськ</value>
+		<value lang="ru">Вознесенск</value>
+	</region>
+	<region id="194014002">
+		<value lang="uk">Первомайськ</value>
+		<value lang="ru">Первомайск</value>
+	</region>
+	<region id="194014003">
+		<value lang="uk">Баштанка</value>
+		<value lang="ru">Баштанка</value>
+	</region>
+	<region id="194008002">
+		<value lang="uk">Косів</value>
+		<value lang="ru">Косов</value>
+	</region>
+	<region id="194008003">
+		<value lang="uk">Коломия</value>
+		<value lang="ru">Коломыя</value>
+	</region>
+	<region id="194017001">
+		<value lang="uk">Острог</value>
+		<value lang="ru">Острог</value>
+	</region>
+	<region id="194024001">
+		<value lang="uk">Прилуки</value>
+		<value lang="ru">Прилуки</value>
+	</region>
+	<region id="194024004">
+		<value lang="uk">Новгород-Сіверський</value>
+		<value lang="ru">Новгород-Северский</value>
+	</region>
+	<region id="194018004">
+		<value lang="uk">Ромни</value>
+		<value lang="ru">Ромны</value>
+	</region>
+	<region id="194005002">
+		<value lang="uk">Коростень</value>
+		<value lang="ru">Коростень</value>
+	</region>
+	<region id="194019001">
+		<value lang="uk">Чортків</value>
+		<value lang="ru">Чортков</value>
+	</region>
+	<region id="194008001">
+		<value lang="uk">Калуш</value>
+		<value lang="ru">Калуш</value>
+	</region>
+	<region id="194023002">
+		<value lang="uk">Золотоноша</value>
+		<value lang="ru">Золотоноша</value>
+	</region>
+	<region id="194023003">
+		<value lang="uk">Звенигородка</value>
+		<value lang="ru">Звенигородка</value>
+	</region>
+	<region id="194025001">
+		<value lang="uk">Хотин</value>
+		<value lang="ru">Хотин</value>
+	</region>
+	<region id="194025003">
+		<value lang="uk">с. Романківці</value>
+		<value lang="ru"> с. Романковцы</value>
+	</region>
+	<region id="194013003">
+		<value lang="uk">Пустомити</value>
+		<value lang="ru">Пустомыты</value>
+	</region>
+	<region id="194013005">
+		<value lang="uk">Перемишляни</value>
+		<value lang="ru">Перемышляны</value>
+	</region>
+	<region id="194003007">
+		<value lang="uk">Першотравневськ</value>
+		<value lang="ru">Першотравенск</value>
+	</region>
+	<region id="194010019">
+		<value lang="uk">Боярка</value>
+		<value lang="ru">Боярка</value>
+	</region>
+	<region id="194012008">
+		<value lang="uk">Сватово</value>
+		<value lang="ru">Сватово</value>
+	</region>
+	<region id="194005003">
+		<value lang="uk">Звягель</value>
+		<value lang="ru">Звягель</value>
+	</region>
+	<region id="194016002">
+		<value lang="uk">Миргород</value>
+		<value lang="ru">Миргород</value>
+	</region>
+	<region id="194018000">
+		<value lang="uk">Конотоп</value>
+		<value lang="ru">Конотоп</value>
+	</region>
+	<region id="194018001">
+		<value lang="uk">Шостка</value>
+		<value lang="ru">Шостка</value>
+	</region>
+	<region id="194018002">
+		<value lang="uk">Суми</value>
+		<value lang="ru">Сумы</value>
+	</region>
+	<region id="194011003">
+		<value lang="uk">Новомиргород</value>
+		<value lang="ru">Новомиргород</value>
+	</region>
+	<region id="194011000">
+		<value lang="uk">Олександрія</value>
+		<value lang="ru">Александрия</value>
+	</region>
+	<region id="194011001">
+		<value lang="uk">Кропивницький</value>
+		<value lang="ru">Кропивницкий</value>
+	</region>
+	<region id="194005000">
+		<value lang="uk">Бердичів</value>
+		<value lang="ru">Бердичев</value>
+	</region>
+	<region id="194005001">
+		<value lang="uk">Житомир</value>
+		<value lang="ru">Житомир</value>
+	</region>
+	<region id="194006002">
+		<value lang="uk">Хуст</value>
+		<value lang="ru">Хуст</value>
+	</region>
+	<region id="194006001">
+		<value lang="uk">Мукачево</value>
+		<value lang="ru">Мукачево</value>
+	</region>
+	<region id="194006000">
+		<value lang="uk">Ужгород</value>
+		<value lang="ru">Ужгород</value>
+	</region>
+	<region id="194019000">
+		<value lang="uk">Тернопіль</value>
+		<value lang="ru">Тернополь</value>
+	</region>
+	<region id="194014000">
+		<value lang="uk">Миколаїв</value>
+		<value lang="ru">Николаев</value>
+	</region>
+	<region id="194008000">
+		<value lang="uk">Івано-Франківськ</value>
+		<value lang="ru">Ивано-Франковск</value>
+	</region>
+	<region id="194017002">
+		<value lang="uk">Радивилів</value>
+		<value lang="ru">Радивилов</value>
+	</region>
+	<region id="194017000">
+		<value lang="uk">Рівне</value>
+		<value lang="ru">Ровно</value>
+	</region>
+	<region id="194023000">
+		<value lang="uk">Умань</value>
+		<value lang="ru">Умань</value>
+	</region>
+	<region id="194023001">
+		<value lang="uk">Черкаси</value>
+		<value lang="ru">Черкассы</value>
+	</region>
+	<region id="194025002">
+		<value lang="uk">Вижниця</value>
+		<value lang="ru">Вижница</value>
+	</region>
+	<region id="194025000">
+		<value lang="uk">Чернівці</value>
+		<value lang="ru">Черновцы</value>
+	</region>
+	<region id="194016003">
+		<value lang="uk">Лубни</value>
+		<value lang="ru">Лубны</value>
+	</region>
+	<region id="194016000">
+		<value lang="uk">Полтава</value>
+		<value lang="ru">Полтава</value>
+	</region>
+	<region id="194016001">
+		<value lang="uk">Кременчук</value>
+		<value lang="ru">Кременчуг</value>
+	</region>
+	<region id="194001001">
+		<value lang="uk">Жмеринка</value>
+		<value lang="ru">Жмеринка</value>
+	</region>
+	<region id="194001002">
+		<value lang="uk">Тульчин</value>
+		<value lang="ru">Тульчин</value>
+	</region>
+	<region id="194001000">
+		<value lang="uk">Вінниця</value>
+		<value lang="ru">Винница</value>
+	</region>
+	<region id="194007003">
+		<value lang="uk">Вільнянськ</value>
+		<value lang="ru">Вольнянск</value>
+	</region>
+	<region id="194002003">
+		<value lang="uk">Володимир</value>
+		<value lang="ru">Владимир</value>
+	</region>
+	<region id="194002002">
+		<value lang="uk">Нововолинськ</value>
+		<value lang="ru">Нововолынск</value>
+	</region>
+	<region id="194002000">
+		<value lang="uk">Луцьк</value>
+		<value lang="ru">Луцк</value>
+	</region>
+	<region id="194022000">
+		<value lang="uk">Кам'янець-Подільський</value>
+		<value lang="ru">Каменец-Подольский</value>
+	</region>
+	<region id="194022002">
+		<value lang="uk">Славута</value>
+		<value lang="ru">Славута</value>
+	</region>
+	<region id="194022003">
+		<value lang="uk">Полонне</value>
+		<value lang="ru">Полонное</value>
+	</region>
+	<region id="194013000">
+		<value lang="uk">Львів</value>
+		<value lang="ru">Львов</value>
+	</region>
+	<region id="194003003">
+		<value lang="uk">Нікополь</value>
+		<value lang="ru">Никополь</value>
+	</region>
+	<region id="194007000">
+		<value lang="uk">Запоріжжя</value>
+		<value lang="ru">Запорожье</value>
+	</region>
+	<region id="194022001">
+		<value lang="uk">Хмельницький</value>
+		<value lang="ru">Хмельницкий</value>
+	</region>
+	<region id="194013004">
+		<value lang="uk">Моршин</value>
+		<value lang="ru">Моршин</value>
+	</region>
+	<region id="194013006">
+		<value lang="uk">Новояворівськ</value>
+		<value lang="ru">Новояворовск</value>
+	</region>
+	<region id="194013001">
+		<value lang="uk">Золочів</value>
+		<value lang="ru">Золочев</value>
+	</region>
+	<region id="194013002">
+		<value lang="uk">Стрий</value>
+		<value lang="ru">Стрый</value>
+	</region>
+	<region id="194013007">
+		<value lang="uk">Дрогобич</value>
+		<value lang="ru">Дрогобыч</value>
+	</region>
+	<region id="194009">
+		<value lang="uk">Київ</value>
+		<value lang="ru">Киев</value>
+	</region>
+	<region id="194013008">
+		<value lang="uk">Червоноград</value>
+		<value lang="ru">Червоноград</value>
+	</region>
+	<region id="194020001">
+		<value lang="uk">Лозова</value>
+		<value lang="ru">Лозовая</value>
+	</region>
+	<region id="194020002">
+		<value lang="uk">Первомайський</value>
+		<value lang="ru">Первомайский</value>
+	</region>
+	<region id="194020000">
+		<value lang="uk">Харків</value>
+		<value lang="ru">Харьков</value>
+	</region>
+	<region id="194003004">
+		<value lang="uk">Павлоград</value>
+		<value lang="ru">Павлоград</value>
+	</region>
+	<region id="194003006">
+		<value lang="uk">Новомосковськ</value>
+		<value lang="ru">Новомосковск</value>
+	</region>
+	<region id="194003002">
+		<value lang="uk">Кам'янське</value>
+		<value lang="ru">Каменское</value>
+	</region>
+	<region id="194003001">
+		<value lang="uk">Кривий Ріг</value>
+		<value lang="ru">Кривой Рог</value>
+	</region>
+	<region id="194003000">
+		<value lang="uk">Дніпро</value>
+		<value lang="ru">Днепр</value>
+	</region>
+	<region id="194015000">
+		<value lang="uk">Ізмаїл</value>
+		<value lang="ru">Измаил</value>
+	</region>
+	<region id="194015003">
+		<value lang="uk">Білгород-Дністровський</value>
+		<value lang="ru">Белгород-Днестровский</value>
+	</region>
+	<region id="194015002">
+		<value lang="uk">Чорноморськ</value>
+		<value lang="ru">Черноморск</value>
+	</region>
+	<region id="194015001">
+		<value lang="uk">Одеса</value>
+		<value lang="ru">Одесса</value>
+	</region>
+	<region id="194010012">
+		<value lang="uk">Вишгород</value>
+		<value lang="ru">Вышгород</value>
+	</region>
+	<region id="194010011">
+		<value lang="uk">Фастів</value>
+		<value lang="ru">Фастов</value>
+	</region>
+	<region id="194010003">
+		<value lang="uk">Бориспіль</value>
+		<value lang="ru">Борисполь</value>
+	</region>
+	<region id="194010005">
+		<value lang="uk">Васильків</value>
+		<value lang="ru">Васильков</value>
+	</region>
+	<region id="194010001">
+		<value lang="uk">Бровари</value>
+		<value lang="ru">Бровары</value>
+	</region>
+	<region id="194010007">
+		<value lang="uk">Обухів</value>
+		<value lang="ru">Обухов</value>
+	</region>
+	<region id="194010000">
+		<value lang="uk">Біла Церква</value>
+		<value lang="ru">Белая Церковь</value>
+	</region>
+	<region id="194004004">
+		<value lang="uk">Краматорськ</value>
+		<value lang="ru">Краматорск</value>
+	</region>
+	<region id="194004012">
+		<value lang="uk">Волноваха</value>
+		<value lang="ru">Волноваха</value>
+	</region>
+	<region id="194004011">
+		<value lang="uk">Покровськ</value>
+		<value lang="ru">Покровск</value>
+	</region>
+	<region id="194004008">
+		<value lang="uk">Бахмут</value>
+		<value lang="ru">Бахмут</value>
+	</region>
+	<region id="194012003">
+		<value lang="uk">Сєвєродонецьк</value>
+		<value lang="ru">Северодонецк</value>
+	</region>
+	<region id="194012007">
+		<value lang="uk">Старобільськ</value>
+		<value lang="ru">Старобельск</value>
+	</region>
+	<region id="194021000">
+		<value lang="uk">Херсон</value>
+		<value lang="ru">Херсон</value>
+	</region>
+</regions>

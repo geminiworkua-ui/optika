@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="96">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="97"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ВидПроцентБонус" id="106">
+					<DataPath>Объект.ВидПроцентБонус</DataPath>
+					<ContextMenu name="ВидПроцентБонусКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="ВидПроцентБонусРасширеннаяПодсказка" id="108"/>
+				</InputField>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Найменування</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Пояснение" id="7">
+			<DataPath>Объект.Пояснение</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пояснение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Пояснення</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПояснениеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПояснениеРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Pages name="Группа2" id="98">
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="99"/>
+			<ChildItems>
+				<Page name="Группа3ДокументыУстановки" id="100">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы назначения условий</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Документи призначення умов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа3 документы установки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="Группа3ДокументыУстановкиРасширеннаяПодсказка" id="101"/>
+					<ChildItems>
+						<Button name="ФормаСоздатьДокумент" id="104">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СоздатьДокумент</CommandName>
+							<ExtendedTooltip name="ФормаСоздатьДокументРасширеннаяПодсказка" id="105"/>
+						</Button>
+						<Table name="ДокументыУстановкиУсловийНачисления" id="10">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ДокументыУстановкиУсловийНачисления</DataPath>
+							<RowPictureDataPath>ДокументыУстановкиУсловийНачисления.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ДокументыУстановкиУсловийНачисленияКонтекстноеМеню" id="11"/>
+							<AutoCommandBar name="ДокументыУстановкиУсловийНачисленияКоманднаяПанель" id="12">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДокументыУстановкиУсловийНачисленияРасширеннаяПодсказка" id="13"/>
+							<SearchStringAddition name="ДокументыУстановкиУсловийНачисленияСтрокаПоиска" id="14">
+								<AdditionSource>
+									<Item>ДокументыУстановкиУсловийНачисления</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыУстановкиУсловийНачисленияСтрокаПоискаКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="ДокументыУстановкиУсловийНачисленияСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДокументыУстановкиУсловийНачисленияСостояниеПросмотра" id="17">
+								<AdditionSource>
+									<Item>ДокументыУстановкиУсловийНачисления</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыУстановкиУсловийНачисленияСостояниеПросмотраКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="ДокументыУстановкиУсловийНачисленияСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДокументыУстановкиУсловийНачисленияУправлениеПоиском" id="20">
+								<AdditionSource>
+									<Item>ДокументыУстановкиУсловийНачисления</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыУстановкиУсловийНачисленияУправлениеПоискомКонтекстноеМеню" id="21"/>
+								<ExtendedTooltip name="ДокументыУстановкиУсловийНачисленияУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ДокументыУстановкиУсловийНачисленияДата" id="23">
+									<DataPath>ДокументыУстановкиУсловийНачисления.Date</DataPath>
+									<ContextMenu name="ДокументыУстановкиУсловийНачисленияДатаКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ДокументыУстановкиУсловийНачисленияДатаРасширеннаяПодсказка" id="25"/>
+								</LabelField>
+								<CheckBoxField name="ДокументыУстановкиУсловийНачисленияПометкаУдаления" id="26">
+									<DataPath>ДокументыУстановкиУсловийНачисления.DeletionMark</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДокументыУстановкиУсловийНачисленияПометкаУдаленияКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ДокументыУстановкиУсловийНачисленияПометкаУдаленияРасширеннаяПодсказка" id="28"/>
+								</CheckBoxField>
+								<LabelField name="ДокументыУстановкиУсловийНачисленияНомер" id="29">
+									<DataPath>ДокументыУстановкиУсловийНачисления.Number</DataPath>
+									<ContextMenu name="ДокументыУстановкиУсловийНачисленияНомерКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ДокументыУстановкиУсловийНачисленияНомерРасширеннаяПодсказка" id="31"/>
+								</LabelField>
+								<CheckBoxField name="ДокументыУстановкиУсловийНачисленияПроведен" id="32">
+									<DataPath>ДокументыУстановкиУсловийНачисления.Posted</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДокументыУстановкиУсловийНачисленияПроведенКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ДокументыУстановкиУсловийНачисленияПроведенРасширеннаяПодсказка" id="34"/>
+								</CheckBoxField>
+								<LabelField name="ДокументыУстановкиУсловийНачисленияСсылка" id="35">
+									<DataPath>ДокументыУстановкиУсловийНачисления.Ref</DataPath>
+									<ContextMenu name="ДокументыУстановкиУсловийНачисленияСсылкаКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ДокументыУстановкиУсловийНачисленияСсылкаРасширеннаяПодсказка" id="37"/>
+								</LabelField>
+								<LabelField name="ДокументыУстановкиУсловийНачисленияАвтор" id="38">
+									<DataPath>ДокументыУстановкиУсловийНачисления.Автор</DataPath>
+									<ContextMenu name="ДокументыУстановкиУсловийНачисленияАвторКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ДокументыУстановкиУсловийНачисленияАвторРасширеннаяПодсказка" id="40"/>
+								</LabelField>
+								<LabelField name="ДокументыУстановкиУсловийНачисленияВидНачисленияСдельнойЗП" id="41">
+									<DataPath>ДокументыУстановкиУсловийНачисления.ВидНачисленияСдельнойЗП</DataPath>
+									<ContextMenu name="ДокументыУстановкиУсловийНачисленияВидНачисленияСдельнойЗПКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ДокументыУстановкиУсловийНачисленияВидНачисленияСдельнойЗПРасширеннаяПодсказка" id="43"/>
+								</LabelField>
+								<LabelField name="ДокументыУстановкиУсловийНачисленияДатаНачалаДействияНовыхУсловий" id="44">
+									<DataPath>ДокументыУстановкиУсловийНачисления.ДатаНачалаДействияНовыхУсловий</DataPath>
+									<ContextMenu name="ДокументыУстановкиУсловийНачисленияДатаНачалаДействияНовыхУсловийКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="ДокументыУстановкиУсловийНачисленияДатаНачалаДействияНовыхУсловийРасширеннаяПодсказка" id="46"/>
+								</LabelField>
+								<CheckBoxField name="ДокументыУстановкиУсловийНачисленияИспользуетсяИндивидуальнаяПрименимостьНачисления" id="47">
+									<DataPath>ДокументыУстановкиУсловийНачисления.ИспользуетсяИндивидуальнаяПрименимостьНачисления</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДокументыУстановкиУсловийНачисленияИспользуетсяИндивидуальнаяПрименимостьНачисленияКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ДокументыУстановкиУсловийНачисленияИспользуетсяИндивидуальнаяПрименимостьНачисленияРасширеннаяПодсказка" id="49"/>
+								</CheckBoxField>
+								<LabelField name="ДокументыУстановкиУсловийНачисленияКомментарий" id="50">
+									<DataPath>ДокументыУстановкиУсловийНачисления.Комментарий</DataPath>
+									<ContextMenu name="ДокументыУстановкиУсловийНачисленияКомментарийКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ДокументыУстановкиУсловийНачисленияКомментарийРасширеннаяПодсказка" id="52"/>
+								</LabelField>
+								<LabelField name="ДокументыУстановкиУсловийНачисленияСтандартнаяКартинка" id="53">
+									<DataPath>ДокументыУстановкиУсловийНачисления.DefaultPicture</DataPath>
+									<ContextMenu name="ДокументыУстановкиУсловийНачисленияСтандартнаяКартинкаКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ДокументыУстановкиУсловийНачисленияСтандартнаяКартинкаРасширеннаяПодсказка" id="55"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Группа4АктуальныеУсловия" id="102">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Актуальные условия</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Актуальні умови</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа4 актуальные условия</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="Группа4АктуальныеУсловияРасширеннаяПодсказка" id="103"/>
+					<ChildItems>
+						<Table name="АктуальныеУсловия" id="56">
+							<ReadOnly>true</ReadOnly>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>АктуальныеУсловия</DataPath>
+							<RowPictureDataPath>АктуальныеУсловия.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="АктуальныеУсловияКонтекстноеМеню" id="57"/>
+							<AutoCommandBar name="АктуальныеУсловияКоманднаяПанель" id="58"/>
+							<ExtendedTooltip name="АктуальныеУсловияРасширеннаяПодсказка" id="59"/>
+							<SearchStringAddition name="АктуальныеУсловияСтрокаПоиска" id="60">
+								<AdditionSource>
+									<Item>АктуальныеУсловия</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="АктуальныеУсловияСтрокаПоискаКонтекстноеМеню" id="61"/>
+								<ExtendedTooltip name="АктуальныеУсловияСтрокаПоискаРасширеннаяПодсказка" id="62"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="АктуальныеУсловияСостояниеПросмотра" id="63">
+								<AdditionSource>
+									<Item>АктуальныеУсловия</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="АктуальныеУсловияСостояниеПросмотраКонтекстноеМеню" id="64"/>
+								<ExtendedTooltip name="АктуальныеУсловияСостояниеПросмотраРасширеннаяПодсказка" id="65"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="АктуальныеУсловияУправлениеПоиском" id="66">
+								<AdditionSource>
+									<Item>АктуальныеУсловия</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="АктуальныеУсловияУправлениеПоискомКонтекстноеМеню" id="67"/>
+								<ExtendedTooltip name="АктуальныеУсловияУправлениеПоискомРасширеннаяПодсказка" id="68"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="АктуальныеУсловияВидНоменклатуры" id="84">
+									<DataPath>АктуальныеУсловия.ВидНоменклатуры</DataPath>
+									<ContextMenu name="АктуальныеУсловияВидНоменклатурыКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="АктуальныеУсловияВидНоменклатурыРасширеннаяПодсказка" id="86"/>
+								</LabelField>
+								<LabelField name="АктуальныеУсловияДолжность" id="87">
+									<DataPath>АктуальныеУсловия.Должность</DataPath>
+									<ContextMenu name="АктуальныеУсловияДолжностьКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="АктуальныеУсловияДолжностьРасширеннаяПодсказка" id="89"/>
+								</LabelField>
+								<LabelField name="АктуальныеУсловияСтавкаНачисления" id="90">
+									<DataPath>АктуальныеУсловия.СтавкаНачисления</DataPath>
+									<ContextMenu name="АктуальныеУсловияСтавкаНачисленияКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="АктуальныеУсловияСтавкаНачисленияРасширеннаяПодсказка" id="92"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ВидыНачисленийСдельнойЗП</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДокументыУстановкиУсловийНачисления" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Документы установки условий начисления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументНазначениеУсловийНачисленияСдельнойЗП.Ссылка,
+	ДокументНазначениеУсловийНачисленияСдельнойЗП.ПометкаУдаления,
+	ДокументНазначениеУсловийНачисленияСдельнойЗП.Номер,
+	ДокументНазначениеУсловийНачисленияСдельнойЗП.Дата,
+	ДокументНазначениеУсловийНачисленияСдельнойЗП.Проведен,
+	ДокументНазначениеУсловийНачисленияСдельнойЗП.ДатаНачалаДействияНовыхУсловий,
+	ДокументНазначениеУсловийНачисленияСдельнойЗП.ВидНачисленияСдельнойЗП,
+	ДокументНазначениеУсловийНачисленияСдельнойЗП.Автор,
+	ДокументНазначениеУсловийНачисленияСдельнойЗП.Комментарий,
+	ДокументНазначениеУсловийНачисленияСдельнойЗП.ИспользуетсяИндивидуальнаяПрименимостьНачисления,
+	ДокументНазначениеУсловийНачисленияСдельнойЗП.БазаНачисления.(
+		Ссылка,
+		НомерСтроки,
+		ВидНоменклатуры,
+		Ставка
+	),
+	ДокументНазначениеУсловийНачисленияСдельнойЗП.ПрименимостьУсловий.(
+		Ссылка,
+		НомерСтроки,
+		Должность
+	),
+	ДокументНазначениеУсловийНачисленияСдельнойЗП.СводнаяТаблицаУсловий.(
+		Ссылка,
+		НомерСтроки,
+		ВидНоменклатуры,
+		Ставка,
+		Должность
+	),
+	ДокументНазначениеУсловийНачисленияСдельнойЗП.МоментВремени
+ИЗ
+	Документ.НазначениеУсловийНачисленияСдельнойЗП КАК ДокументНазначениеУсловийНачисленияСдельнойЗП
+ГДЕ
+	ДокументНазначениеУсловийНачисленияСдельнойЗП.ВидНачисленияСдельнойЗП = &amp;ВидНачисленияСдельнойЗП</QueryText>
+				<MainTable>Document.НазначениеУсловийНачисленияСдельнойЗП</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="АктуальныеУсловия" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Актуальные условия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийУсловияНачисленийСрезПоследних.Период,
+	РегистрСведенийУсловияНачисленийСрезПоследних.Регистратор,
+	РегистрСведенийУсловияНачисленийСрезПоследних.НомерСтроки,
+	РегистрСведенийУсловияНачисленийСрезПоследних.Активность,
+	РегистрСведенийУсловияНачисленийСрезПоследних.ВидНачисленияСдельнойЗарплаты,
+	РегистрСведенийУсловияНачисленийСрезПоследних.ВидНоменклатуры,
+	РегистрСведенийУсловияНачисленийСрезПоследних.Должность,
+	РегистрСведенийУсловияНачисленийСрезПоследних.СтавкаНачисления
+ИЗ
+	РегистрСведений.УсловияНачислений.СрезПоследних(&amp;Период, ) КАК РегистрСведенийУсловияНачисленийСрезПоследних
+ГДЕ
+	РегистрСведенийУсловияНачисленийСрезПоследних.ВидНачисленияСдельнойЗарплаты = &amp;ВидНачисленияСдельнойЗарплаты</QueryText>
+				<MainTable>InformationRegister.УсловияНачислений.SliceLast</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьДокумент" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документ установки условий</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Створити документ встановлення умов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Создать документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДокумент</Action>
+		</Command>
+	</Commands>
+</Form>

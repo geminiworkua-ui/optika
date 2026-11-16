@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Subsystem uuid="f9bc98cb-29fd-4d7e-9991-5c984a45e056">
+		<Properties>
+			<Name>Rozetka</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Rozetka.ua</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Rozetka.ua</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.eComm_ЗаказыКИзменениюСтатусов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.eComm_ВремяЗагруженногоЗаказа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.eComm_ВыгруженныеИзображения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.eComm_Rozetka</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.eComm_ТорговыеПлощадки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_УчетныеЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_СостоянияЗаказовТорговойПлощадки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_СостоянияЗаказовПокупателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_СвойстваТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_ИнтернетТовары</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_КатегорииТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.eComm_ВыполнитьОбмен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.eComm_ДокументыПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.eComm_СправочникиПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.eComm_Обмен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.eComm_БазовыеПрава</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.eComm_УправлениеКонтентом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.eCommСерверПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.eCommСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.eComm_Подсистема</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_МеткиИнтернетТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_ЗначенияСвойствТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_КатегорииТорговойПлощадки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.eComm_СправочникиПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.eComm_РегистрыПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">9507b57a-55c8-43c1-b6b8-cb03d1728796</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.eComm_СостояниеОбменовДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.eComm_ДействияПриОбмене</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_ПрофилиНастроекУчетнойЗаписи</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

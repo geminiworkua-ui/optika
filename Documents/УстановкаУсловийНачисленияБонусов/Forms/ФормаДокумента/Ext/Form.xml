@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Комментарий" id="7">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Pages name="Страницы" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<Page name="ГруппаУсловияПрименения" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Условия применения</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаУсловияПримененияРасширеннаяПодсказка" id="13"/>
+					<ChildItems>
+						<Table name="УсловияПрименения" id="14">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.УсловияПрименения</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="УсловияПримененияКонтекстноеМеню" id="15"/>
+							<AutoCommandBar name="УсловияПримененияКоманднаяПанель" id="16"/>
+							<ExtendedTooltip name="УсловияПримененияРасширеннаяПодсказка" id="17"/>
+							<SearchStringAddition name="УсловияПримененияСтрокаПоиска" id="18">
+								<AdditionSource>
+									<Item>УсловияПрименения</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УсловияПримененияСтрокаПоискаКонтекстноеМеню" id="19"/>
+								<ExtendedTooltip name="УсловияПримененияСтрокаПоискаРасширеннаяПодсказка" id="20"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="УсловияПримененияСостояниеПросмотра" id="21">
+								<AdditionSource>
+									<Item>УсловияПрименения</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УсловияПримененияСостояниеПросмотраКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="УсловияПримененияСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="УсловияПримененияУправлениеПоиском" id="24">
+								<AdditionSource>
+									<Item>УсловияПрименения</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="УсловияПримененияУправлениеПоискомКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="УсловияПримененияУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="УсловияПримененияНомерСтроки" id="27">
+									<DataPath>Объект.УсловияПрименения.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УсловияПримененияНомерСтрокиКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="УсловияПримененияНомерСтрокиРасширеннаяПодсказка" id="29"/>
+								</LabelField>
+								<InputField name="УсловияПримененияДолжность" id="30">
+									<DataPath>Объект.УсловияПрименения.Должность</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УсловияПримененияДолжностьКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="УсловияПримененияДолжностьРасширеннаяПодсказка" id="32"/>
+								</InputField>
+								<InputField name="УсловияПримененияПодразделение" id="33">
+									<DataPath>Объект.УсловияПрименения.Подразделение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УсловияПримененияПодразделениеКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="УсловияПримененияПодразделениеРасширеннаяПодсказка" id="35"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаУстановкаБонусов" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Установка бонусов</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаУстановкаБонусовРасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<Table name="УстановкаБонусов" id="38">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.УстановкаБонусов</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="УстановкаБонусовКонтекстноеМеню" id="39"/>
+							<AutoCommandBar name="УстановкаБонусовКоманднаяПанель" id="40"/>
+							<ExtendedTooltip name="УстановкаБонусовРасширеннаяПодсказка" id="41"/>
+							<SearchStringAddition name="УстановкаБонусовСтрокаПоиска" id="42">
+								<AdditionSource>
+									<Item>УстановкаБонусов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УстановкаБонусовСтрокаПоискаКонтекстноеМеню" id="43"/>
+								<ExtendedTooltip name="УстановкаБонусовСтрокаПоискаРасширеннаяПодсказка" id="44"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="УстановкаБонусовСостояниеПросмотра" id="45">
+								<AdditionSource>
+									<Item>УстановкаБонусов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УстановкаБонусовСостояниеПросмотраКонтекстноеМеню" id="46"/>
+								<ExtendedTooltip name="УстановкаБонусовСостояниеПросмотраРасширеннаяПодсказка" id="47"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="УстановкаБонусовУправлениеПоиском" id="48">
+								<AdditionSource>
+									<Item>УстановкаБонусов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="УстановкаБонусовУправлениеПоискомКонтекстноеМеню" id="49"/>
+								<ExtendedTooltip name="УстановкаБонусовУправлениеПоискомРасширеннаяПодсказка" id="50"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="УстановкаБонусовНомерСтроки" id="51">
+									<DataPath>Объект.УстановкаБонусов.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УстановкаБонусовНомерСтрокиКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="УстановкаБонусовНомерСтрокиРасширеннаяПодсказка" id="53"/>
+								</LabelField>
+								<InputField name="УстановкаБонусовБонус" id="54">
+									<DataPath>Объект.УстановкаБонусов.Бонус</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УстановкаБонусовБонусКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="УстановкаБонусовБонусРасширеннаяПодсказка" id="56"/>
+								</InputField>
+								<InputField name="УстановкаБонусовМинКоличество" id="57">
+									<DataPath>Объект.УстановкаБонусов.МинКоличество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УстановкаБонусовМинКоличествоКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="УстановкаБонусовМинКоличествоРасширеннаяПодсказка" id="59"/>
+								</InputField>
+								<InputField name="УстановкаБонусовМаксКоличество" id="60">
+									<DataPath>Объект.УстановкаБонусов.МаксКоличество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УстановкаБонусовМаксКоличествоКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="УстановкаБонусовМаксКоличествоРасширеннаяПодсказка" id="62"/>
+								</InputField>
+								<InputField name="УстановкаБонусовСуммаПроцентов" id="63">
+									<DataPath>Объект.УстановкаБонусов.СуммаПроцентов</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УстановкаБонусовСуммаПроцентовКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="УстановкаБонусовСуммаПроцентовРасширеннаяПодсказка" id="65"/>
+								</InputField>
+								<InputField name="УстановкаБонусовСуммаНачисления" id="66">
+									<DataPath>Объект.УстановкаБонусов.СуммаНачисления</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УстановкаБонусовСуммаНачисленияКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="УстановкаБонусовСуммаНачисленияРасширеннаяПодсказка" id="68"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПовременноеНачислениеСлужебное" id="69">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Повременное начисление</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа повременное начисление служебное</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПовременноеНачислениеСлужебноеРасширеннаяПодсказка" id="70"/>
+				</Page>
+				<Page name="ГруппаПовременноеНачисление" id="99">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа повременное начисление</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа повременное начисление</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="ГруппаПовременноеНачислениеРасширеннаяПодсказка" id="100"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="139">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="140"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаКоманды" id="145">
+									<Title>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Группа команды</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Группа команды</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="146"/>
+									<ChildItems>
+										<Button name="ДобавитьЗапись" id="141">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.ДобавитьЗапись</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="ДобавитьЗаписьРасширеннаяПодсказка" id="142"/>
+										</Button>
+										<Button name="УдалитьУровеньСтавки" id="143">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.УдалитьУровеньСтавки</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.AppearanceCrossIcon</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="УдалитьУровеньСтавкиРасширеннаяПодсказка" id="144"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<Table name="УровниСтавок" id="101">
+									<Representation>List</Representation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<Width>18</Width>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<HorizontalStretch>false</HorizontalStretch>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>УровниСтавок</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="УровниСтавокКонтекстноеМеню" id="102"/>
+									<AutoCommandBar name="УровниСтавокКоманднаяПанель" id="103">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="УровниСтавокРасширеннаяПодсказка" id="104"/>
+									<SearchStringAddition name="УровниСтавокСтрокаПоиска" id="105">
+										<AdditionSource>
+											<Item>УровниСтавок</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="УровниСтавокСтрокаПоискаКонтекстноеМеню" id="106"/>
+										<ExtendedTooltip name="УровниСтавокСтрокаПоискаРасширеннаяПодсказка" id="107"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="УровниСтавокСостояниеПросмотра" id="108">
+										<AdditionSource>
+											<Item>УровниСтавок</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="УровниСтавокСостояниеПросмотраКонтекстноеМеню" id="109"/>
+										<ExtendedTooltip name="УровниСтавокСостояниеПросмотраРасширеннаяПодсказка" id="110"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="УровниСтавокУправлениеПоиском" id="111">
+										<AdditionSource>
+											<Item>УровниСтавок</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="УровниСтавокУправлениеПоискомКонтекстноеМеню" id="112"/>
+										<ExtendedTooltip name="УровниСтавокУправлениеПоискомРасширеннаяПодсказка" id="113"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">УровниСтавокВыбор</Event>
+										<Event name="OnActivateRow">УровниСтавокПриАктивизацииСтроки</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="УровниСтавокУровеньСтавки" id="114">
+											<DataPath>УровниСтавок.УровеньСтавки</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>N</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>N</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<ContextMenu name="УровниСтавокУровеньСтавкиКонтекстноеМеню" id="115"/>
+											<ExtendedTooltip name="УровниСтавокУровеньСтавкиРасширеннаяПодсказка" id="116"/>
+										</InputField>
+										<InputField name="УровниСтавокСтавка" id="117">
+											<DataPath>УровниСтавок.Ставка</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>15</Width>
+											<ContextMenu name="УровниСтавокСтавкаКонтекстноеМеню" id="118"/>
+											<ExtendedTooltip name="УровниСтавокСтавкаРасширеннаяПодсказка" id="119"/>
+											<Events>
+												<Event name="OnChange">УровниСтавокСтавкаПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа2" id="147">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="148"/>
+							<ChildItems>
+								<UsualGroup name="Группа3" id="178">
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="179"/>
+									<ChildItems>
+										<Button name="ДобавитьУсловие" id="174">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.ДобавитьУсловие</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="ДобавитьУсловиеРасширеннаяПодсказка" id="175"/>
+										</Button>
+										<Button name="УдалитьУсловие" id="176">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.УдалитьУсловие</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.Stop</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="УдалитьУсловиеРасширеннаяПодсказка" id="177"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<Table name="УсловияВыполнения" id="120">
+									<Representation>List</Representation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>УсловияВыполнения</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="УсловияВыполненияКонтекстноеМеню" id="121"/>
+									<AutoCommandBar name="УсловияВыполненияКоманднаяПанель" id="122">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="УсловияВыполненияРасширеннаяПодсказка" id="123"/>
+									<SearchStringAddition name="УсловияВыполненияСтрокаПоиска" id="124">
+										<AdditionSource>
+											<Item>УсловияВыполнения</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="УсловияВыполненияСтрокаПоискаКонтекстноеМеню" id="125"/>
+										<ExtendedTooltip name="УсловияВыполненияСтрокаПоискаРасширеннаяПодсказка" id="126"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="УсловияВыполненияСостояниеПросмотра" id="127">
+										<AdditionSource>
+											<Item>УсловияВыполнения</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="УсловияВыполненияСостояниеПросмотраКонтекстноеМеню" id="128"/>
+										<ExtendedTooltip name="УсловияВыполненияСостояниеПросмотраРасширеннаяПодсказка" id="129"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="УсловияВыполненияУправлениеПоиском" id="130">
+										<AdditionSource>
+											<Item>УсловияВыполнения</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="УсловияВыполненияУправлениеПоискомКонтекстноеМеню" id="131"/>
+										<ExtendedTooltip name="УсловияВыполненияУправлениеПоискомРасширеннаяПодсказка" id="132"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnChange">УсловияВыполненияПриИзменении</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="УсловияВыполненияУсловиеПрименения" id="133">
+											<DataPath>УсловияВыполнения.УсловиеПрименения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="УсловияВыполненияУсловиеПримененияКонтекстноеМеню" id="134"/>
+											<ExtendedTooltip name="УсловияВыполненияУсловиеПримененияРасширеннаяПодсказка" id="135"/>
+										</InputField>
+										<InputField name="УсловияВыполненияПороговоеЗначение" id="136">
+											<DataPath>УсловияВыполнения.ПороговоеЗначение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="УсловияВыполненияПороговоеЗначениеКонтекстноеМеню" id="137"/>
+											<ExtendedTooltip name="УсловияВыполненияПороговоеЗначениеРасширеннаяПодсказка" id="138"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ПовременноеНачисчениеНаФорме" id="149">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ПовременноеНачисчениеНаФорме</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПовременноеНачисчениеНаФормеКонтекстноеМеню" id="150"/>
+							<AutoCommandBar name="ПовременноеНачисчениеНаФормеКоманднаяПанель" id="151">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПовременноеНачисчениеНаФормеРасширеннаяПодсказка" id="152"/>
+							<SearchStringAddition name="ПовременноеНачисчениеНаФормеСтрокаПоиска" id="153">
+								<AdditionSource>
+									<Item>ПовременноеНачисчениеНаФорме</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПовременноеНачисчениеНаФормеСтрокаПоискаКонтекстноеМеню" id="154"/>
+								<ExtendedTooltip name="ПовременноеНачисчениеНаФормеСтрокаПоискаРасширеннаяПодсказка" id="155"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПовременноеНачисчениеНаФормеСостояниеПросмотра" id="156">
+								<AdditionSource>
+									<Item>ПовременноеНачисчениеНаФорме</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПовременноеНачисчениеНаФормеСостояниеПросмотраКонтекстноеМеню" id="157"/>
+								<ExtendedTooltip name="ПовременноеНачисчениеНаФормеСостояниеПросмотраРасширеннаяПодсказка" id="158"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПовременноеНачисчениеНаФормеУправлениеПоиском" id="159">
+								<AdditionSource>
+									<Item>ПовременноеНачисчениеНаФорме</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПовременноеНачисчениеНаФормеУправлениеПоискомКонтекстноеМеню" id="160"/>
+								<ExtendedTooltip name="ПовременноеНачисчениеНаФормеУправлениеПоискомРасширеннаяПодсказка" id="161"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ПовременноеНачисчениеНаФормеУровеньСтавки" id="162">
+									<DataPath>ПовременноеНачисчениеНаФорме.УровеньСтавки</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПовременноеНачисчениеНаФормеУровеньСтавкиКонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="ПовременноеНачисчениеНаФормеУровеньСтавкиРасширеннаяПодсказка" id="164"/>
+								</InputField>
+								<InputField name="ПовременноеНачисчениеНаФормеУсловиеПрименения" id="165">
+									<DataPath>ПовременноеНачисчениеНаФорме.УсловиеПрименения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПовременноеНачисчениеНаФормеУсловиеПримененияКонтекстноеМеню" id="166"/>
+									<ExtendedTooltip name="ПовременноеНачисчениеНаФормеУсловиеПримененияРасширеннаяПодсказка" id="167"/>
+								</InputField>
+								<InputField name="ПовременноеНачисчениеНаФормеСтавка" id="168">
+									<DataPath>ПовременноеНачисчениеНаФорме.Ставка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПовременноеНачисчениеНаФормеСтавкаКонтекстноеМеню" id="169"/>
+									<ExtendedTooltip name="ПовременноеНачисчениеНаФормеСтавкаРасширеннаяПодсказка" id="170"/>
+								</InputField>
+								<InputField name="ПовременноеНачисчениеНаФормеПороговоеЗначение" id="171">
+									<DataPath>ПовременноеНачисчениеНаФорме.ПороговоеЗначение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПовременноеНачисчениеНаФормеПороговоеЗначениеКонтекстноеМеню" id="172"/>
+									<ExtendedTooltip name="ПовременноеНачисчениеНаФормеПороговоеЗначениеРасширеннаяПодсказка" id="173"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.УстановкаУсловийНачисленияБонусов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="УровниСтавок" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Уровни ставок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="УровеньСтавки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Уровень ставки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ставка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ставка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="УсловияВыполнения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Условия выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="УсловиеПрименения" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Условие применения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.УсловияПримененияПовременныхСтавок</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПороговоеЗначение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пороговое значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТекущийУровеньСтавки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Текущий уровень ставки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущееЗначениеСтавки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Текущее значение ставки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПовременноеНачисчениеНаФорме" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Повременное начисчение на форме</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="УровеньСтавки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Уровень ставки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="УсловиеПрименения" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Условие применения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.УсловияПримененияПовременныхСтавок</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ставка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ставка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПороговоеЗначение" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пороговое значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьЗапись" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Добавить запись</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Добавить запись</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьЗапись</Action>
+		</Command>
+		<Command name="УдалитьУровеньСтавки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Удалить уровень ставки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Удалить уровень ставки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьУровеньСтавки</Action>
+		</Command>
+		<Command name="ДобавитьУсловие" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Добавить условие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить условие</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Добавить условие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьУсловие</Action>
+		</Command>
+		<Command name="УдалитьУсловие" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Удалить условие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Удалить условие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьУсловие</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Subsystem uuid="303e0e65-f289-41e5-b808-ec9f25454745">
+		<Properties>
+			<Name>КадровыйУчет</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кадровый учет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Кадровий облік</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.СостояниеПользователя04</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыКадровыхДвижений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КадроваяРасстановка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтработанноеВремяСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ГрафикиРаботы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РасписаниеРаботыСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИндивидуальныеГрафикиРаботыСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыЗанятости</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыСпособаНачисленияЗП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УсловияНачислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РасчетыПоЗаработнойПлате</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">a61bbae5-e3c1-44d2-b9bd-f44a54c1a061</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыНачисленияСтавки</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>НастройкиИСправочники</Subsystem>
+			<Subsystem>ДокументыУчетаВремения</Subsystem>
+			<Subsystem>НачислениеЗП</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

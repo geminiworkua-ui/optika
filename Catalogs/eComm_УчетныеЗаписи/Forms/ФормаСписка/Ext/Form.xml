@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСоздать" id="37">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Item.Список.StandardCommand.Create</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьРасширеннаяПодсказка" id="38"/>
+			</Button>
+			<Button name="ФормаСкопировать" id="39">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Item.Список.StandardCommand.Copy</CommandName>
+				<ExtendedTooltip name="ФормаСкопироватьРасширеннаяПодсказка" id="40"/>
+			</Button>
+			<Button name="ФормаВыгрузитьТовары" id="41">
+				<Type>CommandBarButton</Type>
+				<CommandName>Catalog.eComm_УчетныеЗаписи.Command.ВыгрузитьТовары</CommandName>
+				<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+				<ExtendedTooltip name="ФормаВыгрузитьТоварыРасширеннаяПодсказка" id="42"/>
+			</Button>
+			<Popup name="ФормаПодменюЗаказы" id="49">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Заказы</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Замовлення</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма подменю заказы</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>StdPicture.Document</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаПодменюЗаказыРасширеннаяПодсказка" id="50"/>
+				<ChildItems>
+					<Button name="ФормаЗагрузитьЗаказы" id="43">
+						<Type>CommandBarButton</Type>
+						<CommandName>Catalog.eComm_УчетныеЗаписи.Command.ЗагрузитьЗаказы</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<ExtendedTooltip name="ФормаЗагрузитьЗаказыРасширеннаяПодсказка" id="44"/>
+					</Button>
+					<Button name="ФормаВыгрузитьЗаказы" id="47">
+						<Type>CommandBarButton</Type>
+						<CommandName>Catalog.eComm_УчетныеЗаписи.Command.ВыгрузитьЗаказы</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<ExtendedTooltip name="ФормаВыгрузитьЗаказыРасширеннаяПодсказка" id="48"/>
+					</Button>
+					<Button name="ФормаЗагрузитьСтатусыОплат" id="57">
+						<Type>CommandBarButton</Type>
+						<CommandName>Catalog.eComm_УчетныеЗаписи.Command.ЗагрузитьСтатусыОплат</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<ExtendedTooltip name="ФормаЗагрузитьСтатусыОплатРасширеннаяПодсказка" id="58"/>
+					</Button>
+					<Button name="ФормаСинхронизоватьСтатусы" id="45">
+						<Type>CommandBarButton</Type>
+						<CommandName>Catalog.eComm_УчетныеЗаписи.Command.СинхронизоватьСтатусы</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<ExtendedTooltip name="ФормаСинхронизоватьСтатусыРасширеннаяПодсказка" id="46"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+			<Popup name="ФормаПодменюСправочники" id="51">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Справочники</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Довідники</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма подменю справочники</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>StdPicture.Catalog</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаПодменюСправочникиРасширеннаяПодсказка" id="52"/>
+				<ChildItems>
+					<Button name="Категории" id="55">
+						<Type>CommandBarButton</Type>
+						<CommandName>Catalog.eComm_УчетныеЗаписи.Command.Категории</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<ExtendedTooltip name="КатегорииРасширеннаяПодсказка" id="56"/>
+					</Button>
+					<Button name="ИнтернетТовары" id="53">
+						<Type>CommandBarButton</Type>
+						<CommandName>Catalog.eComm_УчетныеЗаписи.Command.ИнтернетТовары</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<ExtendedTooltip name="ИнтернетТоварыРасширеннаяПодсказка" id="54"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="35">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="36"/>
+		</UsualGroup>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Код" id="17">
+					<DataPath>Список.Код</DataPath>
+					<ContextMenu name="КодКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<LabelField name="Наименование" id="14">
+					<DataPath>Список.Ссылка</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Назва</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<CheckBoxField name="ВыгружатьТовары" id="20">
+					<DataPath>Список.ВыгружатьТовары</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыгружатьТоварыКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ВыгружатьТоварыРасширеннаяПодсказка" id="22"/>
+				</CheckBoxField>
+				<LabelField name="ОбменТоварами" id="32">
+					<DataPath>Список.ОбменТоварами</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Успешн. обмен товарами</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Успішн. обмін товарами</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОбменТоварамиКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ОбменТоварамиРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<CheckBoxField name="ЗагружатьЗаказы" id="23">
+					<DataPath>Список.ЗагружатьЗаказы</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗагружатьЗаказыКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ЗагружатьЗаказыРасширеннаяПодсказка" id="25"/>
+				</CheckBoxField>
+				<LabelField name="ОбменЗаказами" id="29">
+					<DataPath>Список.ОбменЗаказами</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Успешн. обмен заказами</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Успішн. обмін замовл.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОбменЗаказамиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ОбменЗаказамиРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<CheckBoxField name="СинхронизироватьСтатусыЗаказов" id="26">
+					<DataPath>Список.СинхронизироватьСтатусыЗаказов</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синхрониз. статусы</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СинхронизироватьСтатусыЗаказовКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СинхронизироватьСтатусыЗаказовРасширеннаяПодсказка" id="28"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникeComm_УчетныеЗаписи.Ссылка КАК Ссылка,
+	СправочникeComm_УчетныеЗаписи.Код КАК Код,
+	СправочникeComm_УчетныеЗаписи.ВыгружатьТовары КАК ВыгружатьТовары,
+	СправочникeComm_УчетныеЗаписи.ЗагружатьЗаказы КАК ЗагружатьЗаказы,
+	СправочникeComm_УчетныеЗаписи.СинхронизироватьСтатусыЗаказов КАК СинхронизироватьСтатусыЗаказов,
+	СостояниеОбменовЗаказами.ДатаОкончания КАК ОбменЗаказами,
+	СостояниеОбменовТоварами.ДатаОкончания КАК ОбменТоварами
+ИЗ
+	Справочник.eComm_УчетныеЗаписи КАК СправочникeComm_УчетныеЗаписи
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.eComm_СостояниеОбменовДанными КАК СостояниеОбменовТоварами
+		ПО СправочникeComm_УчетныеЗаписи.Ссылка = СостояниеОбменовТоварами.УчетнаяЗапись
+			И (СостояниеОбменовТоварами.ДействиеПриОбмене = ЗНАЧЕНИЕ(Перечисление.eComm_ДействияПриОбмене.ОбменТоварами))
+			И (СостояниеОбменовТоварами.ПрофильНастроек = ЗНАЧЕНИЕ(Справочник.eComm_ПрофилиНастроекУчетнойЗаписи.ПустаяСсылка))
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.eComm_СостояниеОбменовДанными КАК СостояниеОбменовЗаказами
+		ПО СправочникeComm_УчетныеЗаписи.Ссылка = СостояниеОбменовЗаказами.УчетнаяЗапись
+			И (СостояниеОбменовЗаказами.ДействиеПриОбмене = ЗНАЧЕНИЕ(Перечисление.eComm_ДействияПриОбмене.ОбменЗаказами))
+			И (СостояниеОбменовЗаказами.ПрофильНастроек = ЗНАЧЕНИЕ(Справочник.eComm_ПрофилиНастроекУчетнойЗаписи.ПустаяСсылка))</QueryText>
+				<MainTable>Catalog.eComm_УчетныеЗаписи</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

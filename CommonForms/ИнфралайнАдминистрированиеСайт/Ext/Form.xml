@@ -1,0 +1,914 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Сайт" id="24">
+			<DataPath>Сайт</DataPath>
+			<ContextMenu name="СайтКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="СайтРасширеннаяПодсказка" id="26"/>
+		</InputField>
+		<UsualGroup name="Группа" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="16">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="17"/>
+					<ChildItems>
+						<Button name="ПолныйОбменНоменклатура" id="1">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПолныйОбменНоменклатура</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправка товаров (полная)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Відправка товарів (повна)</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПолныйОбменНоменклатураРасширеннаяПодсказка" id="2"/>
+						</Button>
+						<Button name="ОбменОстаткиПолные" id="7">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменОстаткиПолные</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправка отстатков (полная)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Відправка залишків (повна)</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОбменОстаткиПолныеРасширеннаяПодсказка" id="8"/>
+						</Button>
+						<Button name="ОтправитьКатегории" id="9">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменКатегорийПолный</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправка категорий (полная)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Відправка категорій (повна)</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОтправитьКатегорииРасширеннаяПодсказка" id="10"/>
+						</Button>
+						<Button name="ОбменРубрикаторыПолные" id="27">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменРубрикаторыПолные</CommandName>
+							<ExtendedTooltip name="ОбменРубрикаторыПолныеРасширеннаяПодсказка" id="28"/>
+						</Button>
+						<Button name="ОбменБрендПолные" id="31">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменБрендПолные</CommandName>
+							<ExtendedTooltip name="ОбменБрендПолныеРасширеннаяПодсказка" id="32"/>
+						</Button>
+						<Button name="ОбменСтраныПолные" id="35">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменСтраныПолные</CommandName>
+							<ExtendedTooltip name="ОбменСтраныПолныеРасширеннаяПодсказка" id="36"/>
+						</Button>
+						<Button name="ОбменПроизводителиПолные" id="39">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменПроизводителиПолные</CommandName>
+							<ExtendedTooltip name="ОбменПроизводителиПолныеРасширеннаяПодсказка" id="40"/>
+						</Button>
+						<Button name="ОбменСвойстваПолные" id="45">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменСвойстваПолные</CommandName>
+							<ExtendedTooltip name="ОбменСвойстваПолныеРасширеннаяПодсказка" id="46"/>
+						</Button>
+						<Button name="ОбменЦеныПолные" id="47">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменЦеныПолные</CommandName>
+							<ExtendedTooltip name="ОбменЦеныПолныеРасширеннаяПодсказка" id="48"/>
+						</Button>
+						<Button name="ОбменКартинкиПолные" id="53">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменКартинкиПолные</CommandName>
+							<ExtendedTooltip name="ОбменКартинкиПолныеРасширеннаяПодсказка" id="54"/>
+						</Button>
+						<Button name="ОбменВидыЦен" id="55">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменВидыЦен</CommandName>
+							<ExtendedTooltip name="ОбменВидыЦенРасширеннаяПодсказка" id="56"/>
+						</Button>
+						<LabelDecoration name="Декорация1" id="65">
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="67"/>
+						</LabelDecoration>
+						<Button name="ОбменМагазины" id="63">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменМагазиныПолный</CommandName>
+							<ExtendedTooltip name="ОбменМагазиныРасширеннаяПодсказка" id="64"/>
+						</Button>
+						<Button name="ОбменВрачи" id="61">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменВрачиПолный</CommandName>
+							<ExtendedTooltip name="ОбменВрачиРасширеннаяПодсказка" id="62"/>
+						</Button>
+						<PictureDecoration name="Декорация2" id="78">
+							<Height>1</Height>
+							<ContextMenu name="Декорация2КонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="80"/>
+						</PictureDecoration>
+						<Button name="ОбменНаборыСвойств" id="74">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменНаборыСвойств</CommandName>
+							<ExtendedTooltip name="ОбменНаборыСвойствРасширеннаяПодсказка" id="75"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="20">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="21"/>
+					<ChildItems>
+						<Button name="ОбменНоменклатураИзмененная" id="3">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменНоменклатураИзмененная</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправка товаров</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Відправка товарів</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОбменНоменклатураИзмененнаяРасширеннаяПодсказка" id="4"/>
+						</Button>
+						<Button name="ОбменОстаткиИзменения" id="5">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменОстаткиИзменения</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправка остатков</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Відправка залишків</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОбменОстаткиИзмененияРасширеннаяПодсказка" id="6"/>
+						</Button>
+						<Button name="ОбменКатегорийИзменения" id="11">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменКатегорийИзменения</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправка категорий</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Відправка категорій</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОбменКатегорийИзмененияРасширеннаяПодсказка" id="12"/>
+						</Button>
+						<Button name="ОбменРубрикаторыИзмененные" id="29">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменРубрикаторыИзмененные</CommandName>
+							<ExtendedTooltip name="ОбменРубрикаторыИзмененныеРасширеннаяПодсказка" id="30"/>
+						</Button>
+						<Button name="ОбменБрендИзмененные" id="33">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменБрендИзмененные</CommandName>
+							<ExtendedTooltip name="ОбменБрендИзмененныеРасширеннаяПодсказка" id="34"/>
+						</Button>
+						<Button name="ОбменСтраныИзмененные" id="37">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменСтраныИзмененные</CommandName>
+							<ExtendedTooltip name="ОбменСтраныИзмененныеРасширеннаяПодсказка" id="38"/>
+						</Button>
+						<Button name="ОбменПроизводителиИзмененные" id="41">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменПроизводителиИзмененные</CommandName>
+							<ExtendedTooltip name="ОбменПроизводителиИзмененныеРасширеннаяПодсказка" id="42"/>
+						</Button>
+						<Button name="ОбменСвойстваИзмененные" id="43">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменСвойстваИзмененные</CommandName>
+							<ExtendedTooltip name="ОбменСвойстваИзмененныеРасширеннаяПодсказка" id="44"/>
+						</Button>
+						<Button name="ОбменЦеныИзмененные" id="49">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменЦеныИзмененные</CommandName>
+							<ExtendedTooltip name="ОбменЦеныИзмененныеРасширеннаяПодсказка" id="50"/>
+						</Button>
+						<Button name="ОбменКартинкиИзмененные" id="51">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменКартинкиИзмененные</CommandName>
+							<ExtendedTooltip name="ОбменКартинкиИзмененныеРасширеннаяПодсказка" id="52"/>
+						</Button>
+						<Button name="ОбменВидыЦенИзмененные" id="57">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменВидыЦенИзмененные</CommandName>
+							<ExtendedTooltip name="ОбменВидыЦенИзмененныеРасширеннаяПодсказка" id="58"/>
+						</Button>
+						<Button name="ОбменРасписаниеВрачей" id="72">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменРасписаниеВрачей</CommandName>
+							<ExtendedTooltip name="ОбменРасписаниеВрачейРасширеннаяПодсказка" id="73"/>
+						</Button>
+						<Button name="ОбменЗаписьКВрачу" id="59">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменЗаписьКВрачу</CommandName>
+							<ExtendedTooltip name="ОбменЗаписьКВрачуРасширеннаяПодсказка" id="60"/>
+						</Button>
+						<Button name="ОбменМагазиныИзмененные" id="70">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменМагазиныИзмененные</CommandName>
+							<ExtendedTooltip name="ОбменМагазиныИзмененныеРасширеннаяПодсказка" id="71"/>
+						</Button>
+						<Button name="ОбменВрачиИмененные" id="68">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменВрачиИмененные</CommandName>
+							<ExtendedTooltip name="ОбменВрачиИмененныеРасширеннаяПодсказка" id="69"/>
+						</Button>
+						<Button name="ОбменНаборыСвойствИзмененные" id="76">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбменНаборыСвойствИзмененные</CommandName>
+							<ExtendedTooltip name="ОбменНаборыСвойствИзмененныеРасширеннаяПодсказка" id="77"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="ОтправитьВсё" id="22">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОтправитьВсё</CommandName>
+			<ExtendedTooltip name="ОтправитьВсёРасширеннаяПодсказка" id="23"/>
+		</Button>
+		<InputField name="КомиссияW4P" id="13">
+			<DataPath>КомиссияW4P</DataPath>
+			<ContextMenu name="КомиссияW4PКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КомиссияW4PРасширеннаяПодсказка" id="15"/>
+			<Events>
+				<Event name="OnChange">КомиссияW4PПриИзменении</Event>
+			</Events>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="КомиссияW4P" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Комиссия W4P</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Сайт" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сайт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ExchangePlanRef.ОбменССайтомНовый</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СписокУдаления" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Список удаления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолныйОбменНоменклатура" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправка товаров (полная)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відправлення товарів (повна)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Полный обмен номенклатура</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменНоменклатураПолный</Action>
+		</Command>
+		<Command name="ОбменНоменклатураИзмененная" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправка товаров</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відправлення товарів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен номенклатура измененная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменНоменклатураИзмененная</Action>
+		</Command>
+		<Command name="ОбменОстаткиИзменения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправка остатков</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відправлення залишків</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен остатки изменения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменОстаткиИзменения</Action>
+		</Command>
+		<Command name="ОбменОстаткиПолные" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправка остатков (полная)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відправлення залишків (повне)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен остатки полные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменОстаткиПолные</Action>
+		</Command>
+		<Command name="ОбменКатегорийПолный" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить контрагенты (полный)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вiдправити контрагентв (повний)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен категорий полный</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКатегорийПолный</Action>
+		</Command>
+		<Command name="ОбменКатегорийИзменения" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправка контрагентов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вiдправлення категорій</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Отправить контрагенты полный</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКатегорийИзмененные</Action>
+		</Command>
+		<Command name="ОтправитьВсё" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить всё</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відправити все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Отправить всё</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьВсё</Action>
+		</Command>
+		<Command name="ОбменРубрикаторыПолные" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен рубрикаторы (полный)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін рубрикатори (повний)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен рубрикаторы полные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменРубрикаторыПолные</Action>
+		</Command>
+		<Command name="ОбменРубрикаторыИзмененные" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен рубрикаторы измененные</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін рубрикатори</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен рубрикаторы измененные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменРубрикаторыИзмененные</Action>
+		</Command>
+		<Command name="ОбменБрендПолные" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен бренд (полный)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін бренд (повний)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен бренд полные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменБрендПолные</Action>
+		</Command>
+		<Command name="ОбменБрендИзмененные" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен бренд</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін бренд</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен бренд измененные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменБрендИзмененные</Action>
+		</Command>
+		<Command name="ОбменСтраныПолные" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен страны (полный)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін країни (повний)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен страны полные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменСтраныПолные</Action>
+		</Command>
+		<Command name="ОбменСтраныИзмененные" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен страны</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін країни</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен страны измененные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменСтраныИзмененные</Action>
+		</Command>
+		<Command name="ОбменПроизводителиПолные" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен производители (полный)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін виробники (повний)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен производители полные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменПроизводителиПолные</Action>
+		</Command>
+		<Command name="ОбменПроизводителиИзмененные" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен производители</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін виробники</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен производители измененные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменПроизводителиИзмененные</Action>
+		</Command>
+		<Command name="ОбменСвойстваПолные" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен свойства (полный)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін властивості (повний)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен свойства полные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменСвойстваПолные</Action>
+		</Command>
+		<Command name="ОбменСвойстваИзмененные" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен свойств</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін властивості </v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен свойства измененные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменСвойстваИзмененные</Action>
+		</Command>
+		<Command name="ОбменЦеныПолные" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен цены (полный)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін ціни (повний)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен цены полные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменЦеныПолные</Action>
+		</Command>
+		<Command name="ОбменЦеныИзмененные" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен цены</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін ціни</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен цены измененные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменЦеныИзмененные</Action>
+		</Command>
+		<Command name="ОбменКартинкиПолные" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен картинки (полный)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен картинки (повний)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен картинки полные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКартинкиПолные</Action>
+		</Command>
+		<Command name="ОбменКартинкиИзмененные" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен картинки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін картинки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен картинки измененные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКартинкиИзмененные</Action>
+		</Command>
+		<Command name="ОбменВидыЦен" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен виды цен (полный)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін види цін (повний)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен виды цен</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменВидыЦен</Action>
+		</Command>
+		<Command name="ОбменВидыЦенИзмененные" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен виды цен</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін види цін</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен виды цен измененные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменВидыЦенИзмененные</Action>
+		</Command>
+		<Command name="ОбменЗаписьКВрачу" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен запись к врачу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін запис до лікаря</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен запись к врачу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменЗаписьКВрачу</Action>
+		</Command>
+		<Command name="ОбменРасписаниеВрачей" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен расписание врачей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін розклад лікарей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен расписание врачей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменРасписаниеВрачей</Action>
+		</Command>
+		<Command name="ОбменВрачиПолный" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен врачи (полный)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін лікарі (повний)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен врачи полный</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменВрачи</Action>
+		</Command>
+		<Command name="ОбменМагазиныПолный" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен магазины (полный)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін магазини (повний)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен магазины полный</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменМагазины</Action>
+		</Command>
+		<Command name="ОбменВрачиИмененные" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен врачи</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін лікарі</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен врачи имененные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменВрачиИмененные</Action>
+		</Command>
+		<Command name="ОбменМагазиныИзмененные" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен магазины</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін магазини</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен магазины измененные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменМагазиныИзмененные</Action>
+		</Command>
+		<Command name="ОбменНаборыСвойств" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен наборы свойств (полный)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін набори властивостей (повний)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен наборы свойств</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменНаборыСвойств</Action>
+		</Command>
+		<Command name="ОбменНаборыСвойствИзмененные" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен наборы свойств</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмін набори властивостей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обмен наборы свойств измененные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменНаборыСвойствИзмененные</Action>
+		</Command>
+	</Commands>
+</Form>

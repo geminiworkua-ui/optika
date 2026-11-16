@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="cfab117f-00ee-49b8-b5e0-a9c24350d277">
+		<Name>Colour</Name>
+		<Code>000000004</Code>
+		<Description>Colour</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="638dcc72-567d-4427-8799-ac722647cbc3">
+		<Name>ColourAdd</Name>
+		<Code>000000005</Code>
+		<Description>Colour add</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="af9ecc17-5e11-46c6-a520-7c4fdd760156">
+		<Name>SEO_Description</Name>
+		<Code>000000002</Code>
+		<Description>SEO_Description</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="edcb444f-214c-42f4-bd7a-f159598788f8">
+		<Name>SEO_KeyWords</Name>
+		<Code>000000003</Code>
+		<Description>SEO_KeyWords</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="acb26afb-75e4-44fa-91be-c91e23715959">
+		<Name>SEO_Title</Name>
+		<Code>000000001</Code>
+		<Description>SEO_Title</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d3122533-7503-4552-8c8e-4dc44d9cba30">
+		<Name>WS_Name</Name>
+		<Code>000000006</Code>
+		<Description>WS_Name</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="51f7c396-3022-4465-9ecd-3d848d0dac0f">
+		<Name>Артикул</Name>
+		<Code>000000027</Code>
+		<Description>Артикул</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="219712be-ec7f-4d7e-954c-f8beb872400d">
+		<Name>АртикулБР</Name>
+		<Code>000000010</Code>
+		<Description>Артикул БР</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="71ac672d-2314-437e-8fd3-51fcc543a84d">
+		<Name>Вес</Name>
+		<Code>000000042</Code>
+		<Description>Вес</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d617df59-2bce-4ff0-b045-a61eed382c59">
+		<Name>Вид</Name>
+		<Code>000000034</Code>
+		<Description>Вид</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="15bcffa4-f4a6-461b-a739-6cdfec01126a">
+		<Name>ВидЗаменяемости</Name>
+		<Code>000000049</Code>
+		<Description>Вид заменяемости</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bc0b0093-1210-4883-b91d-e42467f55f79">
+		<Name>Время</Name>
+		<Code>000000050</Code>
+		<Description>Время</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="44b5ecf5-8a5a-4646-83bd-b0c562e80884">
+		<Name>Высота</Name>
+		<Code>000000051</Code>
+		<Description>Высота</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="029a5200-2bab-45c6-be7f-b1c0a3c978de">
+		<Name>Длина</Name>
+		<Code>000000039</Code>
+		<Description>Длина</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="03f56cfe-92bd-4ca6-bbfa-9409f65f1417">
+		<Name>Единица</Name>
+		<Code>000000048</Code>
+		<Description>Единица</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5aba3537-05b6-4a1d-bcee-351c97be04da">
+		<Name>ТМЦЕдиница</Name>
+		<Code>000000023</Code>
+		<Description>Единица измерения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c57c1193-e232-45a8-9678-8a165176f79f">
+		<Name>ТМЦЕдиница_Мин</Name>
+		<Code>000000017</Code>
+		<Description>Единица измерения минимал</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="25375e58-b883-42ac-8c01-2bef57749d7a">
+		<Name>ТМЦЕдиница_Ценник</Name>
+		<Code>000000019</Code>
+		<Description>Единица измерения ценник</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ced14f69-5328-48aa-9de5-a27459688b17">
+		<Name>ТМЦЕдиница_Ящик</Name>
+		<Code>000000018</Code>
+		<Description>Единица измерения ящик</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0f3a977f-201b-4442-b735-c4cc8a3d1189">
+		<Name>ЗапретитьСкидку</Name>
+		<Code>000000052</Code>
+		<Description>Запретить скидку</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a3112f07-b2df-459f-b67d-5392f9e820a4">
+		<Name>ИмеетСостав</Name>
+		<Code>000000036</Code>
+		<Description>Имеет состав</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cd0b50dd-c7d0-4fec-9ab7-8b05ce3c5c55">
+		<Name>Категория</Name>
+		<Code>000000026</Code>
+		<Description>Категория</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="83351898-e625-4caa-9b82-1cdc61893271">
+		<Name>КвоВЯщике</Name>
+		<Code>000000032</Code>
+		<Description>Кво в ящике</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="02179422-47e3-4346-8a2b-351fbf36856e">
+		<Name>КвоПакетов</Name>
+		<Code>000000031</Code>
+		<Description>Кво пакетов</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b5c1f733-4bdb-4ea2-b3f9-5170f27b093f">
+		<Name>Код_Мориона</Name>
+		<Code>000000008</Code>
+		<Description>Код мариона</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7136c319-dcc8-49ce-afdf-dfc8dc896748">
+		<Name>КоличествоВКоробке</Name>
+		<Code>000000016</Code>
+		<Description>Количество в коробке</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="23b8f098-2afa-4712-a91a-af0bc4a114be">
+		<Name>КФФЦены</Name>
+		<Code>000000043</Code>
+		<Description>КФФЦены</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bc3e6965-da74-48e8-8f41-13071fb1cba3">
+		<Name>Марка</Name>
+		<Code>000000024</Code>
+		<Description>Марка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="442b64af-f092-4652-a0e7-96cf9e615ef8">
+		<Name>Модель</Name>
+		<Code>000000012</Code>
+		<Description>Модель</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="73198760-cf01-46bc-adab-89d54b5c685f">
+		<Name>Мониторинг</Name>
+		<Code>000000053</Code>
+		<Description>Мониторинг</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="daf2fb2f-bdc1-4015-91ae-b39bb692fa30">
+		<Name>Наименование</Name>
+		<Code>000000009</Code>
+		<Description>Наименование</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b56e662a-a05e-4621-9758-5c67833ef8a6">
+		<Name>НалоговаяГруппа</Name>
+		<Code>000000047</Code>
+		<Description>Налоговая группа</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="87f19b0e-7655-41c7-911e-0408499d1f8a">
+		<Name>НетВПрайсе</Name>
+		<Code>000000040</Code>
+		<Description>Нет в прайсе</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b9db2d9c-2bd0-4d77-829d-91708e67c0e2">
+		<Name>Объем</Name>
+		<Code>000000044</Code>
+		<Description>Объем</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7a8cdefe-5468-4b74-9b32-42aaf0d3315c">
+		<Name>Описание</Name>
+		<Code>000000011</Code>
+		<Description>Описание</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="07aaaa36-48de-455a-b264-bb5847bc10aa">
+		<Name>ОригинальныйНомер</Name>
+		<Code>000000035</Code>
+		<Description>Оригинальный номер</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="32edb599-8585-4fee-9ee3-ca52aba141f8">
+		<Name>ОригинальныйНомерБР</Name>
+		<Code>000000029</Code>
+		<Description>Оригинальный номер БР</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e654b7e6-7376-44fb-a0be-f9b9f28fc5a3">
+		<Name>ОсновноеФото</Name>
+		<Code>000000054</Code>
+		<Description>Основное фото</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6071fca1-0ee6-4936-9ac4-deedcb53c1e5">
+		<Name>ПечататьССоставом</Name>
+		<Code>000000045</Code>
+		<Description>Печатать с составом</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="465ca3ea-1f4b-4bb0-a9e4-7be5ba74fb25">
+		<Name>ПоСериям</Name>
+		<Code>000000037</Code>
+		<Description>По сериям</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c7710f0e-f9f0-446e-89d4-d50d19cc204e">
+		<Name>ПоСноскам</Name>
+		<Code>000000041</Code>
+		<Description>По сноскам</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9ee3dc34-4ff6-4035-9448-caf6099af392">
+		<Name>ПНаименование</Name>
+		<Code>000000030</Code>
+		<Description>Полное наименование</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d706d22f-94ba-40da-a9c7-79f51e87284a">
+		<Name>Правило</Name>
+		<Code>000000055</Code>
+		<Description>Правило</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5b986281-c85d-4a9d-b400-08872e1a1063">
+		<Name>Производитель</Name>
+		<Code>000000022</Code>
+		<Description>Производитель</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1abc4f13-e9f1-4b6c-9d50-32ef6de979dc">
+		<Name>Регистрация</Name>
+		<Code>000000056</Code>
+		<Description>Регистрация</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f55e6d18-b19e-4559-a18d-a0bfc1d68d5e">
+		<Name>Рубрикатор</Name>
+		<Code>000000025</Code>
+		<Description>Рубрика</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="df97d1d6-3e9f-489d-bdca-9685feba491c">
+		<Name>СвоиЦены</Name>
+		<Code>000000057</Code>
+		<Description>Свои цены</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f1ef4cc4-85cb-47b7-8923-3e98e8944647">
+		<Name>СвойствоОбъектовНабор</Name>
+		<Code>000000020</Code>
+		<Description>Свойство объектов набор</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2aa503e8-787b-498a-a54f-1a6576602d09">
+		<Name>Сертификат</Name>
+		<Code>000000058</Code>
+		<Description>Сертификат</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c7cc573b-b694-4e6e-9f83-0fc587cdce7b">
+		<Name>Создаваемый</Name>
+		<Code>000000033</Code>
+		<Description>Создаваемый</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c916e6ab-f308-4929-8811-32b652e51214">
+		<Name>СНаименование</Name>
+		<Code>000000021</Code>
+		<Description>Спец наименование</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4c527197-321e-4229-ac0a-e2fdca86fbb0">
+		<Name>Срок</Name>
+		<Code>000000059</Code>
+		<Description>Срок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e0fbd17a-371a-4ed2-87ac-fb507bdeab62">
+		<Name>Страна</Name>
+		<Code>000000013</Code>
+		<Description>Страна</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f5cafb32-253c-4fdf-a349-15f05beb5728">
+		<Name>ТолькоКоробка</Name>
+		<Code>000000015</Code>
+		<Description>Только коробка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8e2cc35a-d423-4f96-97f7-b6d117c46e09">
+		<Name>ТопПродаж</Name>
+		<Code>000000014</Code>
+		<Description>Топ продаж</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="250699fb-6d22-42e3-9a36-62fa5d1a138f">
+		<Name>Код_УКТЗЕД</Name>
+		<Code>000000028</Code>
+		<Description>УКТЗЕД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7a6bacc1-b831-4290-a99c-864d87ff9efd">
+		<Name>ЦветФона</Name>
+		<Code>000000046</Code>
+		<Description>Цвет фона</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="20aa3d79-6f0b-4bc7-a612-a3edf9c3b78c">
+		<Name>ШаблонСН</Name>
+		<Code>000000060</Code>
+		<Description>Шаблон СН</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4e55a711-994f-4d35-baa7-9b5bb16000f9">
+		<Name>Ширина</Name>
+		<Code>000000038</Code>
+		<Description>Ширина</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

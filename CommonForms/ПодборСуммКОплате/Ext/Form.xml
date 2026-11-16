@@ -1,0 +1,878 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ПринятьЗакрыть" id="41">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ПринятьЗакрыть</CommandName>
+				<ExtendedTooltip name="ПринятьЗакрытьРасширеннаяПодсказка" id="42"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="69">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="70"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="71">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="72"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация1" id="87">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Баланс бонусов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Баланс бонусів</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="88"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="89"/>
+						</LabelDecoration>
+						<InputField name="СуммаБонусовДоступно" id="73">
+							<DataPath>СуммаБонусовДоступно</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="СуммаБонусовДоступноКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="СуммаБонусовДоступноРасширеннаяПодсказка" id="75"/>
+						</InputField>
+						<InputField name="СуммаБонусовОстаток" id="76">
+							<DataPath>СуммаБонусовОстаток</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="СуммаБонусовОстатокКонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="СуммаБонусовОстатокРасширеннаяПодсказка" id="78"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="79">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<CheckBoxField name="БонусыСписывать" id="81">
+							<DataPath>БонусыСписывать</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="БонусыСписыватьКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="БонусыСписыватьРасширеннаяПодсказка" id="83"/>
+							<Events>
+								<Event name="OnChange">БонусыСписыватьПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="БонусыСписано" id="84">
+							<DataPath>БонусыСписано</DataPath>
+							<ContextMenu name="БонусыСписаноКонтекстноеМеню" id="85"/>
+							<ExtendedTooltip name="БонусыСписаноРасширеннаяПодсказка" id="86"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа4" id="90">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="91"/>
+			<ChildItems>
+				<Table name="Сертификаты" id="92">
+					<Representation>List</Representation>
+					<HeightInTableRows>3</HeightInTableRows>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<VerticalStretch>false</VerticalStretch>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Сертификаты</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СертификатыКонтекстноеМеню" id="93"/>
+					<AutoCommandBar name="СертификатыКоманднаяПанель" id="94"/>
+					<ExtendedTooltip name="СертификатыРасширеннаяПодсказка" id="95"/>
+					<SearchStringAddition name="СертификатыСтрокаПоиска" id="96">
+						<AdditionSource>
+							<Item>Сертификаты</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СертификатыСтрокаПоискаКонтекстноеМеню" id="97"/>
+						<ExtendedTooltip name="СертификатыСтрокаПоискаРасширеннаяПодсказка" id="98"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СертификатыСостояниеПросмотра" id="99">
+						<AdditionSource>
+							<Item>Сертификаты</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СертификатыСостояниеПросмотраКонтекстноеМеню" id="100"/>
+						<ExtendedTooltip name="СертификатыСостояниеПросмотраРасширеннаяПодсказка" id="101"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СертификатыУправлениеПоиском" id="102">
+						<AdditionSource>
+							<Item>Сертификаты</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СертификатыУправлениеПоискомКонтекстноеМеню" id="103"/>
+						<ExtendedTooltip name="СертификатыУправлениеПоискомРасширеннаяПодсказка" id="104"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="СертификатыСертификат" id="105">
+							<DataPath>Сертификаты.Сертификат</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СертификатыСертификатКонтекстноеМеню" id="106"/>
+							<ExtendedTooltip name="СертификатыСертификатРасширеннаяПодсказка" id="107"/>
+						</InputField>
+						<InputField name="СертификатыСуммаДоступно" id="108">
+							<DataPath>Сертификаты.СуммаДоступно</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>12</Width>
+							<ContextMenu name="СертификатыСуммаДоступноКонтекстноеМеню" id="109"/>
+							<ExtendedTooltip name="СертификатыСуммаДоступноРасширеннаяПодсказка" id="110"/>
+						</InputField>
+						<CheckBoxField name="СертификатыСписывать" id="111">
+							<DataPath>Сертификаты.Списывать</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Использовать</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Викорстати</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СертификатыСписыватьКонтекстноеМеню" id="112"/>
+							<ExtendedTooltip name="СертификатыСписыватьРасширеннаяПодсказка" id="113"/>
+						</CheckBoxField>
+						<InputField name="СертификатыСуммаСписания" id="114">
+							<DataPath>Сертификаты.СуммаСписания</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СертификатыСуммаСписанияКонтекстноеМеню" id="115"/>
+							<ExtendedTooltip name="СертификатыСуммаСписанияРасширеннаяПодсказка" id="116"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ОстаткиКОплате" id="1">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<HeaderHeight>2</HeaderHeight>
+			<Footer>true</Footer>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ОстаткиКОплате</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОстаткиКОплатеКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ОстаткиКОплатеКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ОстаткиКОплатеРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ОстаткиКОплатеСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ОстаткиКОплате</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОстаткиКОплатеСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ОстаткиКОплатеСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОстаткиКОплатеСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ОстаткиКОплате</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОстаткиКОплатеСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ОстаткиКОплатеСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОстаткиКОплатеУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ОстаткиКОплате</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОстаткиКОплатеУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ОстаткиКОплатеУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<ColumnGroup name="ОстаткиКОплатеГруппа1" id="55">
+					<ExtendedTooltip name="ОстаткиКОплатеГруппа1РасширеннаяПодсказка" id="56"/>
+					<ChildItems>
+						<LabelField name="ОстаткиКОплатеНоменклатура" id="14">
+							<DataPath>ОстаткиКОплате.Номенклатура</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номенклатура</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Номенклатура</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстаткиКОплатеНоменклатураКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ОстаткиКОплатеНоменклатураРасширеннаяПодсказка" id="16"/>
+						</LabelField>
+						<LabelField name="ОстаткиКОплатеХарактеристика" id="17">
+							<DataPath>ОстаткиКОплате.Характеристика</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Характеристика</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Характеристика</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстаткиКОплатеХарактеристикаКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="ОстаткиКОплатеХарактеристикаРасширеннаяПодсказка" id="19"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ОстаткиКОплатеГруппа2" id="57">
+					<ExtendedTooltip name="ОстаткиКОплатеГруппа2РасширеннаяПодсказка" id="58"/>
+					<ChildItems>
+						<LabelField name="ОстаткиКОплатеКоличество" id="29">
+							<DataPath>ОстаткиКОплате.КоличествоЗаказа</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстаткиКОплатеКоличествоКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ОстаткиКОплатеКоличествоРасширеннаяПодсказка" id="31"/>
+						</LabelField>
+						<InputField name="ОстаткиКОплатеЦена" id="46">
+							<DataPath>ОстаткиКОплате.Цена</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстаткиКОплатеЦенаКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="ОстаткиКОплатеЦенаРасширеннаяПодсказка" id="48"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ОстаткиКОплатеГруппа3" id="59">
+					<ExtendedTooltip name="ОстаткиКОплатеГруппа3РасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<LabelField name="ОстаткиКОплатеСуммаЗаказ" id="20">
+							<DataPath>ОстаткиКОплате.СуммаЗаказ</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterDataPath>СуммаЗаказано</FooterDataPath>
+							<ContextMenu name="ОстаткиКОплатеСуммаЗаказКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ОстаткиКОплатеСуммаЗаказРасширеннаяПодсказка" id="22"/>
+						</LabelField>
+						<LabelField name="ОстаткиКОплатеОплачено" id="23">
+							<DataPath>ОстаткиКОплате.СуммаОплачено</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterDataPath>Оплачено</FooterDataPath>
+							<ContextMenu name="ОстаткиКОплатеОплаченоКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ОстаткиКОплатеОплаченоРасширеннаяПодсказка" id="25"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ОстаткиКОплатеГруппа4" id="61">
+					<ExtendedTooltip name="ОстаткиКОплатеГруппа4РасширеннаяПодсказка" id="62"/>
+					<ChildItems>
+						<LabelField name="ОстаткиКОплатеОстаток" id="26">
+							<DataPath>ОстаткиКОплате.Остаток</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterDataPath>Остаток</FooterDataPath>
+							<ContextMenu name="ОстаткиКОплатеОстатокКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ОстаткиКОплатеОстатокРасширеннаяПодсказка" id="28"/>
+						</LabelField>
+						<CheckBoxField name="ОстаткиКОплатеПлатим" id="32">
+							<DataPath>ОстаткиКОплате.Платим</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОстаткиКОплатеПлатимКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ОстаткиКОплатеПлатимРасширеннаяПодсказка" id="34"/>
+							<Events>
+								<Event name="OnChange">ОстаткиКОплатеПлатимПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ОстаткиКОплатеГруппа5" id="63">
+					<ExtendedTooltip name="ОстаткиКОплатеГруппа5РасширеннаяПодсказка" id="64"/>
+					<ChildItems>
+						<InputField name="ОстаткиКОплатеКоличествоЧек" id="43">
+							<DataPath>ОстаткиКОплате.КоличествоЧек</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстаткиКОплатеКоличествоЧекКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ОстаткиКОплатеКоличествоЧекРасширеннаяПодсказка" id="45"/>
+							<Events>
+								<Event name="OnChange">ОстаткиКОплатеКоличествоЧекПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОстаткиКОплатеСуммаЧек" id="35">
+							<DataPath>ОстаткиКОплате.СуммаЧек</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterDataPath>СуммаЧек</FooterDataPath>
+							<ContextMenu name="ОстаткиКОплатеСуммаЧекКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ОстаткиКОплатеСуммаЧекРасширеннаяПодсказка" id="37"/>
+							<Events>
+								<Event name="OnChange">ОстаткиКОплатеСуммаЧекПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ОстаткиКОплатеГруппа6" id="65">
+					<ExtendedTooltip name="ОстаткиКОплатеГруппа6РасширеннаяПодсказка" id="66"/>
+					<ChildItems>
+						<ColumnGroup name="ОстаткиКОплатеГруппа7" id="67">
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ОстаткиКОплатеГруппа7РасширеннаяПодсказка" id="68"/>
+							<ChildItems>
+								<CheckBoxField name="ОстаткиКОплатеНуженЧек" id="49">
+									<DataPath>ОстаткиКОплате.НуженЧек</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОстаткиКОплатеНуженЧекКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ОстаткиКОплатеНуженЧекРасширеннаяПодсказка" id="51"/>
+									<Events>
+										<Event name="OnChange">ОстаткиКОплатеНуженЧекПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="ОстаткиКОплатеКассаККМ" id="38">
+									<DataPath>ОстаткиКОплате.КассаККМ</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОстаткиКОплатеКассаККМКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ОстаткиКОплатеКассаККМРасширеннаяПодсказка" id="40"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="ОстаткиКОплатеКассир" id="52">
+							<DataPath>ОстаткиКОплате.Кассир</DataPath>
+							<ContextMenu name="ОстаткиКОплатеКассирКонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="ОстаткиКОплатеКассирРасширеннаяПодсказка" id="54"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ОстаткиКОплате" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Остатки к оплате</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Номенклатура" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Характеристика" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Характеристика</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СуммаЗаказ" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма заказа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сума у замовленні</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаОплачено" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оплачено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сплачено</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Остаток" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остаток к оплате</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Залишок до сплати</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоЗаказа" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество в заказе</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Кількість у замовленні</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Платим" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Платим</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сплачуємо</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СуммаЧек" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма чек</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сума чек</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КассаККМ" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Касса ККМ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Каса ККМ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.КассыККМ</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоЧек" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество к оплате</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Кількість до оплати</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоОплачено" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество оплачено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Кількість оплачено</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Цена" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ціна</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НуженЧек" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нужен чек</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Потрібен Чек</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Кассир" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Кассир</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Оплачено" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Оплачено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Остаток" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Остаток</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СуммаЗаказано" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Всього</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Склад" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаказКлиента" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заказ клиента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЗаказКлиента</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СуммаЧек" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сумма чек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СуммаБонусовОстаток" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Залишок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СуммаБонусовДоступно" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступно</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Доступно</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="БонусыСписывать" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списывать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Списати</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="БонусыСписано" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бонусы списано</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Сертификаты" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сертификаты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Сертификат" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сертификат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПодарочныеСертификаты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СуммаДоступно" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма доступно</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сума доступна</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Списывать" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Списывать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СуммаСписания" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма списания</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сума списання</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПринятьЗакрыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Принять и закрыть</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Прийняти та зачинити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Принять закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПринятьЗакрыть</Action>
+		</Command>
+	</Commands>
+</Form>

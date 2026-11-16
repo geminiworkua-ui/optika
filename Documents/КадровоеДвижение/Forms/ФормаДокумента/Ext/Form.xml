@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="44">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="45"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Автор" id="10">
+					<DataPath>Объект.Автор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АвторКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Основание" id="7">
+			<DataPath>Объект.Основание</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОснованиеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ОснованиеРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Table name="КадровыеДвижения" id="13">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.КадровыеДвижения</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="КадровыеДвиженияКонтекстноеМеню" id="14"/>
+			<AutoCommandBar name="КадровыеДвиженияКоманднаяПанель" id="15">
+				<ChildItems>
+					<Button name="КадровыеДвиженияЗарегистрироватьИндивидуальныйГрафик" id="52">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗарегистрироватьИндивидуальныйГрафик</CommandName>
+						<ExtendedTooltip name="КадровыеДвиженияЗарегистрироватьИндивидуальныйГрафикРасширеннаяПодсказка" id="53"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="КадровыеДвиженияРасширеннаяПодсказка" id="16"/>
+			<SearchStringAddition name="КадровыеДвиженияСтрокаПоиска" id="17">
+				<AdditionSource>
+					<Item>КадровыеДвижения</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КадровыеДвиженияСтрокаПоискаКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="КадровыеДвиженияСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КадровыеДвиженияСостояниеПросмотра" id="20">
+				<AdditionSource>
+					<Item>КадровыеДвижения</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КадровыеДвиженияСостояниеПросмотраКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="КадровыеДвиженияСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КадровыеДвиженияУправлениеПоиском" id="23">
+				<AdditionSource>
+					<Item>КадровыеДвижения</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КадровыеДвиженияУправлениеПоискомКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="КадровыеДвиженияУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="КадровыеДвиженияНомерСтроки" id="26">
+					<DataPath>Объект.КадровыеДвижения.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КадровыеДвиженияНомерСтрокиКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="КадровыеДвиженияНомерСтрокиРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<InputField name="КадровыеДвиженияФизическоеЛицо" id="29">
+					<DataPath>Объект.КадровыеДвижения.ФизическоеЛицо</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Физическое лицо</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Фізична особа</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КадровыеДвиженияФизическоеЛицоКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="КадровыеДвиженияФизическоеЛицоРасширеннаяПодсказка" id="31"/>
+					<Events>
+						<Event name="OnChange">КадровыеДвиженияФизическоеЛицоПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КадровыеДвиженияВидКадровогоДвижения" id="46">
+					<DataPath>Объект.КадровыеДвижения.ВидКадровогоДвижения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КадровыеДвиженияВидКадровогоДвиженияКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="КадровыеДвиженияВидКадровогоДвиженияРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="КадровыеДвиженияНоваяДолжность" id="32">
+					<DataPath>Объект.КадровыеДвижения.НоваяДолжность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КадровыеДвиженияНоваяДолжностьКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="КадровыеДвиженияНоваяДолжностьРасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="OnChange">КадровыеДвиженияФизическоеЛицоПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КадровыеДвиженияНовоеПодразделение" id="35">
+					<DataPath>Объект.КадровыеДвижения.НовоеПодразделение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КадровыеДвиженияНовоеПодразделениеКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="КадровыеДвиженияНовоеПодразделениеРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="OnChange">КадровыеДвиженияФизическоеЛицоПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КадровыеДвиженияБазоваяСтавка" id="38">
+					<DataPath>Объект.КадровыеДвижения.БазоваяСтавка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КадровыеДвиженияБазоваяСтавкаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="КадровыеДвиженияБазоваяСтавкаРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="КадровыеДвиженияСпособНачисленияСтавки" id="57">
+					<DataPath>Объект.КадровыеДвижения.СпособНачисленияСтавки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КадровыеДвиженияСпособНачисленияСтавкиКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="КадровыеДвиженияСпособНачисленияСтавкиРасширеннаяПодсказка" id="59"/>
+				</InputField>
+				<InputField name="КадровыеДвиженияОснование" id="41">
+					<DataPath>Объект.КадровыеДвижения.Основание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КадровыеДвиженияОснованиеКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="КадровыеДвиженияОснованиеРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<CheckBoxField name="КадровыеДвиженияЕстьИндГрафик" id="54">
+					<DataPath>Объект.КадровыеДвижения.ЕстьИндГрафик</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть инд график</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Є інд графік</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="КадровыеДвиженияЕстьИндГрафикКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="КадровыеДвиженияЕстьИндГрафикРасширеннаяПодсказка" id="56"/>
+				</CheckBoxField>
+				<InputField name="КадровыеДвиженияУстановкаИндивидуальногоГрафикаРаботы" id="49">
+					<DataPath>Объект.КадровыеДвижения.УстановкаИндивидуальногоГрафикаРаботы</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КадровыеДвиженияУстановкаИндивидуальногоГрафикаРаботыКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="КадровыеДвиженияУстановкаИндивидуальногоГрафикаРаботыРасширеннаяПодсказка" id="51"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.КадровоеДвижение</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Объект.КадровыеДвижения"/>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗарегистрироватьИндивидуальныйГрафик" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть / зарегистрировать индивидуальный график</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити / зареєструвати індивідуальний графік</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зарегистрировать индивидуальный график</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗарегистрироватьИндивидуальныйГрафик</Action>
+		</Command>
+	</Commands>
+</Form>

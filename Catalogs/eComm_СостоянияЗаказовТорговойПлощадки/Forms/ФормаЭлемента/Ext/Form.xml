@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Владелец" id="7">
+			<DataPath>Объект.Owner</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная запись</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<UsualGroup name="ГруппаНаименованиеКод" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНаименованиеКодРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">НаименованиеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="СостояниеЗаказаПокупателя" id="10">
+			<DataPath>Объект.СостояниеЗаказаПокупателя</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СостояниеЗаказаПокупателяКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="СостояниеЗаказаПокупателяРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ПричинаОтменыСервиса" id="18">
+			<DataPath>Объект.ПричинаОтменыСервиса</DataPath>
+			<Visible>false</Visible>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ContextMenu name="ПричинаОтменыСервисаКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ПричинаОтменыСервисаРасширеннаяПодсказка" id="20"/>
+		</InputField>
+		<InputField name="Комментарий" id="15">
+			<DataPath>Объект.Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="17"/>
+		</InputField>
+		<CheckBoxField name="ПользовательскийСтатус" id="43">
+			<DataPath>Объект.ПользовательскийСтатус</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПользовательскийСтатусКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ПользовательскийСтатусРасширеннаяПодсказка" id="45"/>
+		</CheckBoxField>
+		<CheckBoxField name="ОграничиватьДоступныеСостояния" id="40">
+			<DataPath>Объект.ОграничиватьДоступныеСостояния</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОграничиватьДоступныеСостоянияКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ОграничиватьДоступныеСостоянияРасширеннаяПодсказка" id="42"/>
+			<Events>
+				<Event name="OnChange">ОграничиватьДоступныеСостоянияПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<Table name="ДоступныеСостояния" id="21">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ДоступныеСостояния</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДоступныеСостоянияКонтекстноеМеню" id="22"/>
+			<AutoCommandBar name="ДоступныеСостоянияКоманднаяПанель" id="23"/>
+			<ExtendedTooltip name="ДоступныеСостоянияРасширеннаяПодсказка" id="24"/>
+			<SearchStringAddition name="ДоступныеСостоянияСтрокаПоиска" id="25">
+				<AdditionSource>
+					<Item>ДоступныеСостояния</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДоступныеСостоянияСтрокаПоискаКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="ДоступныеСостоянияСтрокаПоискаРасширеннаяПодсказка" id="27"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДоступныеСостоянияСостояниеПросмотра" id="28">
+				<AdditionSource>
+					<Item>ДоступныеСостояния</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДоступныеСостоянияСостояниеПросмотраКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="ДоступныеСостоянияСостояниеПросмотраРасширеннаяПодсказка" id="30"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДоступныеСостоянияУправлениеПоиском" id="31">
+				<AdditionSource>
+					<Item>ДоступныеСостояния</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДоступныеСостоянияУправлениеПоискомКонтекстноеМеню" id="32"/>
+				<ExtendedTooltip name="ДоступныеСостоянияУправлениеПоискомРасширеннаяПодсказка" id="33"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ДоступныеСостоянияНомерСтроки" id="34">
+					<DataPath>Объект.ДоступныеСостояния.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДоступныеСостоянияНомерСтрокиКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ДоступныеСостоянияНомерСтрокиРасширеннаяПодсказка" id="36"/>
+				</LabelField>
+				<InputField name="ДоступныеСостоянияСостояние" id="37">
+					<DataPath>Объект.ДоступныеСостояния.Состояние</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДоступныеСостоянияСостояниеКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ДоступныеСостоянияСостояниеРасширеннаяПодсказка" id="39"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.eComm_СостоянияЗаказовТорговойПлощадки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>4:d747439a-9701-4b58-b05b-38409692af76</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>3:d747439a-9701-4b58-b05b-38409692af76</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

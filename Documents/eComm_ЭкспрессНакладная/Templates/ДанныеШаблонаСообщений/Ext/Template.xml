@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Данные</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТелефонПолучателя</dataPath>
+			<field>ТелефонПолучателя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Телефон получателя</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерТТН</dataPath>
+			<field>НомерТТН</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер ТТН</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПрогнозируемаяДатаДоставки</dataPath>
+			<field>ПрогнозируемаяДатаДоставки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогнозируемая дата доставки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтоимостьДоставки</dataPath>
+			<field>СтоимостьДоставки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость доставки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбратнаяДоставкаСумма</dataPath>
+			<field>ОбратнаяДоставкаСумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обратная доставка сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЗаказаНаСайте</dataPath>
+			<field>НомерЗаказаНаСайте</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер заказа на сайте</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъявленнаяСтоимость</dataPath>
+			<field>ОбъявленнаяСтоимость</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объявленная стоимость</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	eComm_ЭкспрессНакладная.Ссылка КАК Ссылка,
+	eComm_ЭкспрессНакладная.НомерТТН КАК НомерТТН,
+	eComm_ЭкспрессНакладная.ТелефонПолучателя КАК ТелефонПолучателя,
+	eComm_ЭкспрессНакладная.ПрогнозируемаяДатаДоставки КАК ПрогнозируемаяДатаДоставки,
+	ВЫБОР
+		КОГДА НЕ eComm_ЭкспрессНакладная.ОбъявленнаяСтоимость = 0
+			ТОГДА eComm_ЭкспрессНакладная.ОбъявленнаяСтоимость
+		ИНАЧЕ ЕСТЬNULL(eComm_ЭкспрессНакладная.ДокументОснование.СуммаДокумента, 0)
+	КОНЕЦ КАК ОбъявленнаяСтоимость,
+	eComm_ЭкспрессНакладная.СтоимостьДоставки КАК СтоимостьДоставки,
+	ВЫБОР
+		КОГДА eComm_ЭкспрессНакладная.ТипПостОплаты = Значение(Справочник.eComm_ОбщиеСправочники.ДенежныйПеревод)
+			ТОГДА eComm_ЭкспрессНакладная.СуммаПостОплаты
+		ИНАЧЕ 0
+	КОНЕЦ КАК ОбратнаяДоставкаСумма,
+	eComm_ЭкспрессНакладная.ДокументОснование.НомерПоДаннымКлиента КАК НомерЗаказаНаСайте
+ИЗ
+	Документ.eComm_ЭкспрессНакладная КАК eComm_ЭкспрессНакладная
+ГДЕ
+	eComm_ЭкспрессНакладная.Ссылка = &amp;eComm_ЭкспрессНакладная</query>
+	</dataSet>
+	<parameter>
+		<name>eComm_ЭкспрессНакладная</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>E comm экспресс накладная</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.eComm_ЭкспрессНакладная</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

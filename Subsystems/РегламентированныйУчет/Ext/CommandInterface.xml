@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<CommandsVisibility>
+		<Command name="CommonCommand.ДополнительныеОтчетыРегламентированныйУчет">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.СинхронизацияДанных">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:d0b95501-fc9d-4b3a-8d6d-474bf9ae0bfa">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:572ffdad-6817-4b87-98e9-997ee428933c">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:5c92d37d-7c99-4a62-a657-b94fab4b25e7">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:86a4682b-72ca-496f-a7df-f73a9cd413a5">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:366e5067-40ac-4f29-aff9-ba576f4acca3">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:6ad8e983-60d2-4f1f-ac78-f4722f2177c9">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ПанельОтчетовРегламентированныйУчет">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ОтчетыИОбработкиБухгалтера">true</xr:Value>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="CommonCommand.СинхронизацияДанных">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.ДополнительныеОтчетыРегламентированныйУчет">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.СинхронизацияДанных">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:d0b95501-fc9d-4b3a-8d6d-474bf9ae0bfa">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:572ffdad-6817-4b87-98e9-997ee428933c">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:5c92d37d-7c99-4a62-a657-b94fab4b25e7">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:86a4682b-72ca-496f-a7df-f73a9cd413a5">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:366e5067-40ac-4f29-aff9-ba576f4acca3">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:6ad8e983-60d2-4f1f-ac78-f4722f2177c9">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="0:c915e4b3-217f-4cc6-9fe9-d1834c80460d">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ПанельОтчетовРегламентированныйУчет">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:2176310d-5ee3-4eb1-acdc-5ce661a7211b">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:f0892fa6-55b6-46f1-8415-13d78c425d2a">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:6668115d-782e-4b01-8db6-c1fbfbf374df">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>888a902b-e418-43a6-81b8-788a6aa4b243</Subsystem>
+		<Subsystem>Subsystem.РегламентированныйУчет.Subsystem.БухгалтерскийИНалоговыйУчет</Subsystem>
+		<Subsystem>Subsystem.РегламентированныйУчет.Subsystem.ОсновныеСредства</Subsystem>
+		<Subsystem>Subsystem.РегламентированныйУчет.Subsystem.Лизинг</Subsystem>
+		<Subsystem>Subsystem.РегламентированныйУчет.Subsystem.НематериальныеАктивы</Subsystem>
+		<Subsystem/>
+		<Subsystem/>
+		<Subsystem/>
+		<Subsystem/>
+		<Subsystem>0c32486b-9516-4d3f-b0b9-08baa32fccea</Subsystem>
+		<Subsystem>7cc23a65-0671-4756-8553-c8c7fdc13f7a</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>ActionsPanelReports</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>NavigationPanelOrdinary</Group>
+	</GroupsOrder>
+</CommandInterface>

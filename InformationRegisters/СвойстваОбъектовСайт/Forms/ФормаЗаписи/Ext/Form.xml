@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Период" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Період</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Объект" id="4">
+			<DataPath>Запись.Номенклатура</DataPath>
+			<ContextMenu name="ОбъектКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ОбъектРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Свойство" id="7">
+			<DataPath>1/0:9e478ed4-0478-4d06-a84e-74407a2346cd</DataPath>
+			<ContextMenu name="СвойствоКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СвойствоРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Значение" id="10">
+			<DataPath>Запись.Значение</DataPath>
+			<ContextMenu name="ЗначениеКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЗначениеРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<CheckBoxField name="НЕАктуальна" id="13">
+			<DataPath>1/0:71abb550-5c76-4232-b16a-aea2e17df977</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НЕАктуальнаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="НЕАктуальнаРасширеннаяПодсказка" id="15"/>
+		</CheckBoxField>
+		<InputField name="Пользователь" id="16">
+			<DataPath>1/0:5bde0768-58de-437f-ba20-e0b66bdaf0df</DataPath>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="18"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.СвойстваОбъектовСайт</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

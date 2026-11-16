@@ -1,0 +1,797 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="75">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="76"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСписокРеестров" id="77">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа список реестров</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа список реестров</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСписокРеестровРасширеннаяПодсказка" id="78"/>
+					<ChildItems>
+						<InputField name="УчетнаяЗаписьДоставки" id="72">
+							<DataPath>УчетнаяЗапись</DataPath>
+							<ContextMenu name="УчетнаяЗаписьДоставкиКонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="УчетнаяЗаписьДоставкиРасширеннаяПодсказка" id="74"/>
+							<Events>
+								<Event name="OnChange">УчетнаяЗаписьДоставкиПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Table name="СписокРеестров" id="81">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Header>false</Header>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialListView>End</InitialListView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокРеестров</DataPath>
+							<RowPictureDataPath>СписокРеестров.ИндексКартинки</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Abs>RowsPicture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокРеестровКонтекстноеМеню" id="82">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="СписокРеестровКонтекстноеМенюИзменитьРеестр" id="131">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ИзменитьРеестр</CommandName>
+										<ExtendedTooltip name="СписокРеестровКонтекстноеМенюИзменитьРеестрРасширеннаяПодсказка" id="132"/>
+									</Button>
+									<Button name="СписокРеестровКонтекстноеМенюНайти" id="133">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.СписокРеестров.StandardCommand.Find</CommandName>
+										<ExtendedTooltip name="СписокРеестровКонтекстноеМенюНайтиРасширеннаяПодсказка" id="134"/>
+									</Button>
+									<Button name="СписокРеестровКонтекстноеМенюОтменитьПоиск" id="135">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.СписокРеестров.StandardCommand.CancelSearch</CommandName>
+										<ExtendedTooltip name="СписокРеестровКонтекстноеМенюОтменитьПоискРасширеннаяПодсказка" id="136"/>
+									</Button>
+									<Button name="СписокРеестровКонтекстноеМенюНастройкаСписка" id="140">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.СписокРеестров.StandardCommand.ListSettings</CommandName>
+										<ExtendedTooltip name="СписокРеестровКонтекстноеМенюНастройкаСпискаРасширеннаяПодсказка" id="141"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="СписокРеестровКоманднаяПанель" id="83">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="СписокРеестровИзменитьРеестр" id="129">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ИзменитьРеестр</CommandName>
+										<ExtendedTooltip name="СписокРеестровИзменитьРеестрРасширеннаяПодсказка" id="130"/>
+									</Button>
+									<Button name="СписокРеестровОбновитьРеестры" id="117">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбновитьРеестры</CommandName>
+										<ExtendedTooltip name="СписокРеестровОбновитьРеестрыРасширеннаяПодсказка" id="118"/>
+									</Button>
+									<Popup name="СписокРеестровПечать" id="127">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Печать</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Друк</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список реестров печать</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Picture>
+											<xr:Ref>StdPicture.Print</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="СписокРеестровПечатьРасширеннаяПодсказка" id="128"/>
+										<ChildItems>
+											<Button name="ПечатьРеестра" id="70">
+												<Type>CommandBarButton</Type>
+												<Representation>PictureAndText</Representation>
+												<CommandName>Document.eComm_ЭкспрессНакладная.Command.ПечатьРеестра</CommandName>
+												<DataPath>Items.СписокНакладных.CurrentData.Реестр</DataPath>
+												<ExtendedTooltip name="ПечатьРеестраРасширеннаяПодсказка" id="71"/>
+											</Button>
+											<Button name="СписокРеестровДокументeComm_ЭкспрессНакладнаяПечатьАдресныхЯрлыковРеестра" id="125">
+												<Type>CommandBarButton</Type>
+												<Representation>PictureAndText</Representation>
+												<CommandName>Document.eComm_ЭкспрессНакладная.Command.ПечатьАдресныхЯрлыковРеестра</CommandName>
+												<DataPath>Items.СписокНакладных.CurrentData.Реестр</DataPath>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Термопринтер (100х100)</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Термопринтер (100х100)</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="СписокРеестровДокументeComm_ЭкспрессНакладнаяПечатьАдресныхЯрлыковРеестраРасширеннаяПодсказка" id="126"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокРеестровРасширеннаяПодсказка" id="84"/>
+							<SearchStringAddition name="СписокРеестровСтрокаПоиска" id="85">
+								<AdditionSource>
+									<Item>СписокРеестров</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокРеестровСтрокаПоискаКонтекстноеМеню" id="86"/>
+								<ExtendedTooltip name="СписокРеестровСтрокаПоискаРасширеннаяПодсказка" id="87"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокРеестровСостояниеПросмотра" id="88">
+								<AdditionSource>
+									<Item>СписокРеестров</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокРеестровСостояниеПросмотраКонтекстноеМеню" id="89"/>
+								<ExtendedTooltip name="СписокРеестровСостояниеПросмотраРасширеннаяПодсказка" id="90"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокРеестровУправлениеПоиском" id="91">
+								<AdditionSource>
+									<Item>СписокРеестров</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокРеестровУправлениеПоискомКонтекстноеМеню" id="92"/>
+								<ExtendedTooltip name="СписокРеестровУправлениеПоискомРасширеннаяПодсказка" id="93"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="DragCheck">СписокРеестровПроверкаПеретаскивания</Event>
+								<Event name="OnActivateRow">СписокРеестровПриАктивизацииСтроки</Event>
+								<Event name="Drag">СписокРеестровПеретаскивание</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СписокРеестровНаименование" id="108">
+									<DataPath>СписокРеестров.Наименование</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Реестр</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Реєстр</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРеестровНаименованиеКонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="СписокРеестровНаименованиеРасширеннаяПодсказка" id="110"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСписокНакладных" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа список накладных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа список накладных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСписокНакладныхРасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<InputField name="УчетнаяЗапись1" id="105">
+							<DataPath>УчетнаяЗапись</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="УчетнаяЗапись1КонтекстноеМеню" id="106"/>
+							<ExtendedTooltip name="УчетнаяЗапись1РасширеннаяПодсказка" id="107"/>
+							<Events>
+								<Event name="OnChange">УчетнаяЗаписьДоставкиПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Table name="СписокНакладных" id="3">
+							<Representation>List</Representation>
+							<DefaultItem>true</DefaultItem>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СписокНакладных</DataPath>
+							<RowPictureDataPath>СписокНакладных.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+							<ContextMenu name="СписокНакладныхКонтекстноеМеню" id="4">
+								<ChildItems>
+									<Button name="КонтекстноеМенюУдалитьИзРеестра" id="111">
+										<Type>CommandBarButton</Type>
+										<CommandName>Document.eComm_ЭкспрессНакладная.Command.УдалитьИзРеестра</CommandName>
+										<DataPath>Items.СписокНакладных.CurrentData.Ссылка</DataPath>
+										<ExtendedTooltip name="КонтекстноеМенюУдалитьИзРеестраРасширеннаяПодсказка" id="112"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="СписокНакладныхКоманднаяПанель" id="5">
+								<ChildItems>
+									<Button name="СписокНакладныхСоздать" id="119">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.СписокНакладных.StandardCommand.Create</CommandName>
+										<ExtendedTooltip name="СписокНакладныхСоздатьРасширеннаяПодсказка" id="120"/>
+									</Button>
+									<Button name="СписокНакладныхОбновить" id="121">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.СписокНакладных.StandardCommand.Refresh</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокНакладныхОбновитьРасширеннаяПодсказка" id="122"/>
+									</Button>
+									<Button name="СписокНакладныхСкопировать" id="123">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.СписокНакладных.StandardCommand.Copy</CommandName>
+										<ExtendedTooltip name="СписокНакладныхСкопироватьРасширеннаяПодсказка" id="124"/>
+									</Button>
+									<Popup name="ПечатьЭН" id="101">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Печать ЭН</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Печать ЭН</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ПечатьЭНРасширеннаяПодсказка" id="102"/>
+										<ChildItems>
+											<Button name="Печать_printDocument" id="99">
+												<Type>CommandBarButton</Type>
+												<CommandName>Document.eComm_ЭкспрессНакладная.Command.Печать_printDocument</CommandName>
+												<DataPath>Items.СписокНакладных.CurrentData.Ссылка</DataPath>
+												<ExtendedTooltip name="Печать_printDocumentРасширеннаяПодсказка" id="100"/>
+											</Button>
+											<Button name="Печать_printMarking100x100" id="97">
+												<Type>CommandBarButton</Type>
+												<CommandName>Document.eComm_ЭкспрессНакладная.Command.Печать_printMarking100x100</CommandName>
+												<DataPath>Items.СписокНакладных.CurrentData.Ссылка</DataPath>
+												<ExtendedTooltip name="Печать_printMarking100x100РасширеннаяПодсказка" id="98"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокНакладныхРасширеннаяПодсказка" id="6"/>
+							<SearchStringAddition name="СписокНакладныхСтрокаПоиска" id="7">
+								<AdditionSource>
+									<Item>СписокНакладных</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокНакладныхСтрокаПоискаКонтекстноеМеню" id="8"/>
+								<ExtendedTooltip name="СписокНакладныхСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокНакладныхСостояниеПросмотра" id="10">
+								<AdditionSource>
+									<Item>СписокНакладных</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокНакладныхСостояниеПросмотраКонтекстноеМеню" id="11"/>
+								<ExtendedTooltip name="СписокНакладныхСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокНакладныхУправлениеПоиском" id="13">
+								<AdditionSource>
+									<Item>СписокНакладных</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокНакладныхУправлениеПоискомКонтекстноеМеню" id="14"/>
+								<ExtendedTooltip name="СписокНакладныхУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="DragStart">СписокНакладныхНачалоПеретаскивания</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="НомерТТН" id="28">
+									<DataPath>СписокНакладных.НомерТТН</DataPath>
+									<ContextMenu name="НомерТТНКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="НомерТТНРасширеннаяПодсказка" id="30"/>
+								</LabelField>
+								<LabelField name="ОписаниеСтатуса" id="49">
+									<DataPath>СписокНакладных.ОписаниеСтатуса</DataPath>
+									<ContextMenu name="ОписаниеСтатусаКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ОписаниеСтатусаРасширеннаяПодсказка" id="51"/>
+								</LabelField>
+								<LabelField name="Дата" id="16">
+									<DataPath>СписокНакладных.Дата</DataPath>
+									<DefaultItem>true</DefaultItem>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="18"/>
+								</LabelField>
+								<LabelField name="Реестр" id="61">
+									<DataPath>СписокНакладных.Реестр</DataPath>
+									<ContextMenu name="РеестрКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="РеестрРасширеннаяПодсказка" id="63"/>
+								</LabelField>
+								<LabelField name="ОбъявленнаяСтоимость" id="31">
+									<DataPath>СписокНакладных.ОбъявленнаяСтоимость</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Объявл.  стоимость</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Оголошена вартість</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОбъявленнаяСтоимостьКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ОбъявленнаяСтоимостьРасширеннаяПодсказка" id="33"/>
+								</LabelField>
+								<LabelField name="СтоимостьДоставки" id="34">
+									<DataPath>СписокНакладных.СтоимостьДоставки</DataPath>
+									<ContextMenu name="СтоимостьДоставкиКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="СтоимостьДоставкиРасширеннаяПодсказка" id="36"/>
+								</LabelField>
+								<LabelField name="ОбратнаяДоставкаСумма" id="58">
+									<DataPath>СписокНакладных.ОбратнаяДоставкаСумма</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Денежный перевод</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОбратнаяДоставкаСуммаКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ОбратнаяДоставкаСуммаРасширеннаяПодсказка" id="60"/>
+								</LabelField>
+								<LabelField name="КонтрольОплаты" id="55">
+									<DataPath>СписокНакладных.КонтрольОплаты</DataPath>
+									<ContextMenu name="КонтрольОплатыКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="КонтрольОплатыРасширеннаяПодсказка" id="57"/>
+								</LabelField>
+								<LabelField name="Вес" id="37">
+									<DataPath>СписокНакладных.Вес</DataPath>
+									<ContextMenu name="ВесКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ВесРасширеннаяПодсказка" id="39"/>
+								</LabelField>
+								<LabelField name="ДокументОснование" id="137">
+									<DataPath>СписокНакладных.ДокументОснование</DataPath>
+									<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="139"/>
+								</LabelField>
+								<LabelField name="Отправитель" id="142">
+									<DataPath>СписокНакладных.Отправитель</DataPath>
+									<ContextMenu name="ОтправительКонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="ОтправительРасширеннаяПодсказка" id="144"/>
+								</LabelField>
+								<LabelField name="КонтактноеЛицоОтправителя" id="22">
+									<DataPath>СписокНакладных.КонтактноеЛицоОтправителя</DataPath>
+									<ContextMenu name="КонтактноеЛицоОтправителяКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="КонтактноеЛицоОтправителяРасширеннаяПодсказка" id="24"/>
+								</LabelField>
+								<LabelField name="ТелефонОтправителя" id="40">
+									<DataPath>СписокНакладных.ТелефонОтправителя</DataPath>
+									<ContextMenu name="ТелефонОтправителяКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ТелефонОтправителяРасширеннаяПодсказка" id="42"/>
+								</LabelField>
+								<LabelField name="Получатель" id="145">
+									<DataPath>СписокНакладных.Получатель</DataPath>
+									<ContextMenu name="ПолучательКонтекстноеМеню" id="146"/>
+									<ExtendedTooltip name="ПолучательРасширеннаяПодсказка" id="147"/>
+								</LabelField>
+								<LabelField name="КонтактноеЛицоПолучателя" id="25">
+									<DataPath>СписокНакладных.КонтактноеЛицоПолучателя</DataPath>
+									<ContextMenu name="КонтактноеЛицоПолучателяКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="КонтактноеЛицоПолучателяРасширеннаяПодсказка" id="27"/>
+								</LabelField>
+								<LabelField name="ТелефонПолучателя" id="43">
+									<DataPath>СписокНакладных.ТелефонПолучателя</DataPath>
+									<ContextMenu name="ТелефонПолучателяКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ТелефонПолучателяРасширеннаяПодсказка" id="45"/>
+								</LabelField>
+								<LabelField name="НаселенныйПунктПолучателя" id="46">
+									<DataPath>СписокНакладных.НаселенныйПунктПолучателя</DataPath>
+									<ContextMenu name="НаселенныйПунктПолучателяКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="НаселенныйПунктПолучателяРасширеннаяПодсказка" id="48"/>
+								</LabelField>
+								<LabelField name="УчетнаяЗапись" id="52">
+									<DataPath>СписокНакладных.УчетнаяЗапись</DataPath>
+									<ContextMenu name="УчетнаяЗаписьКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="УчетнаяЗаписьРасширеннаяПодсказка" id="54"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокНакладных" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список накладных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Список накладних</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>СписокНакладных.Ссылка</Field>
+				<Field>СписокНакладных.ЭкспрессНакладная</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументeComm_ЭкспрессНакладная.Ссылка КАК Ссылка,
+	ДокументeComm_ЭкспрессНакладная.ПометкаУдаления КАК ПометкаУдаления,
+	ДокументeComm_ЭкспрессНакладная.Дата КАК Дата,
+	ДокументeComm_ЭкспрессНакладная.Проведен КАК Проведен,
+	ДокументeComm_ЭкспрессНакладная.Вес КАК Вес,
+	ДокументeComm_ЭкспрессНакладная.ВидПлательщика КАК ВидПлательщика,
+	ДокументeComm_ЭкспрессНакладная.ДокументОснование КАК ДокументОснование,
+	ДокументeComm_ЭкспрессНакладная.ДополнительнаяИнформация КАК ДополнительнаяИнформация,
+	ДокументeComm_ЭкспрессНакладная.Идентификатор КАК Идентификатор,
+	ДокументeComm_ЭкспрессНакладная.КоличествоМест КАК КоличествоМест,
+	ДокументeComm_ЭкспрессНакладная.КонтактноеЛицоОтправителя КАК КонтактноеЛицоОтправителя,
+	ДокументeComm_ЭкспрессНакладная.КонтактноеЛицоПолучателя КАК КонтактноеЛицоПолучателя,
+	ВЫБОР
+		КОГДА ДокументeComm_ЭкспрессНакладная.ТипПостОплаты = ЗНАЧЕНИЕ(Справочник.eComm_ОбщиеСправочники.КонтрольОплаты)
+			ТОГДА ВЫБОР
+					КОГДА НЕ ДокументeComm_ЭкспрессНакладная.СуммаПостОплаты = 0
+						ТОГДА ДокументeComm_ЭкспрессНакладная.СуммаПостОплаты
+					ИНАЧЕ ДокументeComm_ЭкспрессНакладная.ДокументОснование.СуммаДокумента
+				КОНЕЦ
+		КОГДА ДокументeComm_ЭкспрессНакладная.ТипПостОплаты = ЗНАЧЕНИЕ(Справочник.eComm_ОбщиеСправочники.ПостОплатаУкрПочта)
+				И ДокументeComm_ЭкспрессНакладная.ЗачислятьНаIBAN = ИСТИНА
+			ТОГДА ВЫБОР
+					КОГДА НЕ ДокументeComm_ЭкспрессНакладная.СуммаПостОплаты = 0
+						ТОГДА ДокументeComm_ЭкспрессНакладная.СуммаПостОплаты
+					ИНАЧЕ ДокументeComm_ЭкспрессНакладная.ДокументОснование.СуммаДокумента
+				КОНЕЦ
+		ИНАЧЕ 0
+	КОНЕЦ КАК КонтрольОплаты,
+	ВЫБОР
+		КОГДА ДокументeComm_ЭкспрессНакладная.ТипПостОплаты = ЗНАЧЕНИЕ(Справочник.eComm_ОбщиеСправочники.ДенежныйПеревод)
+			ТОГДА ВЫБОР
+					КОГДА ДокументeComm_ЭкспрессНакладная.ОбратнаяДоставкаВидГруза.Идентификатор = "Money"
+							И НЕ ДокументeComm_ЭкспрессНакладная.СуммаПостОплаты = 0
+						ТОГДА ДокументeComm_ЭкспрессНакладная.СуммаПостОплаты
+					КОГДА ДокументeComm_ЭкспрессНакладная.ОбратнаяДоставкаВидГруза.Идентификатор = "Money"
+							И ДокументeComm_ЭкспрессНакладная.СуммаПостОплаты = 0
+						ТОГДА ДокументeComm_ЭкспрессНакладная.ДокументОснование.СуммаДокумента
+					ИНАЧЕ ДокументeComm_ЭкспрессНакладная.ОбратнаяДоставкаОписание
+				КОНЕЦ
+		КОГДА ДокументeComm_ЭкспрессНакладная.ТипПостОплаты = ЗНАЧЕНИЕ(Справочник.eComm_ОбщиеСправочники.ПостОплатаУкрПочта)
+				И ДокументeComm_ЭкспрессНакладная.ЗачислятьНаIBAN = ЛОЖЬ
+			ТОГДА ВЫБОР
+					КОГДА НЕ ДокументeComm_ЭкспрессНакладная.СуммаПостОплаты = 0
+						ТОГДА ДокументeComm_ЭкспрессНакладная.СуммаПостОплаты
+					ИНАЧЕ ДокументeComm_ЭкспрессНакладная.ДокументОснование.СуммаДокумента
+				КОНЕЦ
+		ИНАЧЕ 0
+	КОНЕЦ КАК ОбратнаяДоставкаСумма,
+	ДокументeComm_ЭкспрессНакладная.НаселенныйПунктОтправителя КАК НаселенныйПунктОтправителя,
+	ДокументeComm_ЭкспрессНакладная.НаселенныйПунктПолучателя КАК НаселенныйПунктПолучателя,
+	ДокументeComm_ЭкспрессНакладная.НесколькоМест КАК НесколькоМест,
+	ДокументeComm_ЭкспрессНакладная.НомерДомаОтправителя КАК НомерДомаОтправителя,
+	ДокументeComm_ЭкспрессНакладная.НомерДомаПолучателя КАК НомерДомаПолучателя,
+	ДокументeComm_ЭкспрессНакладная.НомерКвартирыОтправителя КАК НомерКвартирыОтправителя,
+	ДокументeComm_ЭкспрессНакладная.НомерКвартирыПолучателя КАК НомерКвартирыПолучателя,
+	ДокументeComm_ЭкспрессНакладная.НомерТТН КАК НомерТТН,
+	ВЫБОР
+		КОГДА НЕ ДокументeComm_ЭкспрессНакладная.ОбъявленнаяСтоимость = 0
+			ТОГДА ДокументeComm_ЭкспрессНакладная.ОбъявленнаяСтоимость
+		ИНАЧЕ ЕСТЬNULL(ДокументeComm_ЭкспрессНакладная.ДокументОснование.СуммаДокумента, 0)
+	КОНЕЦ КАК ОбъявленнаяСтоимость,
+	ДокументeComm_ЭкспрессНакладная.ОписаниеГруза КАК ОписаниеГруза,
+	ДокументeComm_ЭкспрессНакладная.ОтделениеОтправителя КАК ОтделениеОтправителя,
+	ДокументeComm_ЭкспрессНакладная.ОтделениеПолучателя КАК ОтделениеПолучателя,
+	ДокументeComm_ЭкспрессНакладная.Отправитель КАК Отправитель,
+	ДокументeComm_ЭкспрессНакладная.Получатель КАК Получатель,
+	ДокументeComm_ЭкспрессНакладная.ПрогнозируемаяДатаДоставки КАК ПрогнозируемаяДатаДоставки,
+	ДокументeComm_ЭкспрессНакладная.СтоимостьДоставки КАК СтоимостьДоставки,
+	ДокументeComm_ЭкспрессНакладная.ТелефонОтправителя КАК ТелефонОтправителя,
+	ДокументeComm_ЭкспрессНакладная.ТелефонПолучателя КАК ТелефонПолучателя,
+	ДокументeComm_ЭкспрессНакладная.ТехнологияДоставки КАК ТехнологияДоставки,
+	ДокументeComm_ЭкспрессНакладная.ТипГруза КАК ТипГруза,
+	ДокументeComm_ЭкспрессНакладная.ТипПолучателя КАК ТипПолучателя,
+	ДокументeComm_ЭкспрессНакладная.УлицаОтправителя КАК УлицаОтправителя,
+	ДокументeComm_ЭкспрессНакладная.УлицаПолучателя КАК УлицаПолучателя,
+	ДокументeComm_ЭкспрессНакладная.УчетнаяЗапись КАК УчетнаяЗапись,
+	ДокументeComm_ЭкспрессНакладная.ФормаОплаты КАК ФормаОплаты,
+	ДокументeComm_ЭкспрессНакладная.Объем КАК Объем,
+	ДокументeComm_ЭкспрессНакладная.МоментВремени КАК МоментВремени,
+	eComm_СтатусыЭкспрессНакладных.ЭкспрессНакладная КАК ЭкспрессНакладная,
+	eComm_СтатусыЭкспрессНакладных.Статус КАК Статус,
+	eComm_СтатусыЭкспрессНакладных.ОписаниеСтатуса КАК ОписаниеСтатуса,
+	ЕСТЬNULL(eComm_Реестры.Реестр, ЗНАЧЕНИЕ(Справочник.eComm_Реестры.ПустаяСсылка)) КАК Реестр
+ИЗ
+	Документ.eComm_ЭкспрессНакладная КАК ДокументeComm_ЭкспрессНакладная
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.eComm_СтатусыЭкспрессНакладных КАК eComm_СтатусыЭкспрессНакладных
+		ПО (eComm_СтатусыЭкспрессНакладных.ЭкспрессНакладная = ДокументeComm_ЭкспрессНакладная.Ссылка)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.eComm_Реестры КАК eComm_Реестры
+		ПО (eComm_Реестры.ЭкспрессНакладная = ДокументeComm_ЭкспрессНакладная.Ссылка)</QueryText>
+				<MainTable>Document.eComm_ЭкспрессНакладная</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="УчетнаяЗапись" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная запись</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обліковий запис</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.eComm_УчетныеЗаписиСлужбДоставки</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокРеестров" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список реестров</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Список реєстрів</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СписокРеестров.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникeComm_Реестры.Ссылка КАК Ссылка,
+	СправочникeComm_Реестры.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникeComm_Реестры.Владелец КАК Владелец,
+	СправочникeComm_Реестры.Код КАК Код,
+	СправочникeComm_Реестры.Наименование КАК Наименование,
+	СправочникeComm_Реестры.Идентификатор КАК Идентификатор,
+	СправочникeComm_Реестры.Дата КАК Дата,
+	СправочникeComm_Реестры.Тип КАК Тип,
+	ВЫБОР
+		КОГДА СправочникeComm_Реестры.Распечатан
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ИндексКартинки
+ИЗ
+	Справочник.eComm_Реестры КАК СправочникeComm_Реестры
+ГДЕ
+	СправочникeComm_Реестры.ПометкаУдаления = ЛОЖЬ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	НЕОПРЕДЕЛЕНО,
+	ЛОЖЬ,
+	&amp;УчетнаяЗапись,
+	NULL,
+	"-Все накладные-",
+	NULL,
+	NULL,
+	NULL,
+	NULL
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЗНАЧЕНИЕ(Справочник.eComm_Реестры.ПустаяСсылка),
+	ЛОЖЬ,
+	&amp;УчетнаяЗапись,
+	NULL,
+	"-Накладные без реестра-",
+	NULL,
+	NULL,
+	NULL,
+	NULL</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИспользоватьРеестры" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать реестры</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Використовувати реєстри</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьРеестры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Оновити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить реестры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьРеестры</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ИзменитьРеестр" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Редагувати</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить реестр</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИзменитьРеестр</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>Document.eComm_ЭкспрессНакладная.Command.ДобавитьВРеестр</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.eComm_ЭкспрессНакладная.Command.УдалитьИзРеестра</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

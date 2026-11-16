@@ -1,0 +1,1220 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="392">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="393"/>
+			<ChildItems>
+				<InputField name="Пациент" id="1">
+					<DataPath>Пациент</DataPath>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ChoiceForm>Catalog.Партнеры.Form.ФормаВыбораФизлицаКлиента</ChoiceForm>
+					<ContextMenu name="ПациентКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПациентРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">ПациентПриИзменении</Event>
+					</Events>
+				</InputField>
+				<LabelField name="Пол" id="411">
+					<DataPath>Пол</DataPath>
+					<ContextMenu name="ПолКонтекстноеМеню" id="412"/>
+					<ExtendedTooltip name="ПолРасширеннаяПодсказка" id="413"/>
+				</LabelField>
+				<LabelField name="Возраст" id="414">
+					<DataPath>Возраст</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возраст</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вік</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ВозрастКонтекстноеМеню" id="415"/>
+					<ExtendedTooltip name="ВозрастРасширеннаяПодсказка" id="416"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<LabelField name="ВажнаяМедИнформация" id="389">
+			<DataPath>ВажнаяМедИнформация</DataPath>
+			<Visible>false</Visible>
+			<BackColor>#FFB189</BackColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ContextMenu name="ВажнаяМедИнформацияКонтекстноеМеню" id="390"/>
+			<ExtendedTooltip name="ВажнаяМедИнформацияРасширеннаяПодсказка" id="391"/>
+		</LabelField>
+		<Pages name="Группа1" id="295">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="296"/>
+			<ChildItems>
+				<Page name="ГруппаКарточкиПациента" id="297">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Карточки пациента</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Картки паціента</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа карточки пациента</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКарточкиПациентаРасширеннаяПодсказка" id="298"/>
+					<ChildItems>
+						<Button name="СоздатьКарточкуПациента" id="341">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СоздатьКарточкуПациента</CommandName>
+							<ExtendedTooltip name="СоздатьКарточкуПациентаРасширеннаяПодсказка" id="342"/>
+						</Button>
+						<Table name="КарточкиПациента" id="4">
+							<ReadOnly>true</ReadOnly>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>КарточкиПациента</DataPath>
+							<RowPictureDataPath>КарточкиПациента.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="КарточкиПациентаКонтекстноеМеню" id="5"/>
+							<AutoCommandBar name="КарточкиПациентаКоманднаяПанель" id="6">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="КарточкиПациентаРасширеннаяПодсказка" id="7"/>
+							<SearchStringAddition name="КарточкиПациентаСтрокаПоиска" id="8">
+								<AdditionSource>
+									<Item>КарточкиПациента</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КарточкиПациентаСтрокаПоискаКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="КарточкиПациентаСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КарточкиПациентаСостояниеПросмотра" id="11">
+								<AdditionSource>
+									<Item>КарточкиПациента</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КарточкиПациентаСостояниеПросмотраКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="КарточкиПациентаСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КарточкиПациентаУправлениеПоиском" id="14">
+								<AdditionSource>
+									<Item>КарточкиПациента</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КарточкиПациентаУправлениеПоискомКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="КарточкиПациентаУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="КарточкиПациентаСсылка" id="261">
+									<DataPath>КарточкиПациента.Ref</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="КарточкиПациентаСсылкаКонтекстноеМеню" id="262"/>
+									<ExtendedTooltip name="КарточкиПациентаСсылкаРасширеннаяПодсказка" id="263"/>
+								</InputField>
+								<LabelField name="КарточкиПациентаАнамнез" id="264">
+									<DataPath>КарточкиПациента.Анамнез</DataPath>
+									<ContextMenu name="КарточкиПациентаАнамнезКонтекстноеМеню" id="265"/>
+									<ExtendedTooltip name="КарточкиПациентаАнамнезРасширеннаяПодсказка" id="266"/>
+								</LabelField>
+								<ColumnGroup name="Назначения" id="276">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Назначение</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Призначення</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Назначения</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="НазначенияРасширеннаяПодсказка" id="277"/>
+									<ChildItems>
+										<LabelField name="КарточкиПациентаОчкиДляБлизи" id="399">
+											<DataPath>КарточкиПациента.ОчкиДляБлизи</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Очки для близи</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Окул для блізи</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<Width>5</Width>
+											<ContextMenu name="КарточкиПациентаОчкиДляБлизиКонтекстноеМеню" id="400"/>
+											<ExtendedTooltip name="КарточкиПациентаОчкиДляБлизиРасширеннаяПодсказка" id="401"/>
+										</LabelField>
+										<LabelField name="КарточкиПациентаОчкиДляДали" id="402">
+											<DataPath>КарточкиПациента.ОчкиДляДали</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Очки для дали</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Окул для далі</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<Width>5</Width>
+											<ContextMenu name="КарточкиПациентаОчкиДляДалиКонтекстноеМеню" id="403"/>
+											<ExtendedTooltip name="КарточкиПациентаОчкиДляДалиРасширеннаяПодсказка" id="404"/>
+										</LabelField>
+										<LabelField name="КарточкиПациентаМКЛ" id="405">
+											<DataPath>КарточкиПациента.МКЛ</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>МКЛ</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>МКЛ</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<Width>5</Width>
+											<ContextMenu name="КарточкиПациентаМКЛКонтекстноеМеню" id="406"/>
+											<ExtendedTooltip name="КарточкиПациентаМКЛРасширеннаяПодсказка" id="407"/>
+										</LabelField>
+										<LabelField name="КарточкиПациентаНЛ" id="408">
+											<DataPath>КарточкиПациента.НЛ</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>НЛ</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>НЛ</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<Width>5</Width>
+											<ContextMenu name="КарточкиПациентаНЛКонтекстноеМеню" id="409"/>
+											<ExtendedTooltip name="КарточкиПациентаНЛРасширеннаяПодсказка" id="410"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНазначениеКурсовЛечений" id="299">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначение лечений</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Призначення лікувань</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа назначение курсов лечений</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНазначениеКурсовЛеченийРасширеннаяПодсказка" id="300"/>
+					<ChildItems>
+						<Button name="НазначитьКурсЛечения" id="343">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.НазначитьКурсЛечения</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Назначить курс лечения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Призначити курс лікування</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="НазначитьКурсЛеченияРасширеннаяПодсказка" id="344"/>
+						</Button>
+						<Table name="НазначенияКурсовЛечений" id="191">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<VerticalStretch>false</VerticalStretch>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>НазначенияКурсовЛечений</DataPath>
+							<RowPictureDataPath>НазначенияКурсовЛечений.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="НазначенияКурсовЛеченийКонтекстноеМеню" id="192"/>
+							<AutoCommandBar name="НазначенияКурсовЛеченийКоманднаяПанель" id="193">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="НазначенияКурсовЛеченийРасширеннаяПодсказка" id="194"/>
+							<SearchStringAddition name="НазначенияКурсовЛеченийСтрокаПоиска" id="195">
+								<Enabled>false</Enabled>
+								<AdditionSource>
+									<Item>НазначенияКурсовЛечений</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НазначенияКурсовЛеченийСтрокаПоискаКонтекстноеМеню" id="196"/>
+								<ExtendedTooltip name="НазначенияКурсовЛеченийСтрокаПоискаРасширеннаяПодсказка" id="197"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НазначенияКурсовЛеченийСостояниеПросмотра" id="198">
+								<Enabled>false</Enabled>
+								<AdditionSource>
+									<Item>НазначенияКурсовЛечений</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НазначенияКурсовЛеченийСостояниеПросмотраКонтекстноеМеню" id="199"/>
+								<ExtendedTooltip name="НазначенияКурсовЛеченийСостояниеПросмотраРасширеннаяПодсказка" id="200"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НазначенияКурсовЛеченийУправлениеПоиском" id="201">
+								<Enabled>false</Enabled>
+								<AdditionSource>
+									<Item>НазначенияКурсовЛечений</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НазначенияКурсовЛеченийУправлениеПоискомКонтекстноеМеню" id="202"/>
+								<ExtendedTooltip name="НазначенияКурсовЛеченийУправлениеПоискомРасширеннаяПодсказка" id="203"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="НазначенияКурсовЛеченийСсылка" id="278">
+									<DataPath>НазначенияКурсовЛечений.Ref</DataPath>
+									<ContextMenu name="НазначенияКурсовЛеченийСсылкаКонтекстноеМеню" id="279"/>
+									<ExtendedTooltip name="НазначенияКурсовЛеченийСсылкаРасширеннаяПодсказка" id="280"/>
+								</LabelField>
+								<ColumnGroup name="НазначенияКурсовЛеченийГруппа1" id="290">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Процедуры</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Процедуры</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="НазначенияКурсовЛеченийГруппа1РасширеннаяПодсказка" id="291"/>
+									<ChildItems>
+										<LabelField name="НазначенияКурсовЛеченийКоличествоПроцедурЛечения" id="281">
+											<DataPath>НазначенияКурсовЛечений.ДлительностьКурса</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Назн</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Призн</v8:content>
+												</v8:item>
+											</Title>
+											<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+											<Width>4</Width>
+											<ContextMenu name="НазначенияКурсовЛеченийКоличествоПроцедурЛеченияКонтекстноеМеню" id="282"/>
+											<ExtendedTooltip name="НазначенияКурсовЛеченийКоличествоПроцедурЛеченияРасширеннаяПодсказка" id="283"/>
+										</LabelField>
+										<LabelField name="НазначенияКурсовЛеченийКоличествоВыполненных" id="287">
+											<DataPath>НазначенияКурсовЛечений.КоличествоВыполненных</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполн</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Викон</v8:content>
+												</v8:item>
+											</Title>
+											<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+											<Width>4</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="НазначенияКурсовЛеченийКоличествоВыполненныхКонтекстноеМеню" id="288"/>
+											<ExtendedTooltip name="НазначенияКурсовЛеченийКоличествоВыполненныхРасширеннаяПодсказка" id="289"/>
+										</LabelField>
+										<LabelField name="НазначенияКурсовЛеченийПроцентВыіполнения" id="394">
+											<DataPath>НазначенияКурсовЛечений.ПроцентВыіполнения</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>% вып</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>% вик</v8:content>
+												</v8:item>
+											</Title>
+											<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+											<Width>4</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="НазначенияКурсовЛеченийПроцентВыіполненияКонтекстноеМеню" id="395"/>
+											<ExtendedTooltip name="НазначенияКурсовЛеченийПроцентВыіполненияРасширеннаяПодсказка" id="396"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<LabelField name="НазначенияКурсовЛеченийДатаСледующегоЛечения" id="292">
+									<DataPath>НазначенияКурсовЛечений.ДатаСледующегоЛечения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата след</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Дата наст</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НазначенияКурсовЛеченийДатаСледующегоЛеченияКонтекстноеМеню" id="293"/>
+									<ExtendedTooltip name="НазначенияКурсовЛеченийДатаСледующегоЛеченияРасширеннаяПодсказка" id="294"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДинамикаЗрения" id="301">
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Динамика показателей</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Динаміка показників</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа динамика зрения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДинамикаЗренияРасширеннаяПодсказка" id="302"/>
+					<ChildItems>
+						<Table name="ИсторияПоказателей" id="345">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ИсторияПоказателей</DataPath>
+							<RowPictureDataPath>ИсторияПоказателей.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ИсторияПоказателейКонтекстноеМеню" id="346"/>
+							<AutoCommandBar name="ИсторияПоказателейКоманднаяПанель" id="347">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ИсторияПоказателейРасширеннаяПодсказка" id="348"/>
+							<SearchStringAddition name="ИсторияПоказателейСтрокаПоиска" id="349">
+								<Enabled>false</Enabled>
+								<AdditionSource>
+									<Item>ИсторияПоказателей</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияПоказателейСтрокаПоискаКонтекстноеМеню" id="350"/>
+								<ExtendedTooltip name="ИсторияПоказателейСтрокаПоискаРасширеннаяПодсказка" id="351"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИсторияПоказателейСостояниеПросмотра" id="352">
+								<Enabled>false</Enabled>
+								<AdditionSource>
+									<Item>ИсторияПоказателей</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияПоказателейСостояниеПросмотраКонтекстноеМеню" id="353"/>
+								<ExtendedTooltip name="ИсторияПоказателейСостояниеПросмотраРасширеннаяПодсказка" id="354"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИсторияПоказателейУправлениеПоиском" id="355">
+								<Enabled>false</Enabled>
+								<AdditionSource>
+									<Item>ИсторияПоказателей</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияПоказателейУправлениеПоискомКонтекстноеМеню" id="356"/>
+								<ExtendedTooltip name="ИсторияПоказателейУправлениеПоискомРасширеннаяПодсказка" id="357"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ИсторияПоказателейСсылка" id="358">
+									<DataPath>ИсторияПоказателей.Ref</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Документ</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Документ</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ИсторияПоказателейСсылкаКонтекстноеМеню" id="359"/>
+									<ExtendedTooltip name="ИсторияПоказателейСсылкаРасширеннаяПодсказка" id="360"/>
+								</LabelField>
+								<LabelField name="ИсторияПоказателейИсточник" id="361">
+									<DataPath>ИсторияПоказателей.Источник</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тип события</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Тп події</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ИсторияПоказателейИсточникКонтекстноеМеню" id="362"/>
+									<ExtendedTooltip name="ИсторияПоказателейИсточникРасширеннаяПодсказка" id="363"/>
+								</LabelField>
+								<ColumnGroup name="ИсторияПоказателейГруппа1" id="379">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Без коррекции</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Без корекції</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ИсторияПоказателейГруппа1РасширеннаяПодсказка" id="380"/>
+									<ChildItems>
+										<LabelField name="ИсторияПоказателейОстротаЗренияODбк" id="367">
+											<DataPath>ИсторияПоказателей.ОстротаЗренияODбк</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>OD</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>OD</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ИсторияПоказателейОстротаЗренияODбкКонтекстноеМеню" id="368"/>
+											<ExtendedTooltip name="ИсторияПоказателейОстротаЗренияODбкРасширеннаяПодсказка" id="369"/>
+										</LabelField>
+										<LabelField name="ИсторияПоказателейОстротаЗренияOSбк" id="373">
+											<DataPath>ИсторияПоказателей.ОстротаЗренияOSбк</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>OS</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>OS</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ИсторияПоказателейОстротаЗренияOSбкКонтекстноеМеню" id="374"/>
+											<ExtendedTooltip name="ИсторияПоказателейОстротаЗренияOSбкРасширеннаяПодсказка" id="375"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ИсторияПоказателейГруппа2" id="381">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>С коррекцией</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>З корекцією</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ИсторияПоказателейГруппа2РасширеннаяПодсказка" id="382"/>
+									<ChildItems>
+										<LabelField name="ИсторияПоказателейОстротаЗренияODcк" id="364">
+											<DataPath>ИсторияПоказателей.ОстротаЗренияODcк</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>OD</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>OD</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ИсторияПоказателейОстротаЗренияODcкКонтекстноеМеню" id="365"/>
+											<ExtendedTooltip name="ИсторияПоказателейОстротаЗренияODcкРасширеннаяПодсказка" id="366"/>
+										</LabelField>
+										<LabelField name="ИсторияПоказателейОстротаЗренияOScк" id="370">
+											<DataPath>ИсторияПоказателей.ОстротаЗренияOScк</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>OS</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>OS</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ИсторияПоказателейОстротаЗренияOScкКонтекстноеМеню" id="371"/>
+											<ExtendedTooltip name="ИсторияПоказателейОстротаЗренияOScкРасширеннаяПодсказка" id="372"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаРасписаниеПриемаНаДень" id="397">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа расписание приема на день</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа расписание приема на день</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаРасписаниеПриемаНаДеньРасширеннаяПодсказка" id="398"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМестоОфтальмолога</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Пациент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пациент</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Паціент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Партнеры</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КарточкиПациента" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Карточки пациента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументКарточкаПациента.Ссылка,
+	ДокументКарточкаПациента.ПометкаУдаления,
+	ДокументКарточкаПациента.Номер,
+	ДокументКарточкаПациента.Дата,
+	ДокументКарточкаПациента.Проведен,
+	ДокументКарточкаПациента.Пациент,
+	ДокументКарточкаПациента.Жалобы,
+	ДокументКарточкаПациента.Анамнез,
+	ДокументКарточкаПациента.ВидКоррекции,
+	ДокументКарточкаПациента.ОстротаЗренияODбк,
+	ДокументКарточкаПациента.ОстротаЗренияOSбк,
+	ДокументКарточкаПациента.ОстротаЗренияODcк,
+	ДокументКарточкаПациента.ОстротаЗренияOScк,
+	ДокументКарточкаПациента.ОстротаЗренияODск_sph,
+	ДокументКарточкаПациента.ОстротаЗренияOSск_sph,
+	ДокументКарточкаПациента.ОстротаЗренияODск_cyl,
+	ДокументКарточкаПациента.ОстротаЗренияOSск_cyl,
+	ДокументКарточкаПациента.ОстротаЗренияODск_ax,
+	ДокументКарточкаПациента.ОстротаЗренияOSск_ax,
+	ДокументКарточкаПациента.РефрактометрияУзкийЗрачокOD_sph,
+	ДокументКарточкаПациента.РефрактометрияУзкийЗрачокOS_sph,
+	ДокументКарточкаПациента.РефрактометрияУзкийЗрачокOD_cyl,
+	ДокументКарточкаПациента.РефрактометрияУзкийЗрачокOS_cyl,
+	ДокументКарточкаПациента.РефрактометрияУзкийЗрачокOD_ax,
+	ДокументКарточкаПациента.РефрактометрияУзкийЗрачокOS_ax,
+	ДокументКарточкаПациента.РефрактометрияШирокийЗрачокOD_sph,
+	ДокументКарточкаПациента.РефрактометрияШирокийЗрачокOS_sph,
+	ДокументКарточкаПациента.РефрактометрияШирокийЗрачокOD_cyl,
+	ДокументКарточкаПациента.РефрактометрияШирокийЗрачокOS_cyl,
+	ДокументКарточкаПациента.РефрактометрияШирокийЗрачокOD_ax,
+	ДокументКарточкаПациента.РефрактометрияШирокийЗрачокOS_ax,
+	ДокументКарточкаПациента.ПередниеОтделы,
+	ДокументКарточкаПациента.Среда,
+	ДокументКарточкаПациента.ПоложениеГлаз,
+	ДокументКарточкаПациента.ХарактерЗрения,
+	ДокументКарточкаПациента.Рекомендации,
+	ДокументКарточкаПациента.НазначеноМКЛ,
+	ДокументКарточкаПациента.НазначеноОчки,
+	ДокументКарточкаПациента.НазначениеОчкиOD_sph,
+	ДокументКарточкаПациента.НазначениеОчкиOS_sph,
+	ДокументКарточкаПациента.НазначениеОчкиOD_cyl,
+	ДокументКарточкаПациента.НазначениеОчкиOS_cyl,
+	ДокументКарточкаПациента.НазначениеОчкиOD_ax,
+	ДокументКарточкаПациента.НазначениеОчкиOS_ax,
+	ДокументКарточкаПациента.НазначениеОчкиКомментарий,
+	ДокументКарточкаПациента.НазначениеОчки_DP,
+	ДокументКарточкаПациента.НазначениеМКЛ_OD_sph,
+	ДокументКарточкаПациента.НазначениеМКЛ_OS_sph,
+	ДокументКарточкаПациента.НазначениеМКЛ_OD_cyl,
+	ДокументКарточкаПациента.НазначениеМКЛ_OS_cyl,
+	ДокументКарточкаПациента.НазначеноМКЛ_OD_ax,
+	ДокументКарточкаПациента.НазначеноМКЛ_OS_ax,
+	ДокументКарточкаПациента.НазначеноМКЛ_Комментарий,
+	ДокументКарточкаПациента.НазначеноНЛ,
+	ДокументКарточкаПациента.НазначеноНЛ_OD,
+	ДокументКарточкаПациента.НазначеноНЛ_OS,
+	ДокументКарточкаПациента.Исполнитель,
+	ДокументКарточкаПациента.ДиагнозOD,
+	ДокументКарточкаПациента.ДиагнозOS,
+	ДокументКарточкаПациента.ДатаСледуюющегоОсмотра,
+	ДокументКарточкаПациента.НазначеноНЛ_Комментарий,
+	ДокументКарточкаПациента.НазначениеЛС.(
+		Ссылка,
+		НомерСтроки,
+		Номенклатура,
+		Характеристика,
+		ЕдИзм,
+		Количество,
+		ПорядокПрименения
+	),
+	ДокументКарточкаПациента.МоментВремени,
+	ВложенныйЗапрос.ОчкиДляБлизи,
+	ВложенныйЗапрос.ОчкиДляДали,
+	ВложенныйЗапрос.МКЛ,
+	ВложенныйЗапрос.НЛ
+ИЗ
+	Документ.КарточкаПациента КАК ДокументКарточкаПациента
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КарточкаПациентаНазначенияОчки.Ссылка КАК Ссылка,
+			СУММА(ВЫБОР
+					КОГДА КарточкаПациентаНазначенияОчки.ВидНазначения = ЗНАЧЕНИЕ(Перечисление.ВидыНазначенийОчкиЛинзы.ОчкиДляБлизи)
+						ТОГДА 1
+					ИНАЧЕ 0
+				КОНЕЦ) КАК ОчкиДляБлизи,
+			СУММА(ВЫБОР
+					КОГДА КарточкаПациентаНазначенияОчки.ВидНазначения = ЗНАЧЕНИЕ(Перечисление.ВидыНазначенийОчкиЛинзы.ОчкиДляДали)
+						ТОГДА 1
+					ИНАЧЕ 0
+				КОНЕЦ) КАК ОчкиДляДали,
+			СУММА(ВЫБОР
+					КОГДА КарточкаПациентаНазначенияОчки.ВидНазначения = ЗНАЧЕНИЕ(Перечисление.ВидыНазначенийОчкиЛинзы.МКЛ)
+						ТОГДА 1
+					ИНАЧЕ 0
+				КОНЕЦ) КАК МКЛ,
+			СУММА(ВЫБОР
+					КОГДА КарточкаПациентаНазначенияОчки.ВидНазначения = ЗНАЧЕНИЕ(Перечисление.ВидыНазначенийОчкиЛинзы.НЛ)
+						ТОГДА 1
+					ИНАЧЕ 0
+				КОНЕЦ) КАК НЛ
+		ИЗ
+			Документ.КарточкаПациента.НазначенияОчки КАК КарточкаПациентаНазначенияОчки
+		
+		СГРУППИРОВАТЬ ПО
+			КарточкаПациентаНазначенияОчки.Ссылка) КАК ВложенныйЗапрос
+		ПО ДокументКарточкаПациента.Ссылка = ВложенныйЗапрос.Ссылка
+ГДЕ
+	ДокументКарточкаПациента.Пациент = &amp;Пациент</QueryText>
+				<MainTable>Document.КарточкаПациента</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="НазначенияКурсовЛечений" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Назначения курсов лечений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументНазначениеКурсаЛечения.Ссылка,
+	ДокументНазначениеКурсаЛечения.ПометкаУдаления,
+	ДокументНазначениеКурсаЛечения.Номер,
+	ДокументНазначениеКурсаЛечения.Дата,
+	ДокументНазначениеКурсаЛечения.Проведен,
+	ДокументНазначениеКурсаЛечения.Пациент,
+	ДокументНазначениеКурсаЛечения.ДиагнозOD,
+	ДокументНазначениеКурсаЛечения.КоличествоПроцедурЛечения,
+	ДокументНазначениеКурсаЛечения.ДиагнозOS,
+	ДокументНазначениеКурсаЛечения.Комментарий,
+	ДокументНазначениеКурсаЛечения.ДлительностьКурса,
+	ДокументНазначениеКурсаЛечения.ДатаСледующегоЛечения,
+	ДокументНазначениеКурсаЛечения.Исполнитель,
+	ДокументНазначениеКурсаЛечения.ОстротаЗренияODбкДоЛечения,
+	ДокументНазначениеКурсаЛечения.ОстротаЗренияOSбкДоЛечения,
+	ДокументНазначениеКурсаЛечения.ОстротаЗренияODcкДоЛечения,
+	ДокументНазначениеКурсаЛечения.ОстротаЗренияOScкДоЛечения,
+	ДокументНазначениеКурсаЛечения.ОстротаЗренияODбкПослеЛечения,
+	ДокументНазначениеКурсаЛечения.ОстротаЗренияOSбкПослеЛечения,
+	ДокументНазначениеКурсаЛечения.ОстротаЗренияODcкПослеЛечения,
+	ДокументНазначениеКурсаЛечения.ОстротаЗренияOScкПослеЛечения,
+	ДокументНазначениеКурсаЛечения.ПрименениеДляГлаз,
+	ДокументНазначениеКурсаЛечения.РасписаниеКурсаЛечений.(
+		Ссылка,
+		НомерСтроки,
+		Дата,
+		Выполнено,
+		КоличествоПроцедур
+	),
+	ДокументНазначениеКурсаЛечения.НазначениеЛечебныхПроцедур.(
+		Ссылка,
+		НомерСтроки,
+		ЛечебнаяПроцедура,
+		ПрименениеДляГлаз
+	),
+	ДокументНазначениеКурсаЛечения.МоментВремени,
+	ВложенныйЗапрос.КоличествоВыполненных,
+	ВЫБОР
+		КОГДА ДокументНазначениеКурсаЛечения.ДлительностьКурса &gt; 0
+			ТОГДА 100 * (ВложенныйЗапрос.КоличествоВыполненных / ДокументНазначениеКурсаЛечения.ДлительностьКурса)
+	КОНЕЦ КАК ПроцентВыіполнения
+ИЗ
+	Документ.НазначениеКурсаЛечения КАК ДокументНазначениеКурсаЛечения
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ВыполнениеПроцедуры.Ссылка) КАК КоличествоВыполненных,
+			ВыполнениеПроцедуры.НазначениеКурсаЛечения КАК НазначениеКурсаЛечения
+		ИЗ
+			Документ.ВыполнениеПроцедуры КАК ВыполнениеПроцедуры
+		
+		СГРУППИРОВАТЬ ПО
+			ВыполнениеПроцедуры.НазначениеКурсаЛечения) КАК ВложенныйЗапрос
+		ПО ДокументНазначениеКурсаЛечения.Ссылка = ВложенныйЗапрос.НазначениеКурсаЛечения.Ссылка
+ГДЕ
+	ДокументНазначениеКурсаЛечения.Пациент = &amp;Пациент</QueryText>
+				<MainTable>Document.НазначениеКурсаЛечения</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ПроцентВыіполнения</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Формат</dcscor:parameter>
+									<dcscor:value xsi:type="xs:string">ЧДЦ=0; ЧС=2; ЧФ=Ч%</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИсторияПоказателей" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История показателей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Історія показників</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	КарточкаПациента.Ссылка,
+	КарточкаПациента.ОстротаЗренияODбк,
+	КарточкаПациента.ОстротаЗренияOSбк,
+	КарточкаПациента.ОстротаЗренияODcк,
+	КарточкаПациента.ОстротаЗренияOScк,
+	"Картка паціента" КАК Источник
+ИЗ
+	Документ.КарточкаПациента КАК КарточкаПациента
+ГДЕ
+	КарточкаПациента.Проведен
+	И КарточкаПациента.Пациент = &amp;Пациент
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	НазначениеКурсаЛечения.Ссылка,
+	НазначениеКурсаЛечения.ОстротаЗренияODбкДоЛечения,
+	НазначениеКурсаЛечения.ОстротаЗренияOSбкДоЛечения,
+	НазначениеКурсаЛечения.ОстротаЗренияODcкДоЛечения,
+	НазначениеКурсаЛечения.ОстротаЗренияOScкДоЛечения,
+	"Призначення курсу лікування"
+ИЗ
+	Документ.НазначениеКурсаЛечения КАК НазначениеКурсаЛечения
+ГДЕ
+	НазначениеКурсаЛечения.Проведен
+	И НазначениеКурсаЛечения.Пациент = &amp;Пациент
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	НазначениеКурсаЛечения.Ссылка,
+	НазначениеКурсаЛечения.ОстротаЗренияODбкПослеЛечения,
+	НазначениеКурсаЛечения.ОстротаЗренияOSбкПослеЛечения,
+	НазначениеКурсаЛечения.ОстротаЗренияODcкПослеЛечения,
+	НазначениеКурсаЛечения.ОстротаЗренияOScкПослеЛечения,
+	"Завершення курсу лікування"
+ИЗ
+	Документ.НазначениеКурсаЛечения КАК НазначениеКурсаЛечения
+ГДЕ
+	НазначениеКурсаЛечения.Проведен
+	И НазначениеКурсаЛечения.Пациент = &amp;Пациент</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Пол" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пол</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Стать</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ПолФизическогоЛица</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Возраст" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Возраст</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВажнаяМедИнформация" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Важная мед информация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РасписаниеНаДень" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Расписание на день</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.РасписаниеПриемаВрача</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Магазин" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Магазин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Врач" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Врач</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Дата" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Номенклатура" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КарточкиПациентаОчкиДляБлизи</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">КарточкиПациента.ОчкиДляБлизи</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#99CC00</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КарточкиПациентаОчкиДляДали</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">КарточкиПациента.ОчкиДляДали</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#99CC00</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КарточкиПациентаМКЛ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">КарточкиПациента.МКЛ</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#99CC00</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КарточкиПациентаНЛ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">КарточкиПациента.НЛ</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#99CC00</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьКарточкуПациента" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать карточку пациента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Створити картку пацієнта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Создать карточку пациента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьКарточкуПациента</Action>
+		</Command>
+		<Command name="НазначитьКурсЛечения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить курс лечения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Призначити курс лікування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Назначить курс лечения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НазначитьКурсЛечения</Action>
+		</Command>
+	</Commands>
+</Form>

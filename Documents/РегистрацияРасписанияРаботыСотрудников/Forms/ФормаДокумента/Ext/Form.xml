@@ -1,0 +1,1195 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаполнитьПервичныеДанные" id="186">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаполнитьПервичныеДанные</CommandName>
+				<ExtendedTooltip name="ФормаЗаполнитьПервичныеДанныеРасширеннаяПодсказка" id="187"/>
+			</Button>
+			<Button name="ФормаДобавитьСотрудника" id="227">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ДобавитьСотрудника</CommandName>
+				<ExtendedTooltip name="ФормаДобавитьСотрудникаРасширеннаяПодсказка" id="228"/>
+			</Button>
+			<Button name="ФормаУдалитьСотрудника" id="229">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.УдалитьСотрудника</CommandName>
+				<ExtendedTooltip name="ФормаУдалитьСотрудникаРасширеннаяПодсказка" id="230"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="134">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="135"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">ДатаПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="136">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="137"/>
+			<ChildItems>
+				<InputField name="Месяц" id="238">
+					<DataPath>Объект.Месяц</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Месяц</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Місяць</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="МесяцКонтекстноеМеню" id="239"/>
+					<ExtendedTooltip name="МесяцРасширеннаяПодсказка" id="240"/>
+					<Events>
+						<Event name="OnChange">МесяцПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Подразделение" id="7">
+					<DataPath>Объект.Подразделение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Підрозділ</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="9"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСортировка" id="241">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа сортировка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа сортировка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСортировкаРасширеннаяПодсказка" id="242"/>
+			<ChildItems>
+				<Button name="КнопкаСортироватьПоВозрастанию" id="243">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.СортироватьПоВозрастанию</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ПоляИСортировки</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="КнопкаСортироватьПоВозрастаниюРасширеннаяПодсказка" id="244"/>
+				</Button>
+				<Button name="КнопкаСортироватьПоУбыванию" id="245">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.СортироватьПоУбыванию</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ПоляИСортировки</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="КнопкаСортироватьПоУбываниюРасширеннаяПодсказка" id="246"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Расписание" id="19">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Расписание</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РасписаниеКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="РасписаниеКоманднаяПанель" id="21">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="РасписаниеРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="РасписаниеСтрокаПоиска" id="23">
+				<AdditionSource>
+					<Item>Расписание</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РасписаниеСтрокаПоискаКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="РасписаниеСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РасписаниеСостояниеПросмотра" id="26">
+				<AdditionSource>
+					<Item>Расписание</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РасписаниеСостояниеПросмотраКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="РасписаниеСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РасписаниеУправлениеПоиском" id="29">
+				<AdditionSource>
+					<Item>Расписание</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РасписаниеУправлениеПоискомКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="РасписаниеУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">РасписаниеВыбор</Event>
+			</Events>
+			<ChildItems>
+				<ColumnGroup name="РасписаниеГруппа2" id="236">
+					<ExtendedTooltip name="РасписаниеГруппа2РасширеннаяПодсказка" id="237"/>
+					<ChildItems>
+						<LabelField name="РасписаниеНомерСтроки" id="32">
+							<DataPath>Объект.Расписание.LineNumber</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РасписаниеНомерСтрокиКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="РасписаниеНомерСтрокиРасширеннаяПодсказка" id="34"/>
+						</LabelField>
+						<InputField name="РасписаниеДнейРаб" id="231">
+							<DataPath>Объект.Расписание.ДнейРаб</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДР</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>ДР</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<TextColor>#1E35D4</TextColor>
+							<ContextMenu name="РасписаниеДнейРабКонтекстноеМеню" id="232"/>
+							<ExtendedTooltip name="РасписаниеДнейРабРасширеннаяПодсказка" id="233"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="РасписаниеГруппа1" id="234">
+					<Width>15</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ExtendedTooltip name="РасписаниеГруппа1РасширеннаяПодсказка" id="235"/>
+					<ChildItems>
+						<InputField name="РасписаниеДолжность" id="38" DisplayImportance="High">
+							<DataPath>Объект.Расписание.Должность</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>15</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="РасписаниеДолжностьКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="РасписаниеДолжностьРасширеннаяПодсказка" id="40"/>
+						</InputField>
+						<InputField name="РасписаниеСотрудник" id="35">
+							<DataPath>Объект.Расписание.Сотрудник</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>15</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<TextColor>#3366FF</TextColor>
+							<ContextMenu name="РасписаниеСотрудникКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="РасписаниеСотрудникРасширеннаяПодсказка" id="37"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="РасписаниеД1" id="41">
+					<DataPath>Объект.Расписание.Д1</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Hiperlink>true</Hiperlink>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД1КонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="РасписаниеД1РасширеннаяПодсказка" id="43"/>
+					<Events>
+						<Event name="OnChange">РасписаниеД1ПриИзменении</Event>
+						<Event name="URLProcessing">РасписаниеД1ОбработкаНавигационнойСсылки</Event>
+						<Event name="Click">РасписаниеД1Нажатие</Event>
+					</Events>
+				</LabelField>
+				<InputField name="РасписаниеД2" id="44">
+					<DataPath>Объект.Расписание.Д2</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД2КонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="РасписаниеД2РасширеннаяПодсказка" id="46"/>
+					<Events>
+						<Event name="StartChoice">РасписаниеД2НачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="РасписаниеД3" id="47">
+					<DataPath>Объект.Расписание.Д3</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД3КонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="РасписаниеД3РасширеннаяПодсказка" id="49"/>
+					<Events>
+						<Event name="StartChoice">РасписаниеД3НачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="РасписаниеД4" id="50">
+					<DataPath>Объект.Расписание.Д4</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД4КонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="РасписаниеД4РасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="РасписаниеД5" id="53">
+					<DataPath>Объект.Расписание.Д5</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД5КонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="РасписаниеД5РасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="РасписаниеД6" id="56">
+					<DataPath>Объект.Расписание.Д6</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД6КонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="РасписаниеД6РасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="РасписаниеД7" id="59">
+					<DataPath>Объект.Расписание.Д7</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД7КонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="РасписаниеД7РасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="РасписаниеД8" id="62">
+					<DataPath>Объект.Расписание.Д8</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД8КонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="РасписаниеД8РасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<InputField name="РасписаниеД9" id="65">
+					<DataPath>Объект.Расписание.Д9</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД9КонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="РасписаниеД9РасширеннаяПодсказка" id="67"/>
+				</InputField>
+				<InputField name="РасписаниеД10" id="68">
+					<DataPath>Объект.Расписание.Д10</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД10КонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="РасписаниеД10РасширеннаяПодсказка" id="70"/>
+				</InputField>
+				<InputField name="РасписаниеД11" id="71">
+					<DataPath>Объект.Расписание.Д11</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД11КонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="РасписаниеД11РасширеннаяПодсказка" id="73"/>
+				</InputField>
+				<InputField name="РасписаниеД12" id="74">
+					<DataPath>Объект.Расписание.Д12</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД12КонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="РасписаниеД12РасширеннаяПодсказка" id="76"/>
+				</InputField>
+				<InputField name="РасписаниеД13" id="77">
+					<DataPath>Объект.Расписание.Д13</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД13КонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="РасписаниеД13РасширеннаяПодсказка" id="79"/>
+				</InputField>
+				<InputField name="РасписаниеД14" id="80">
+					<DataPath>Объект.Расписание.Д14</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД14КонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="РасписаниеД14РасширеннаяПодсказка" id="82"/>
+				</InputField>
+				<InputField name="РасписаниеД15" id="83">
+					<DataPath>Объект.Расписание.Д15</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД15КонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="РасписаниеД15РасширеннаяПодсказка" id="85"/>
+				</InputField>
+				<InputField name="РасписаниеД16" id="86">
+					<DataPath>Объект.Расписание.Д16</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД16КонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="РасписаниеД16РасширеннаяПодсказка" id="88"/>
+				</InputField>
+				<InputField name="РасписаниеД17" id="89">
+					<DataPath>Объект.Расписание.Д17</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД17КонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="РасписаниеД17РасширеннаяПодсказка" id="91"/>
+				</InputField>
+				<InputField name="РасписаниеД18" id="92">
+					<DataPath>Объект.Расписание.Д18</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД18КонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="РасписаниеД18РасширеннаяПодсказка" id="94"/>
+				</InputField>
+				<InputField name="РасписаниеД19" id="95">
+					<DataPath>Объект.Расписание.Д19</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД19КонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="РасписаниеД19РасширеннаяПодсказка" id="97"/>
+				</InputField>
+				<InputField name="РасписаниеД20" id="98">
+					<DataPath>Объект.Расписание.Д20</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД20КонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="РасписаниеД20РасширеннаяПодсказка" id="100"/>
+				</InputField>
+				<InputField name="РасписаниеД21" id="101">
+					<DataPath>Объект.Расписание.Д21</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД21КонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="РасписаниеД21РасширеннаяПодсказка" id="103"/>
+				</InputField>
+				<InputField name="РасписаниеД22" id="104">
+					<DataPath>Объект.Расписание.Д22</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД22КонтекстноеМеню" id="105"/>
+					<ExtendedTooltip name="РасписаниеД22РасширеннаяПодсказка" id="106"/>
+				</InputField>
+				<InputField name="РасписаниеД23" id="107">
+					<DataPath>Объект.Расписание.Д23</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД23КонтекстноеМеню" id="108"/>
+					<ExtendedTooltip name="РасписаниеД23РасширеннаяПодсказка" id="109"/>
+				</InputField>
+				<InputField name="РасписаниеД24" id="110">
+					<DataPath>Объект.Расписание.Д24</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД24КонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="РасписаниеД24РасширеннаяПодсказка" id="112"/>
+				</InputField>
+				<InputField name="РасписаниеД25" id="113">
+					<DataPath>Объект.Расписание.Д25</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД25КонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="РасписаниеД25РасширеннаяПодсказка" id="115"/>
+				</InputField>
+				<InputField name="РасписаниеД26" id="116">
+					<DataPath>Объект.Расписание.Д26</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД26КонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="РасписаниеД26РасширеннаяПодсказка" id="118"/>
+				</InputField>
+				<InputField name="РасписаниеД27" id="119">
+					<DataPath>Объект.Расписание.Д27</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД27КонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="РасписаниеД27РасширеннаяПодсказка" id="121"/>
+				</InputField>
+				<InputField name="РасписаниеД28" id="122">
+					<DataPath>Объект.Расписание.Д28</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД28КонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="РасписаниеД28РасширеннаяПодсказка" id="124"/>
+				</InputField>
+				<InputField name="РасписаниеД29" id="125">
+					<DataPath>Объект.Расписание.Д29</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД29КонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="РасписаниеД29РасширеннаяПодсказка" id="127"/>
+				</InputField>
+				<InputField name="РасписаниеД30" id="128">
+					<DataPath>Объект.Расписание.Д30</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД30КонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="РасписаниеД30РасширеннаяПодсказка" id="130"/>
+				</InputField>
+				<InputField name="РасписаниеД31" id="131">
+					<DataPath>Объект.Расписание.Д31</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>true</VerticalStretch>
+					<Font ref="style:NormalTextFont" kind="StyleItem"/>
+					<ContextMenu name="РасписаниеД31КонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="РасписаниеД31РасширеннаяПодсказка" id="133"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Pages name="Группа3" id="138">
+			<Visible>false</Visible>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="139"/>
+			<ChildItems>
+				<Page name="Группа4" id="140">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Календарь</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Календарь</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="141"/>
+				</Page>
+				<Page name="Группа5" id="142">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Служ поле</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Служ поле</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="143"/>
+					<ChildItems>
+						<Table name="ДанныеДляРегистрацииРасписания" id="144">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ДанныеДляРегистрацииРасписания</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДанныеДляРегистрацииРасписанияКонтекстноеМеню" id="145"/>
+							<AutoCommandBar name="ДанныеДляРегистрацииРасписанияКоманднаяПанель" id="146"/>
+							<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияРасширеннаяПодсказка" id="147"/>
+							<SearchStringAddition name="ДанныеДляРегистрацииРасписанияСтрокаПоиска" id="148">
+								<AdditionSource>
+									<Item>ДанныеДляРегистрацииРасписания</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеДляРегистрацииРасписанияСтрокаПоискаКонтекстноеМеню" id="149"/>
+								<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияСтрокаПоискаРасширеннаяПодсказка" id="150"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДанныеДляРегистрацииРасписанияСостояниеПросмотра" id="151">
+								<AdditionSource>
+									<Item>ДанныеДляРегистрацииРасписания</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеДляРегистрацииРасписанияСостояниеПросмотраКонтекстноеМеню" id="152"/>
+								<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияСостояниеПросмотраРасширеннаяПодсказка" id="153"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДанныеДляРегистрацииРасписанияУправлениеПоиском" id="154">
+								<AdditionSource>
+									<Item>ДанныеДляРегистрацииРасписания</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеДляРегистрацииРасписанияУправлениеПоискомКонтекстноеМеню" id="155"/>
+								<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияУправлениеПоискомРасширеннаяПодсказка" id="156"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ДанныеДляРегистрацииРасписанияНомерСтроки" id="157">
+									<DataPath>Объект.ДанныеДляРегистрацииРасписания.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляРегистрацииРасписанияНомерСтрокиКонтекстноеМеню" id="158"/>
+									<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияНомерСтрокиРасширеннаяПодсказка" id="159"/>
+								</LabelField>
+								<InputField name="ДанныеДляРегистрацииРасписанияНомерСтрокиСводной" id="218">
+									<DataPath>Объект.ДанныеДляРегистрацииРасписания.НомерСтрокиСводной</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляРегистрацииРасписанияНомерСтрокиСводнойКонтекстноеМеню" id="219"/>
+									<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияНомерСтрокиСводнойРасширеннаяПодсказка" id="220"/>
+								</InputField>
+								<InputField name="ДанныеДляРегистрацииРасписанияДеньМесяца" id="215">
+									<DataPath>Объект.ДанныеДляРегистрацииРасписания.ДеньМесяца</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляРегистрацииРасписанияДеньМесяцаКонтекстноеМеню" id="216"/>
+									<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияДеньМесяцаРасширеннаяПодсказка" id="217"/>
+								</InputField>
+								<InputField name="ДанныеДляРегистрацииРасписанияДата" id="160">
+									<DataPath>Объект.ДанныеДляРегистрацииРасписания.Дата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляРегистрацииРасписанияДатаКонтекстноеМеню" id="161"/>
+									<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияДатаРасширеннаяПодсказка" id="162"/>
+								</InputField>
+								<InputField name="ДанныеДляРегистрацииРасписанияФизлицо" id="163">
+									<DataPath>Объект.ДанныеДляРегистрацииРасписания.Физлицо</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляРегистрацииРасписанияФизлицоКонтекстноеМеню" id="164"/>
+									<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияФизлицоРасширеннаяПодсказка" id="165"/>
+								</InputField>
+								<InputField name="ДанныеДляРегистрацииРасписанияПодразделение" id="166">
+									<DataPath>Объект.ДанныеДляРегистрацииРасписания.Подразделение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляРегистрацииРасписанияПодразделениеКонтекстноеМеню" id="167"/>
+									<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияПодразделениеРасширеннаяПодсказка" id="168"/>
+								</InputField>
+								<InputField name="ДанныеДляРегистрацииРасписанияСтатусЗанятости" id="169">
+									<DataPath>Объект.ДанныеДляРегистрацииРасписания.СтатусЗанятости</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляРегистрацииРасписанияСтатусЗанятостиКонтекстноеМеню" id="170"/>
+									<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияСтатусЗанятостиРасширеннаяПодсказка" id="171"/>
+								</InputField>
+								<InputField name="ДанныеДляРегистрацииРасписанияДолжность" id="172">
+									<DataPath>Объект.ДанныеДляРегистрацииРасписания.Должность</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляРегистрацииРасписанияДолжностьКонтекстноеМеню" id="173"/>
+									<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияДолжностьРасширеннаяПодсказка" id="174"/>
+								</InputField>
+								<InputField name="ДанныеДляРегистрацииРасписанияВремяНачала" id="175">
+									<DataPath>Объект.ДанныеДляРегистрацииРасписания.ВремяНачала</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляРегистрацииРасписанияВремяНачалаКонтекстноеМеню" id="176"/>
+									<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияВремяНачалаРасширеннаяПодсказка" id="177"/>
+								</InputField>
+								<InputField name="ДанныеДляРегистрацииРасписанияВремяОкончания" id="178">
+									<DataPath>Объект.ДанныеДляРегистрацииРасписания.ВремяОкончания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляРегистрацииРасписанияВремяОкончанияКонтекстноеМеню" id="179"/>
+									<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияВремяОкончанияРасширеннаяПодсказка" id="180"/>
+								</InputField>
+								<InputField name="ДанныеДляРегистрацииРасписанияПримечание" id="181">
+									<DataPath>Объект.ДанныеДляРегистрацииРасписания.Примечание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляРегистрацииРасписанияПримечаниеКонтекстноеМеню" id="182"/>
+									<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияПримечаниеРасширеннаяПодсказка" id="183"/>
+								</InputField>
+								<InputField name="ДанныеДляРегистрацииРасписанияДеньНедели" id="188">
+									<DataPath>Объект.ДанныеДляРегистрацииРасписания.ДеньНедели</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляРегистрацииРасписанияДеньНеделиКонтекстноеМеню" id="189"/>
+									<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияДеньНеделиРасширеннаяПодсказка" id="190"/>
+								</InputField>
+								<InputField name="ДанныеДляРегистрацииРасписанияВремяНачалаРаботыПодразделения" id="221">
+									<DataPath>Объект.ДанныеДляРегистрацииРасписания.ВремяНачалаРаботыПодразделения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляРегистрацииРасписанияВремяНачалаРаботыПодразделенияКонтекстноеМеню" id="222"/>
+									<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияВремяНачалаРаботыПодразделенияРасширеннаяПодсказка" id="223"/>
+								</InputField>
+								<InputField name="ДанныеДляРегистрацииРасписанияВремяОкончанияРаботыПодразделения" id="224">
+									<DataPath>Объект.ДанныеДляРегистрацииРасписания.ВремяОкончанияРаботыПодразделения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляРегистрацииРасписанияВремяОкончанияРаботыПодразделенияКонтекстноеМеню" id="225"/>
+									<ExtendedTooltip name="ДанныеДляРегистрацииРасписанияВремяОкончанияРаботыПодразделенияРасширеннаяПодсказка" id="226"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаАктуальныеСотрудники" id="191">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Актуальные сотрудники</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Актуальные сотрудники</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа актуальные сотрудники</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаАктуальныеСотрудникиРасширеннаяПодсказка" id="192"/>
+					<ChildItems>
+						<Table name="АктуальныеСотрудники" id="193">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.АктуальныеСотрудники</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="АктуальныеСотрудникиКонтекстноеМеню" id="194"/>
+							<AutoCommandBar name="АктуальныеСотрудникиКоманднаяПанель" id="195"/>
+							<ExtendedTooltip name="АктуальныеСотрудникиРасширеннаяПодсказка" id="196"/>
+							<SearchStringAddition name="АктуальныеСотрудникиСтрокаПоиска" id="197">
+								<AdditionSource>
+									<Item>АктуальныеСотрудники</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="АктуальныеСотрудникиСтрокаПоискаКонтекстноеМеню" id="198"/>
+								<ExtendedTooltip name="АктуальныеСотрудникиСтрокаПоискаРасширеннаяПодсказка" id="199"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="АктуальныеСотрудникиСостояниеПросмотра" id="200">
+								<AdditionSource>
+									<Item>АктуальныеСотрудники</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="АктуальныеСотрудникиСостояниеПросмотраКонтекстноеМеню" id="201"/>
+								<ExtendedTooltip name="АктуальныеСотрудникиСостояниеПросмотраРасширеннаяПодсказка" id="202"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="АктуальныеСотрудникиУправлениеПоиском" id="203">
+								<AdditionSource>
+									<Item>АктуальныеСотрудники</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="АктуальныеСотрудникиУправлениеПоискомКонтекстноеМеню" id="204"/>
+								<ExtendedTooltip name="АктуальныеСотрудникиУправлениеПоискомРасширеннаяПодсказка" id="205"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="АктуальныеСотрудникиНомерСтроки" id="206">
+									<DataPath>Объект.АктуальныеСотрудники.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АктуальныеСотрудникиНомерСтрокиКонтекстноеМеню" id="207"/>
+									<ExtendedTooltip name="АктуальныеСотрудникиНомерСтрокиРасширеннаяПодсказка" id="208"/>
+								</LabelField>
+								<InputField name="АктуальныеСотрудникиФизлицо" id="209">
+									<DataPath>Объект.АктуальныеСотрудники.Физлицо</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АктуальныеСотрудникиФизлицоКонтекстноеМеню" id="210"/>
+									<ExtendedTooltip name="АктуальныеСотрудникиФизлицоРасширеннаяПодсказка" id="211"/>
+								</InputField>
+								<InputField name="АктуальныеСотрудникиДолжность" id="212">
+									<DataPath>Объект.АктуальныеСотрудники.Должность</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АктуальныеСотрудникиДолжностьКонтекстноеМеню" id="213"/>
+									<ExtendedTooltip name="АктуальныеСотрудникиДолжностьРасширеннаяПодсказка" id="214"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="16">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Автор" id="13">
+			<DataPath>Объект.Автор</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АвторКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="15"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.РегистрацияРасписанияРаботыСотрудников</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РасписаниеД1</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Расписание.Д1</dcsset:left>
+						<dcsset:comparisonType>Contains</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">"НР"</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#00FF00</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьПервичныеДанные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезаполнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Перезаповнити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заполнить первичные данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПервичныеДанные1</Action>
+		</Command>
+		<Command name="ДобавитьСотрудника" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Доповнити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Добавить сотрудника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьСотрудника</Action>
+		</Command>
+		<Command name="УдалитьСотрудника" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Видалити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Удалить сотрудника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьСотрудника</Action>
+		</Command>
+		<Command name="ПечатьДокумента" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Печать документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьДокумента</Action>
+		</Command>
+		<Command name="СортироватьПоВозрастанию" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать по возрастанию</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сортувати за зростанням</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сортировать по возрастанию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СортироватьПоВозрастанию</Action>
+		</Command>
+		<Command name="СортироватьПоУбыванию" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать по убыванию</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сортувати за спаданням</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сортировать по убыванию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СортироватьПоУбыванию</Action>
+		</Command>
+	</Commands>
+</Form>

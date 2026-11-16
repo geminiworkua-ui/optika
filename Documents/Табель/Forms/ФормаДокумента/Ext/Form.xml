@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаполнитьАктуальными" id="62">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаполнитьАктуальными</CommandName>
+				<BackColor>#D7FFE1</BackColor>
+				<ExtendedTooltip name="ФормаЗаполнитьАктуальнымиРасширеннаяПодсказка" id="63"/>
+			</Button>
+			<Button name="ФормаУстановитьВремяПолныйДень" id="64">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.УстановитьВремяПолныйДень</CommandName>
+				<BackColor>#FFFECC</BackColor>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Полный день</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Повний День</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаУстановитьВремяПолныйДеньРасширеннаяПодсказка" id="65"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="50">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<InputField name="Дата" id="4" DisplayImportance="High">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">ДатаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Подразделение" id="7">
+					<DataPath>Объект.Подразделение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Підрозділ</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="9"/>
+					<Events>
+						<Event name="OnChange">ДатаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="54">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="55"/>
+			<ChildItems>
+				<InputField name="ВремяНачалаРаботыПоГрафику" id="56">
+					<DataPath>Объект.ВремяНачалаРаботыПоГрафику</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ВремяНачалаРаботыПоГрафикуКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ВремяНачалаРаботыПоГрафикуРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="ВремяОкончанияРаботыПоГрафику" id="59">
+					<DataPath>Объект.ВремяОкончанияРаботыПоГрафику</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ВремяОкончанияРаботыПоГрафикуКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ВремяОкончанияРаботыПоГрафикуРасширеннаяПодсказка" id="61"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ОтработанноеВремя" id="16">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ОтработанноеВремя</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОтработанноеВремяКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="ОтработанноеВремяКоманднаяПанель" id="18"/>
+			<ExtendedTooltip name="ОтработанноеВремяРасширеннаяПодсказка" id="19"/>
+			<SearchStringAddition name="ОтработанноеВремяСтрокаПоиска" id="20">
+				<AdditionSource>
+					<Item>ОтработанноеВремя</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтработанноеВремяСтрокаПоискаКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ОтработанноеВремяСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОтработанноеВремяСостояниеПросмотра" id="23">
+				<AdditionSource>
+					<Item>ОтработанноеВремя</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтработанноеВремяСостояниеПросмотраКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ОтработанноеВремяСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОтработанноеВремяУправлениеПоиском" id="26">
+				<AdditionSource>
+					<Item>ОтработанноеВремя</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтработанноеВремяУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ОтработанноеВремяУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ОтработанноеВремяНомерСтроки" id="29">
+					<DataPath>Объект.ОтработанноеВремя.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОтработанноеВремяНомерСтрокиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ОтработанноеВремяНомерСтрокиРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<InputField name="ОтработанноеВремяСотрудник" id="32">
+					<DataPath>Объект.ОтработанноеВремя.Сотрудник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОтработанноеВремяСотрудникКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ОтработанноеВремяСотрудникРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ОтработанноеВремяДолжность" id="47">
+					<DataPath>Объект.ОтработанноеВремя.Должность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОтработанноеВремяДолжностьКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ОтработанноеВремяДолжностьРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ОтработанноеВремяВремяНачалаРаботы" id="35">
+					<DataPath>Объект.ОтработанноеВремя.ВремяНачалаРаботы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Початок</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=HH:mm</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ДФ=HH:mm</v8:content>
+						</v8:item>
+					</Format>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=HH:mm</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ДФ=HH:mm</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ОтработанноеВремяВремяНачалаРаботыКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ОтработанноеВремяВремяНачалаРаботыРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="OnChange">ОтработанноеВремяВремяНачалаРаботыПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтработанноеВремяВремяОкончанияРаботы" id="38">
+					<DataPath>Объект.ОтработанноеВремя.ВремяОкончанияРаботы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Завершение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Завершення</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=HH:mm</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ДФ=HH:mm</v8:content>
+						</v8:item>
+					</Format>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=HH:mm</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ДФ=HH:mm</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ОтработанноеВремяВремяОкончанияРаботыКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ОтработанноеВремяВремяОкончанияРаботыРасширеннаяПодсказка" id="40"/>
+					<Events>
+						<Event name="OnChange">ОтработанноеВремяВремяНачалаРаботыПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтработанноеВремяВычетыВремени" id="41">
+					<DataPath>Объект.ОтработанноеВремя.ВычетыВремени</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вычеты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вирахування</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=HH:mm</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ДФ=HH:mm</v8:content>
+						</v8:item>
+					</Format>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=HH:mm</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ДФ=HH:mm</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ОтработанноеВремяВычетыВремениКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ОтработанноеВремяВычетыВремениРасширеннаяПодсказка" id="43"/>
+					<Events>
+						<Event name="OnChange">ОтработанноеВремяВремяНачалаРаботыПриИзменении</Event>
+					</Events>
+				</InputField>
+				<LabelField name="ОтработанноеВремяОтработаноВремени" id="44">
+					<DataPath>Объект.ОтработанноеВремя.ОтработаноВремени</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=HH:mm</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ДФ=HH:mm</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="ОтработанноеВремяОтработаноВремениКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ОтработанноеВремяОтработаноВремениРасширеннаяПодсказка" id="46"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Группа2" id="52">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="53"/>
+			<ChildItems>
+				<InputField name="Автор" id="10">
+					<DataPath>Объект.Автор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АвторКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="Комментарий" id="13">
+					<DataPath>Объект.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Табель</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьАктуальными" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить актуальными</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити актуальними</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заполнить актуальными</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьАктуальными</Action>
+		</Command>
+		<Command name="УстановитьВремяПолныйДень" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить время полный день</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити час повний день</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Установить время полный день</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьВремяПолныйДень</Action>
+		</Command>
+	</Commands>
+</Form>

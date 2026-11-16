@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="38">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<LabelField name="ДокументОснование" id="35">
+					<DataPath>Объект.ДокументОснование</DataPath>
+					<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Клиент" id="57">
+			<DataPath>Объект.Клиент</DataPath>
+			<ContextMenu name="КлиентКонтекстноеМеню" id="58"/>
+			<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="59"/>
+		</InputField>
+		<LabelField name="ФизическоеЛицо" id="40">
+			<DataPath>Объект.ФизическоеЛицо</DataPath>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="120"/>
+			<ContextMenu name="ФизическоеЛицоКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ФизическоеЛицоРасширеннаяПодсказка" id="42"/>
+		</LabelField>
+		<UsualGroup name="Группа2" id="55">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="56"/>
+			<ChildItems>
+				<LabelField name="Должность" id="46">
+					<DataPath>Объект.Должность</DataPath>
+					<ContextMenu name="ДолжностьКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="48"/>
+				</LabelField>
+				<LabelField name="Подразделение" id="43">
+					<DataPath>Объект.Подразделение</DataPath>
+					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="45"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Расписание" id="7">
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Расписание</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РасписаниеКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="РасписаниеКоманднаяПанель" id="9"/>
+			<ExtendedTooltip name="РасписаниеРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="РасписаниеСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>Расписание</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РасписаниеСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="РасписаниеСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РасписаниеСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>Расписание</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РасписаниеСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="РасписаниеСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РасписаниеУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>Расписание</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РасписаниеУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="РасписаниеУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="РасписаниеДеньНеделиПрописью" id="32">
+					<DataPath>Объект.Расписание.ДеньНеделиПрописью</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РасписаниеДеньНеделиПрописьюКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="РасписаниеДеньНеделиПрописьюРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="РасписаниеВремяНачала" id="26">
+					<DataPath>Объект.Расписание.ВремяНачала</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РасписаниеВремяНачалаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="РасписаниеВремяНачалаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="РасписаниеВремяОкончания" id="29">
+					<DataPath>Объект.Расписание.ВремяОкончания</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РасписаниеВремяОкончанияКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="РасписаниеВремяОкончанияРасширеннаяПодсказка" id="31"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="Автор" id="49">
+			<DataPath>Объект.Автор</DataPath>
+			<ContextMenu name="АвторКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="51"/>
+		</InputField>
+		<InputField name="Комментарий" id="52">
+			<DataPath>Объект.Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="54"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.РегистрацияИндивидуальногоГрафикаРаботыСотрудника</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Объект.Расписание">
+					<Column name="ДеньНеделиПрописью" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>День недели прописью</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>12</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Subsystem uuid="62968cc2-1a7b-42ab-a79f-a043156910ac">
+		<Properties>
+			<Name>НоваяПочта</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новая почта</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Нова пошта</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_РегионыДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_ОтделенияДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.eComm_СлужбыДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_УчетныеЗаписиСлужбДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_КонтрагентыДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_НаселенныеПунктыДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.eCommДоставкаСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.eComm_ДоставкаПолныеПрава</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_ОбщиеСправочники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_КонтактныеЛицаКонтрагентовДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.eComm_ЭкспрессНакладная</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.eComm_НоваяПочта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.eComm_ОбновитьСправочникиДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.eComm_СтатусыЭкспрессНакладных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.eComm_ПечатьЭН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.eComm_Информация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_Реестры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.eComm_Реестры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.eComm_ЭкспрессНакладныеСпискаЗаказов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_Улицы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.eComm_АдресаДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.eComm_ДополнительныеСведенияДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.eComm_ЗначенияУчетныхЗаписейДоставкиПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.eComm_Послеплата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.eComm_ЛимитыПослеплаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.eComm_Постоплата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РеквизитыДоставки</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

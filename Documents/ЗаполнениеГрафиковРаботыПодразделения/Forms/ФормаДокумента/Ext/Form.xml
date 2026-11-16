@@ -1,0 +1,844 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаполнить" id="141">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Заполнить</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Заполнить</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Заповнити</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗаполнитьРасширеннаяПодсказка" id="142"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа4" id="139">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="140"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЛево" id="137">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="138"/>
+					<ChildItems>
+						<InputField name="ВидГрафика" id="7" DisplayImportance="High">
+							<DataPath>Объект.ВидГрафика</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВидГрафикаКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ВидГрафикаРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<UsualGroup name="Группа1" id="95">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="96"/>
+							<ChildItems>
+								<InputField name="Номер" id="1">
+									<DataPath>Объект.Number</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<InputField name="Дата" id="4">
+									<DataPath>Объект.Date</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+									<Events>
+										<Event name="OnChange">ДатаПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа2" id="97">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="98"/>
+							<ChildItems>
+								<InputField name="ДатаНачалаПериода" id="10">
+									<DataPath>Объект.ДатаНачалаПериода</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДатаНачалаПериодаКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ДатаНачалаПериодаРасширеннаяПодсказка" id="12"/>
+								</InputField>
+								<InputField name="ДатаОкончанияПериода" id="13">
+									<DataPath>Объект.ДатаОкончанияПериода</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДатаОкончанияПериодаКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ДатаОкончанияПериодаРасширеннаяПодсказка" id="15"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппТиповоеВремяРаботы" id="99">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Типовое время работы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Типовий час роботи</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Групп типовое время работы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппТиповоеВремяРаботыРасширеннаяПодсказка" id="100"/>
+							<ChildItems>
+								<UsualGroup name="Группа3" id="111">
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="112"/>
+									<ChildItems>
+										<LabelDecoration name="ДеньНедели" id="116">
+											<Width>12</Width>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>День тижня</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>День недели</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДеньНеделиКонтекстноеМеню" id="117"/>
+											<ExtendedTooltip name="ДеньНеделиРасширеннаяПодсказка" id="118"/>
+										</LabelDecoration>
+										<LabelDecoration name="Пн" id="113">
+											<Width>5</Width>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Пн</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пн</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<ContextMenu name="ПнКонтекстноеМеню" id="114"/>
+											<ExtendedTooltip name="ПнРасширеннаяПодсказка" id="115"/>
+										</LabelDecoration>
+										<LabelDecoration name="Вт" id="119">
+											<Width>5</Width>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Вівт</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Вт</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<ContextMenu name="ВтКонтекстноеМеню" id="120"/>
+											<ExtendedTooltip name="ВтРасширеннаяПодсказка" id="121"/>
+										</LabelDecoration>
+										<LabelDecoration name="Ср" id="122">
+											<Width>5</Width>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сер</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ср</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<ContextMenu name="СрКонтекстноеМеню" id="123"/>
+											<ExtendedTooltip name="СрРасширеннаяПодсказка" id="124"/>
+										</LabelDecoration>
+										<LabelDecoration name="Чт" id="125">
+											<Width>5</Width>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Чет</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Чт</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<ContextMenu name="ЧтКонтекстноеМеню" id="126"/>
+											<ExtendedTooltip name="ЧтРасширеннаяПодсказка" id="127"/>
+										</LabelDecoration>
+										<LabelDecoration name="Пт" id="128">
+											<Width>5</Width>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Пт</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пт</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<ContextMenu name="ПтКонтекстноеМеню" id="129"/>
+											<ExtendedTooltip name="ПтРасширеннаяПодсказка" id="130"/>
+										</LabelDecoration>
+										<LabelDecoration name="Сб" id="131">
+											<Width>5</Width>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сб</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сб</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<ContextMenu name="СбКонтекстноеМеню" id="132"/>
+											<ExtendedTooltip name="СбРасширеннаяПодсказка" id="133"/>
+										</LabelDecoration>
+										<LabelDecoration name="Вс" id="134">
+											<Width>5</Width>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Нед</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Вс</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<ContextMenu name="ВсКонтекстноеМеню" id="135"/>
+											<ExtendedTooltip name="ВсРасширеннаяПодсказка" id="136"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаТиповоеВремяНачала" id="101">
+									<Title>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Группа типовое время начала</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Группа типовое время начала</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаТиповоеВремяНачалаРасширеннаяПодсказка" id="102"/>
+									<ChildItems>
+										<LabelDecoration name="ВремяНачала" id="105">
+											<Width>10</Width>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Поч</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Нач</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ВремяНачалаКонтекстноеМеню" id="106"/>
+											<ExtendedTooltip name="ВремяНачалаРасширеннаяПодсказка" id="107"/>
+										</LabelDecoration>
+										<Button name="ЗаполнитьДатуНачПоАналогии" id="143">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.ЗаполнитьДатуНачПоАналогии</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ОформитьПоРаспоряжению</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="ЗаполнитьДатуНачПоАналогииРасширеннаяПодсказка" id="144"/>
+										</Button>
+										<InputField name="ПнНач" id="16">
+											<DataPath>Объект.ПнНач</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ПнНачКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="ПнНачРасширеннаяПодсказка" id="18"/>
+										</InputField>
+										<InputField name="ВтНач" id="22">
+											<DataPath>Объект.ВтНач</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ВтНачКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="ВтНачРасширеннаяПодсказка" id="24"/>
+										</InputField>
+										<InputField name="СрНач" id="28">
+											<DataPath>Объект.СрНач</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="СрНачКонтекстноеМеню" id="29"/>
+											<ExtendedTooltip name="СрНачРасширеннаяПодсказка" id="30"/>
+										</InputField>
+										<InputField name="ЧтНач" id="34">
+											<DataPath>Объект.ЧтНач</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ЧтНачКонтекстноеМеню" id="35"/>
+											<ExtendedTooltip name="ЧтНачРасширеннаяПодсказка" id="36"/>
+										</InputField>
+										<InputField name="ПтНач" id="40">
+											<DataPath>Объект.ПтНач</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ПтНачКонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="ПтНачРасширеннаяПодсказка" id="42"/>
+										</InputField>
+										<InputField name="СбНач" id="46">
+											<DataPath>Объект.СбНач</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>6</Width>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+											</EditFormat>
+											<BackColor>#FFE8CB</BackColor>
+											<ContextMenu name="СбНачКонтекстноеМеню" id="47"/>
+											<ExtendedTooltip name="СбНачРасширеннаяПодсказка" id="48"/>
+										</InputField>
+										<InputField name="ВсНач" id="52">
+											<DataPath>Объект.ВсНач</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>6</Width>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+											</EditFormat>
+											<BackColor>#FFE8CB</BackColor>
+											<ContextMenu name="ВсНачКонтекстноеМеню" id="53"/>
+											<ExtendedTooltip name="ВсНачРасширеннаяПодсказка" id="54"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаТиповоеВремяОкончания" id="103">
+									<Title>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Группа типовое время окончания</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Группа типовое время окончания</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаТиповоеВремяОкончанияРасширеннаяПодсказка" id="104"/>
+									<ChildItems>
+										<LabelDecoration name="ВемяОкончания" id="108">
+											<Width>10</Width>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Окон</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Кін</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ВемяОкончанияКонтекстноеМеню" id="109"/>
+											<ExtendedTooltip name="ВемяОкончанияРасширеннаяПодсказка" id="110"/>
+										</LabelDecoration>
+										<Button name="ЗаполнитьДатуОконПоАналогии" id="145">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.ЗаполнитьДатуОконПоАналогии</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ОформитьПоРаспоряжению</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="ЗаполнитьДатуОконПоАналогииРасширеннаяПодсказка" id="146"/>
+										</Button>
+										<InputField name="ПнКон" id="19">
+											<DataPath>Объект.ПнКон</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ПнКонКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="ПнКонРасширеннаяПодсказка" id="21"/>
+										</InputField>
+										<InputField name="ВтКон" id="25">
+											<DataPath>Объект.ВтКон</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ВтКонКонтекстноеМеню" id="26"/>
+											<ExtendedTooltip name="ВтКонРасширеннаяПодсказка" id="27"/>
+										</InputField>
+										<InputField name="СрКон" id="31">
+											<DataPath>Объект.СрКон</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="СрКонКонтекстноеМеню" id="32"/>
+											<ExtendedTooltip name="СрКонРасширеннаяПодсказка" id="33"/>
+										</InputField>
+										<InputField name="ЧтКон" id="37">
+											<DataPath>Объект.ЧтКон</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ЧтКонКонтекстноеМеню" id="38"/>
+											<ExtendedTooltip name="ЧтКонРасширеннаяПодсказка" id="39"/>
+										</InputField>
+										<InputField name="ПтКон" id="43">
+											<DataPath>Объект.ПтКон</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ПтКонКонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="ПтКонРасширеннаяПодсказка" id="45"/>
+										</InputField>
+										<InputField name="СбКон" id="49">
+											<DataPath>Объект.СбКон</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+											</EditFormat>
+											<BackColor>#FFE8CB</BackColor>
+											<ContextMenu name="СбКонКонтекстноеМеню" id="50"/>
+											<ExtendedTooltip name="СбКонРасширеннаяПодсказка" id="51"/>
+										</InputField>
+										<InputField name="ВсКон" id="55">
+											<DataPath>Объект.ВсКон</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>6</Width>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+											</EditFormat>
+											<BackColor>#FFE8CB</BackColor>
+											<ContextMenu name="ВсКонКонтекстноеМеню" id="56"/>
+											<ExtendedTooltip name="ВсКонРасширеннаяПодсказка" id="57"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Автор" id="58">
+							<DataPath>Объект.Автор</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="АвторКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="60"/>
+						</InputField>
+						<InputField name="Комментарий" id="61">
+							<DataPath>Объект.Комментарий</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="63"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="ФормированиеГрафика" id="64">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ФормированиеГрафика</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ФормированиеГрафикаКонтекстноеМеню" id="65"/>
+					<AutoCommandBar name="ФормированиеГрафикаКоманднаяПанель" id="66">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ФормированиеГрафикаРасширеннаяПодсказка" id="67"/>
+					<SearchStringAddition name="ФормированиеГрафикаСтрокаПоиска" id="68">
+						<AdditionSource>
+							<Item>ФормированиеГрафика</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ФормированиеГрафикаСтрокаПоискаКонтекстноеМеню" id="69"/>
+						<ExtendedTooltip name="ФормированиеГрафикаСтрокаПоискаРасширеннаяПодсказка" id="70"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ФормированиеГрафикаСостояниеПросмотра" id="71">
+						<AdditionSource>
+							<Item>ФормированиеГрафика</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ФормированиеГрафикаСостояниеПросмотраКонтекстноеМеню" id="72"/>
+						<ExtendedTooltip name="ФормированиеГрафикаСостояниеПросмотраРасширеннаяПодсказка" id="73"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ФормированиеГрафикаУправлениеПоиском" id="74">
+						<AdditionSource>
+							<Item>ФормированиеГрафика</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ФормированиеГрафикаУправлениеПоискомКонтекстноеМеню" id="75"/>
+						<ExtendedTooltip name="ФормированиеГрафикаУправлениеПоискомРасширеннаяПодсказка" id="76"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ФормированиеГрафикаНомерСтроки" id="77">
+							<DataPath>Объект.ФормированиеГрафика.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ФормированиеГрафикаНомерСтрокиКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ФормированиеГрафикаНомерСтрокиРасширеннаяПодсказка" id="79"/>
+						</LabelField>
+						<LabelField name="ФормированиеГрафикаДата" id="80">
+							<DataPath>Объект.ФормированиеГрафика.Дата</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=dd.MM.yyyy</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>ДФ=dd.MM.yyyy</v8:content>
+								</v8:item>
+							</Format>
+							<ContextMenu name="ФормированиеГрафикаДатаКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="ФормированиеГрафикаДатаРасширеннаяПодсказка" id="82"/>
+						</LabelField>
+						<LabelField name="ФормированиеГрафикаДеньНедели" id="83">
+							<DataPath>Объект.ФормированиеГрафика.ДеньНедели</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=дддд</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>ДФ=дддд</v8:content>
+								</v8:item>
+							</Format>
+							<ContextMenu name="ФормированиеГрафикаДеньНеделиКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="ФормированиеГрафикаДеньНеделиРасширеннаяПодсказка" id="85"/>
+						</LabelField>
+						<InputField name="ФормированиеГрафикаВремяНачала" id="86">
+							<DataPath>Объект.ФормированиеГрафика.ВремяНачала</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Начало</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Початок</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=HH:mm</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>ДФ=HH:mm</v8:content>
+								</v8:item>
+							</Format>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=HH:mm</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>ДФ=HH:mm</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="ФормированиеГрафикаВремяНачалаКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="ФормированиеГрафикаВремяНачалаРасширеннаяПодсказка" id="88"/>
+						</InputField>
+						<InputField name="ФормированиеГрафикаВремяОкончания" id="89">
+							<DataPath>Объект.ФормированиеГрафика.ВремяОкончания</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Окончание</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Завершення</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=HH:mm</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>ДФ=HH:mm</v8:content>
+								</v8:item>
+							</Format>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=HH:mm</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>ДФ=HH:mm</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="ФормированиеГрафикаВремяОкончанияКонтекстноеМеню" id="90"/>
+							<ExtendedTooltip name="ФормированиеГрафикаВремяОкончанияРасширеннаяПодсказка" id="91"/>
+						</InputField>
+						<InputField name="ФормированиеГрафикаКоментар" id="92">
+							<DataPath>Объект.ФормированиеГрафика.Коментар</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ФормированиеГрафикаКоментарКонтекстноеМеню" id="93"/>
+							<ExtendedTooltip name="ФормированиеГрафикаКоментарРасширеннаяПодсказка" id="94"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ЗаполнениеГрафиковРаботыПодразделения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Заполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заполнить</Action>
+		</Command>
+		<Command name="ЗаполнитьДатуНачПоАналогии" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заполнить дату нач по аналогии</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заполнить дату нач по аналогии</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьДатуНачПоАналогии</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="ЗаполнитьДатуОконПоАналогии" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заполнить дату окон по аналогии</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заполнить дату окон по аналогии</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьДатуОконПоАналогии</Action>
+		</Command>
+	</Commands>
+</Form>

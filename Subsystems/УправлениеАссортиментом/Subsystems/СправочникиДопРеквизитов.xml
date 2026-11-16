@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Subsystem uuid="a2c35472-8ae8-49cc-9c5a-7fdb7dab98e8">
+		<Properties>
+			<Name>СправочникиДопРеквизитов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники доп реквизитов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Довідники додаткових рекізитів</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._Цвет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._Дегресія</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._Диаметр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._Аддідація</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._Вісь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._Циліндр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._Сфера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog._Радіус</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПолМодели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВремяИспользованияПослеОткрытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.МинимальноеВремяДезинфекции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УвлажняющийАгент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЧистящееВещество</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Консервант</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Тон</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПропусканиеКислорода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.МатериалКонтактныхЛинз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Влагоемкость</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.UVфильтр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипМатериала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТолщинаПоЦентру</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Диаметр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидОправы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РазмерОчков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РазмерМостика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РазмерЗаушника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Фотохром</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Поляризация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЦветЛинз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЦветОправы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.МатериалЛинз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.МатериалОправы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Модели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидЗапчасти</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидАксессуараОчки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидАксессуара</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипРаствора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КатегорияРаствора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РежимЗамены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НазначениеКонтКоррекции</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

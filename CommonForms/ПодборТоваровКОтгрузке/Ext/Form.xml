@@ -1,0 +1,807 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ПринятьЗакрыть" id="41">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ПринятьЗакрыть</CommandName>
+				<ExtendedTooltip name="ПринятьЗакрытьРасширеннаяПодсказка" id="42"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ОстаткиКОтгрузке" id="43">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ОстаткиКОтгрузке</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОстаткиКОтгрузкеКонтекстноеМеню" id="44"/>
+			<AutoCommandBar name="ОстаткиКОтгрузкеКоманднаяПанель" id="45">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ОстаткиКОтгрузкеРасширеннаяПодсказка" id="46"/>
+			<SearchStringAddition name="ОстаткиКОтгрузкеСтрокаПоиска" id="47">
+				<AdditionSource>
+					<Item>ОстаткиКОтгрузке</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОстаткиКОтгрузкеСтрокаПоискаКонтекстноеМеню" id="48"/>
+				<ExtendedTooltip name="ОстаткиКОтгрузкеСтрокаПоискаРасширеннаяПодсказка" id="49"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОстаткиКОтгрузкеСостояниеПросмотра" id="50">
+				<AdditionSource>
+					<Item>ОстаткиКОтгрузке</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОстаткиКОтгрузкеСостояниеПросмотраКонтекстноеМеню" id="51"/>
+				<ExtendedTooltip name="ОстаткиКОтгрузкеСостояниеПросмотраРасширеннаяПодсказка" id="52"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОстаткиКОтгрузкеУправлениеПоиском" id="53">
+				<AdditionSource>
+					<Item>ОстаткиКОтгрузке</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОстаткиКОтгрузкеУправлениеПоискомКонтекстноеМеню" id="54"/>
+				<ExtendedTooltip name="ОстаткиКОтгрузкеУправлениеПоискомРасширеннаяПодсказка" id="55"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<ColumnGroup name="ОстаткиКОтгрузкеГруппа3" id="105">
+					<Width>18</Width>
+					<ExtendedTooltip name="ОстаткиКОтгрузкеГруппа3РасширеннаяПодсказка" id="106"/>
+					<ChildItems>
+						<InputField name="ОстаткиКОтгрузкеНоменклатура" id="56">
+							<DataPath>ОстаткиКОтгрузке.Номенклатура</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ContextMenu name="ОстаткиКОтгрузкеНоменклатураКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="ОстаткиКОтгрузкеНоменклатураРасширеннаяПодсказка" id="58"/>
+						</InputField>
+						<InputField name="ОстаткиКОтгрузкеХарактеристика" id="59">
+							<DataPath>ОстаткиКОтгрузке.Характеристика</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстаткиКОтгрузкеХарактеристикаКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="ОстаткиКОтгрузкеХарактеристикаРасширеннаяПодсказка" id="61"/>
+						</InputField>
+						<InputField name="ОстаткиКОтгрузкеУпаковка" id="122">
+							<DataPath>ОстаткиКОтгрузке.Упаковка</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстаткиКОтгрузкеУпаковкаКонтекстноеМеню" id="123"/>
+							<ExtendedTooltip name="ОстаткиКОтгрузкеУпаковкаРасширеннаяПодсказка" id="124"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ОстаткиКОтгрузкеГруппа4" id="116">
+					<ExtendedTooltip name="ОстаткиКОтгрузкеГруппа4РасширеннаяПодсказка" id="117"/>
+					<ChildItems>
+						<ColumnGroup name="ОстаткиКОтгрузкеГруппа1" id="98">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Состояние оплаты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Стан розрахунків</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<Group>Horizontal</Group>
+							<ShowInHeader>true</ShowInHeader>
+							<ExtendedTooltip name="ОстаткиКОтгрузкеГруппа1РасширеннаяПодсказка" id="99"/>
+							<ChildItems>
+								<InputField name="ОстаткиКОтгрузкеСуммаЗаказ" id="62">
+									<DataPath>ОстаткиКОтгрузке.СуммаЗаказ</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заказ</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Замовл</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>12</Width>
+									<Font ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<ContextMenu name="ОстаткиКОтгрузкеСуммаЗаказКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="ОстаткиКОтгрузкеСуммаЗаказРасширеннаяПодсказка" id="64"/>
+								</InputField>
+								<InputField name="ОстаткиКОтгрузкеСуммаОплачено" id="65">
+									<DataPath>ОстаткиКОтгрузке.СуммаОплачено</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Оплач</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сплач</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>12</Width>
+									<Font ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<ContextMenu name="ОстаткиКОтгрузкеСуммаОплаченоКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="ОстаткиКОтгрузкеСуммаОплаченоРасширеннаяПодсказка" id="67"/>
+								</InputField>
+								<InputField name="ОстаткиКОтгрузкеСуммаОтгружено" id="68">
+									<DataPath>ОстаткиКОтгрузке.СуммаОтгружено</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отгруж</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Відвант</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>12</Width>
+									<Font ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<ContextMenu name="ОстаткиКОтгрузкеСуммаОтгруженоКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ОстаткиКОтгрузкеСуммаОтгруженоРасширеннаяПодсказка" id="70"/>
+								</InputField>
+								<InputField name="ОстаткиКОтгрузкеСуммаОстатокКОплате" id="100">
+									<DataPath>ОстаткиКОтгрузке.СуммаОстатокКОплате</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>К_Оплате</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>ДоСплати</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>12</Width>
+									<Font ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<ContextMenu name="ОстаткиКОтгрузкеСуммаОстатокКОплатеКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="ОстаткиКОтгрузкеСуммаОстатокКОплатеРасширеннаяПодсказка" id="102"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ОстаткиКОтгрузкеГруппа2" id="103">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество отгружено</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Кількість відвантажено</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<Group>Horizontal</Group>
+							<ShowInHeader>true</ShowInHeader>
+							<ExtendedTooltip name="ОстаткиКОтгрузкеГруппа2РасширеннаяПодсказка" id="104"/>
+							<ChildItems>
+								<InputField name="ОстаткиКОтгрузкеКоличествоЗаказ" id="95">
+									<DataPath>ОстаткиКОтгрузке.КоличествоЗаказ</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заказ</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Замовл</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>12</Width>
+									<Font ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<ContextMenu name="ОстаткиКОтгрузкеКоличествоЗаказКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="ОстаткиКОтгрузкеКоличествоЗаказРасширеннаяПодсказка" id="97"/>
+								</InputField>
+								<InputField name="ОстаткиКОтгрузкеКоличествоОтгружено" id="92">
+									<DataPath>ОстаткиКОтгрузке.КоличествоОтгружено</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отгруж</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Відвант</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>12</Width>
+									<Font ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<ContextMenu name="ОстаткиКОтгрузкеКоличествоОтгруженоКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ОстаткиКОтгрузкеКоличествоОтгруженоРасширеннаяПодсказка" id="94"/>
+								</InputField>
+								<InputField name="ОстаткиКОтгрузкеКоличествоОстатокКОтгрузке" id="89">
+									<DataPath>ОстаткиКОтгрузке.КоличествоОстатокКОтгрузке</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Остаток</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Залиш</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>12</Width>
+									<Font ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<ContextMenu name="ОстаткиКОтгрузкеКоличествоОстатокКОтгрузкеКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="ОстаткиКОтгрузкеКоличествоОстатокКОтгрузкеРасширеннаяПодсказка" id="91"/>
+								</InputField>
+								<InputField name="ОстаткиКОтгрузкеКоличествоДоступноКОтгрузке" id="80">
+									<DataPath>ОстаткиКОтгрузке.КоличествоДоступноКОтгрузке</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Доступно</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Доступно</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>12</Width>
+									<Font ref="style:NormalTextFont" faceName="Arial Narrow" kind="StyleItem"/>
+									<ContextMenu name="ОстаткиКОтгрузкеКоличествоДоступноКОтгрузкеКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ОстаткиКОтгрузкеКоличествоДоступноКОтгрузкеРасширеннаяПодсказка" id="82"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ОстаткиКОтгрузкеГруппа5" id="118">
+					<ExtendedTooltip name="ОстаткиКОтгрузкеГруппа5РасширеннаяПодсказка" id="119"/>
+					<ChildItems>
+						<LabelField name="ОстаткиКОтгрузкеКомент" id="107">
+							<DataPath>ОстаткиКОтгрузке.Комент</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>12</Width>
+							<ContextMenu name="ОстаткиКОтгрузкеКоментКонтекстноеМеню" id="108"/>
+							<ExtendedTooltip name="ОстаткиКОтгрузкеКоментРасширеннаяПодсказка" id="109"/>
+						</LabelField>
+						<InputField name="ОстаткиКОтгрузкеЦена" id="113">
+							<DataPath>ОстаткиКОтгрузке.Цена</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Цена</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Ціна</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>12</Width>
+							<ContextMenu name="ОстаткиКОтгрузкеЦенаКонтекстноеМеню" id="114"/>
+							<ExtendedTooltip name="ОстаткиКОтгрузкеЦенаРасширеннаяПодсказка" id="115"/>
+						</InputField>
+						<InputField name="ОстаткиКОтгрузкеСуммаОплатыНеобходима" id="110">
+							<DataPath>ОстаткиКОтгрузке.СуммаОплатыНеобходима</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>12</Width>
+							<ContextMenu name="ОстаткиКОтгрузкеСуммаОплатыНеобходимаКонтекстноеМеню" id="111"/>
+							<ExtendedTooltip name="ОстаткиКОтгрузкеСуммаОплатыНеобходимаРасширеннаяПодсказка" id="112"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ОстаткиКОтгрузкеГруппа6" id="120">
+					<ExtendedTooltip name="ОстаткиКОтгрузкеГруппа6РасширеннаяПодсказка" id="121"/>
+					<ChildItems>
+						<InputField name="ОстаткиКОтгрузкеСуммаМожноОтгружать" id="71">
+							<DataPath>ОстаткиКОтгрузке.СуммаМожноОтгружать</DataPath>
+							<Visible>false</Visible>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>12</Width>
+							<ContextMenu name="ОстаткиКОтгрузкеСуммаМожноОтгружатьКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="ОстаткиКОтгрузкеСуммаМожноОтгружатьРасширеннаяПодсказка" id="73"/>
+						</InputField>
+						<InputField name="ОстаткиКОтгрузкеРазрешеноОтгружатьКолич" id="77">
+							<DataPath>ОстаткиКОтгрузке.РазрешеноОтгружатьКолич</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Разр</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Дозв</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>12</Width>
+							<ContextMenu name="ОстаткиКОтгрузкеРазрешеноОтгружатьКоличКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ОстаткиКОтгрузкеРазрешеноОтгружатьКоличРасширеннаяПодсказка" id="79"/>
+						</InputField>
+						<CheckBoxField name="ОстаткиКОтгрузкеОтгружаем" id="83">
+							<DataPath>ОстаткиКОтгрузке.Отгружаем</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>+</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>+</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОстаткиКОтгрузкеОтгружаемКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="ОстаткиКОтгрузкеОтгружаемРасширеннаяПодсказка" id="85"/>
+							<Events>
+								<Event name="OnChange">ОстаткиКОтгрузкеОтгружаемПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ОстаткиКОтгрузкеКоличествоОтгружаем" id="86">
+							<DataPath>ОстаткиКОтгрузке.КоличествоОтгружаем</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Колич</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Кількість</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>12</Width>
+							<ContextMenu name="ОстаткиКОтгрузкеКоличествоОтгружаемКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="ОстаткиКОтгрузкеКоличествоОтгружаемРасширеннаяПодсказка" id="88"/>
+							<Events>
+								<Event name="OnChange">ОстаткиКОтгрузкеКоличествоОтгружаемПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ОстаткиКОтгрузке" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Остатки к отгрузке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Номенклатура" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Характеристика" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Характеристика</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СуммаЗаказ" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма заказа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сума у замовленні</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаОплачено" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оплачено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сплачено</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаОтгружено" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сумма отгружено</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаМожноОтгружать" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сумма можно отгружать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Цена" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Цена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="РазрешеноОтгружатьКолич" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Разрешено отгружать колич</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоДоступноКОтгрузке" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Количество доступно к отгрузке</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Отгружаем" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Отгружаем</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоОтгружаем" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Количество отгружаем</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоОстатокКОтгрузке" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Количество остаток к отгрузке</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоОтгружено" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Количество отгружено</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоЗаказ" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Количество заказ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаОстатокКОплате" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сумма остаток к оплате</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комент" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Комент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>25</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаОплатыНеобходима" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сум необх</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сум Необх </v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Упаковка" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Упаковка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.УпаковкиЕдиницыИзмерения</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Оплачено" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Оплачено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Остаток" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Остаток</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СуммаЗаказано" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Всього</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Склад" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаказКлиента" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заказ клиента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЗаказКлиента</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СуммаЧек" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сумма чек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПринятьЗакрыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Принять закрыть</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Принять закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Принять закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПринятьЗакрыть</Action>
+		</Command>
+	</Commands>
+</Form>

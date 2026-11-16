@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Сайт" id="16">
+			<DataPath>Запись.Сайт</DataPath>
+			<ContextMenu name="СайтКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="СайтРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<UsualGroup name="Группа3" id="29">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="27">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="28"/>
+					<ChildItems>
+						<UsualGroup name="Группа5" id="39">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="40"/>
+							<ChildItems>
+								<InputField name="Время" id="1">
+									<DataPath>Запись.Время</DataPath>
+									<ContextMenu name="ВремяКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="ВремяРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<InputField name="Режим" id="4">
+									<DataPath>Запись.Режим</DataPath>
+									<ContextMenu name="РежимКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="РежимРасширеннаяПодсказка" id="6"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ТипДанных" id="7">
+							<DataPath>Запись.ТипДанных</DataPath>
+							<ContextMenu name="ТипДанныхКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ТипДанныхРасширеннаяПодсказка" id="9"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа1" id="25">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="26"/>
+					<ChildItems>
+						<InputField name="Статус" id="10">
+							<DataPath>Запись.Статус</DataPath>
+							<ContextMenu name="СтатусКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="КодСтатуса" id="13">
+							<DataPath>Запись.КодСтатуса</DataPath>
+							<ContextMenu name="КодСтатусаКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="КодСтатусаРасширеннаяПодсказка" id="15"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа4" id="37">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<InputField name="ДанныеВходящие" id="19">
+					<DataPath>Запись.ДанныеВходящие</DataPath>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ДанныеВходящиеКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ДанныеВходящиеРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="ДанныеИсходящие" id="22">
+					<DataPath>Запись.ДанныеИсходящие</DataPath>
+					<Height>8</Height>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ДанныеИсходящиеКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ДанныеИсходящиеРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Ошибка" id="31">
+			<DataPath>Запись.Ошибка</DataPath>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ОшибкаКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ОшибкаРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<LabelField name="Ссылка" id="34">
+			<DataPath>Запись.Ссылка</DataPath>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="СсылкаКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="36"/>
+		</LabelField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЛогированиеСайт</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
