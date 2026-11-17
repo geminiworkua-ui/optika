@@ -1794,6 +1794,7 @@
 			<Role>ibs_ЧтениеМестПредоставленияУслугHelsi</Role>
 			<Role>ibs_ДобавлениеИзменениеМестПредоставленияУслугHelsi</Role>
 			<Role>tsms_ОсновнаяРоль</Role>
+			<Role>tsms_РучнаяРассылка</Role>
 			<CommonTemplate>ГеографическаяСхемаКартаМира</CommonTemplate>
 			<CommonTemplate>ДрайверДисплейПокупателя</CommonTemplate>
 			<CommonTemplate>ДрайверПринтерЧеков</CommonTemplate>
@@ -2757,6 +2758,7 @@
 			<CommonModule>ЗагрузкаОстатковИзДиггер</CommonModule>
 			<CommonModule>ibs_ОбработчикиПодпискиСобытий</CommonModule>
 			<CommonModule>ОбменОстаткиИзДигерПолный</CommonModule>
+			<CommonModule>tsms_Журнал</CommonModule>
 			<CommonAttribute>ОбластьДанныхВспомогательныеДанные</CommonAttribute>
 			<CommonAttribute>ОбластьДанныхОсновныеДанные</CommonAttribute>
 			<ExchangePlan>ИнтеграцияС1СДокументооборотом</ExchangePlan>
@@ -4867,6 +4869,7 @@
 			<Catalog>_Покрытие</Catalog>
 			<Catalog>_Тонирование</Catalog>
 			<Catalog>tsms_ВидыОповещений</Catalog>
+			<Catalog>tsms_РучныеРассылки</Catalog>
 			<Catalog>ПоказателиЗУП</Catalog>
 			<Catalog>ibs_КлассификаторыМедицинскихУслугHelsi</Catalog>
 			<Catalog>ibs_МестаПредоставленияУслугHelsi</Catalog>
@@ -5487,6 +5490,9 @@
 			<Enum>tsms_КаналыОтправки</Enum>
 			<Enum>tsms_УровниЛогирования</Enum>
 			<Enum>tsms_СобытияЛогирования</Enum>
+			<Enum>tsms_СтатусыСообщений</Enum>
+			<Enum>tsms_СпособыОтправки</Enum>
+			<Enum>tsms_ТипыViberСообщений</Enum>
 			<Report>ABCXYZАнализНоменклатуры</Report>
 			<Report>ABCXYZРаспределениеКлиентов</Report>
 			<Report>АнализВерсийОбъектов</Report>
@@ -5701,6 +5707,7 @@
 			<Report>ПродажиПоРекомендациям</Report>
 			<Report>eComm_Постоплата</Report>
 			<Report>ОтчетАнализОбращенийТехподдержку1</Report>
+			<Report>tsms_АналитикаРассылок</Report>
 			<DataProcessor>АвтоматическоеИзвлечениеТекстов</DataProcessor>
 			<DataProcessor>АктивныеПользователи</DataProcessor>
 			<DataProcessor>АрхивированиеУдалениеЧековККМ</DataProcessor>
@@ -5890,6 +5897,7 @@
 			<DataProcessor>eComm_Justin</DataProcessor>
 			<DataProcessor>eComm_Meest</DataProcessor>
 			<DataProcessor>УстановкаРежима</DataProcessor>
+			<DataProcessor>tsms_РучнаяРассылка</DataProcessor>
 			<InformationRegister>ABCXYZКлассификацияКлиентов</InformationRegister>
 			<InformationRegister>АналитикаВидовЗапасов</InformationRegister>
 			<InformationRegister>АналитикаУчетаНоменклатуры</InformationRegister>
@@ -6232,6 +6240,8 @@
 			<InformationRegister>СоответствиеПоказателейДляДолжностей</InformationRegister>
 			<InformationRegister>ibs_ДиагностическиеОтчетыHelsi</InformationRegister>
 			<InformationRegister>tsms_ЖурналЛогирования</InformationRegister>
+			<InformationRegister>tsms_ЖурналСообщений</InformationRegister>
+			<InformationRegister>tsms_КликиКарусели</InformationRegister>
 			<AccumulationRegister>БонусныеБаллы</AccumulationRegister>
 			<AccumulationRegister>ВыручкаИСебестоимостьПродаж</AccumulationRegister>
 			<AccumulationRegister>ГрафикОтгрузкиТоваров</AccumulationRegister>

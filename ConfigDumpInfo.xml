@@ -2201,30 +2201,52 @@
 		<Metadata name="Catalog.ibs_МестаПредоставленияУслугHelsi.Form.ФормаСписка.Form" id="e9bc5188-f929-4179-bc70-b66a5bcbc25c.0" configVersion="15f3e2b62c0bf24698c8f74f357edc2f00000000"/>
 		<Metadata name="Catalog.ibs_МестаПредоставленияУслугHelsi.Form.ФормаЭлемента" id="02648ea0-f628-4add-8be5-e7497f8f2b84" configVersion="275a4bdd2fef304ea7244f0f237945b900000000"/>
 		<Metadata name="Catalog.ibs_МестаПредоставленияУслугHelsi.Form.ФормаЭлемента.Form" id="02648ea0-f628-4add-8be5-e7497f8f2b84.0" configVersion="41a2addb292aa54eb47d6fa7984ba3df00000000"/>
-		<Metadata name="Catalog.tsms_ВидыОповещений" id="09947508-a2b8-48ac-81d3-ca6aedf1ca4f" configVersion="6301f1f5448bce4280f842499e54845c00000000">
+		<Metadata name="Catalog.tsms_ВидыОповещений" id="09947508-a2b8-48ac-81d3-ca6aedf1ca4f" configVersion="30699dd61ee3ff45bf2dfc76994a6cf900000000">
 			<Metadata name="Catalog.tsms_ВидыОповещений.TabularSection.ГруппыНоменклатуры" id="0197253f-1f6a-4782-9a27-95f2b923d86e"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.КартинкаViber" id="02f94da8-3b6f-4ce0-bf1a-89d813dd8f87"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.КаналПродаж" id="1b637985-c839-49c2-b48b-b02819cecacc"/>
+			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.ТипViberСообщения" id="22c3c15b-8716-4024-911f-76f7b877c1fc"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.Использовать" id="237d439d-7f1d-4234-9022-652e2520413b"/>
+			<Metadata name="Catalog.tsms_ВидыОповещений.TabularSection.КарточкиКарусели.Attribute.АдресСсылки" id="31711d26-1e48-4cc7-9096-5b3503a6915d"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.ШаблонСообщения" id="44d003cb-dedb-4225-816b-b411db1ae165"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.ДнейОжиданияПокупки" id="4e19a7b6-d13b-42b1-aae2-d6c290eac362"/>
+			<Metadata name="Catalog.tsms_ВидыОповещений.TabularSection.КарточкиКарусели.Attribute.Заголовок" id="4ec57cad-27a5-413a-89c5-8b2553894b49"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.ВидНоменклатуры" id="5186aa89-29a6-4390-83e3-da59ecd03a40"/>
+			<Metadata name="Catalog.tsms_ВидыОповещений.TabularSection.КарточкиКарусели.Attribute.ТекстКнопки" id="6742a2b4-70fe-4894-90a2-048e3f0d1331"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.TabularSection.ГруппыНоменклатуры.Attribute.ГруппаНоменклатуры" id="70719168-a426-45a2-9300-12100445425b"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.КоличествоДней" id="7cab62c7-20cb-4f04-a47c-f0b7dffdd6da"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.ШаблонСообщенияTelegram" id="90e0ff1f-7160-4ea7-8598-3ff3ca4eec18"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.TabularSection.КаналыОтправки.Attribute.Канал" id="983871b6-83f3-4747-9ec4-76c9d0beec86"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.ЗначениеРежимаЗамены" id="9980ec44-e9be-4d88-a7b5-e9886b4fa7f6"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.КартинкаViberИД" id="9f1a3c02-7276-4b77-a721-9d225d41d508"/>
+			<Metadata name="Catalog.tsms_ВидыОповещений.TabularSection.КарточкиКарусели.Attribute.СсылкаКнопки" id="a3d21df3-57ba-4a20-a102-679d3a399726"/>
+			<Metadata name="Catalog.tsms_ВидыОповещений.TabularSection.КарточкиКарусели" id="b4be64f3-30f4-4051-8542-c63261877601"/>
+			<Metadata name="Catalog.tsms_ВидыОповещений.TabularSection.КарточкиКарусели.Attribute.ИмяФайлаКартинки" id="b8b04733-fcdd-4726-adb0-d7c94c0b2dbf"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.ВидСобытия" id="c16ca6d5-9b14-4ab7-9d0c-35e7baab7845"/>
+			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.ЭскалацияЧерезДней" id="c561e86b-b11d-4876-a382-beafb742f3db"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.КнопкаViberСсылка" id="d1073ccd-8849-4b41-ae98-2300161819d5"/>
+			<Metadata name="Catalog.tsms_ВидыОповещений.TabularSection.КарточкиКарусели.Attribute.ТекстСсылки" id="d818d43b-f600-4120-85bc-53b392746d80"/>
+			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.ЭскалацияВСМС" id="dbb766f7-73e9-4213-9c2b-5790c0b3afdc"/>
+			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.ШаблонСообщенияЭскалации" id="e0fe9908-89db-41d7-90e2-82644f1fd867"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.КнопкаViberТекст" id="e2e53bfb-f2c0-4b6c-8a5e-814fbf29127c"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.TabularSection.КаналыОтправки" id="e3a0d0d2-849f-40cf-83b0-2dfdef6afc09"/>
+			<Metadata name="Catalog.tsms_ВидыОповещений.TabularSection.КарточкиКарусели.Attribute.КартинкаИД" id="e7f71d79-2ea9-4853-a6e8-2b8f1b8b5e8c"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.ШаблонСообщенияViber" id="fdf9a217-20a2-4dce-a3e4-6d85783c32a3"/>
 			<Metadata name="Catalog.tsms_ВидыОповещений.Attribute.РасчетПоЗапасуЛинз" id="fe6a869d-4805-4d66-a9b2-f756c842e74b"/>
 		</Metadata>
-		<Metadata name="Catalog.tsms_ВидыОповещений.Form.ФормаЭлемента" id="ed3832dd-659d-486c-912a-20c4e8c9a4d4" configVersion="f414b513e294114f83acb9f7725d572600000000"/>
-		<Metadata name="Catalog.tsms_ВидыОповещений.Form.ФормаЭлемента.Form" id="ed3832dd-659d-486c-912a-20c4e8c9a4d4.0" configVersion="18dbdd91a1912840be3c7a7c725ff4c000000000"/>
+		<Metadata name="Catalog.tsms_ВидыОповещений.Form.ФормаЭлемента" id="ed3832dd-659d-486c-912a-20c4e8c9a4d4" configVersion="5ca3b6100e1b514c999757b16751c04e00000000"/>
+		<Metadata name="Catalog.tsms_ВидыОповещений.Form.ФормаЭлемента.Form" id="ed3832dd-659d-486c-912a-20c4e8c9a4d4.0" configVersion="3593917025b1074582d46d4c3128de9300000000"/>
 		<Metadata name="Catalog.tsms_ВидыОповещений.ObjectModule" id="09947508-a2b8-48ac-81d3-ca6aedf1ca4f.0" configVersion="eef498cd7cd657469578411456760ea600000000"/>
+		<Metadata name="Catalog.tsms_РучныеРассылки" id="db99f90b-aab3-4a7a-be19-b16ba970ab47" configVersion="9ed9df2579466042aaf9c9bd6c7c92ba00000000">
+			<Metadata name="Catalog.tsms_РучныеРассылки.Attribute.ВидОповещения" id="0da1c6de-79b6-4629-b79d-923f6579bbfe"/>
+			<Metadata name="Catalog.tsms_РучныеРассылки.Attribute.ОписаниеОтбора" id="27169591-8f05-4075-be1f-c4b36c6cd980"/>
+			<Metadata name="Catalog.tsms_РучныеРассылки.Attribute.Ошибок" id="a9e28863-a90b-4e46-9693-ac10d7156e52"/>
+			<Metadata name="Catalog.tsms_РучныеРассылки.Attribute.Комментарий" id="d61dcc02-20ba-432b-bbec-0af83a9425a2"/>
+			<Metadata name="Catalog.tsms_РучныеРассылки.Attribute.Отправлено" id="e2aa7b6d-5d5a-4900-b027-8765695c88a5"/>
+			<Metadata name="Catalog.tsms_РучныеРассылки.Attribute.ДатаРассылки" id="f4644d3e-f303-4baa-a9ad-5e86a37acb0e"/>
+			<Metadata name="Catalog.tsms_РучныеРассылки.Attribute.Автор" id="fc3ee305-3260-49b3-b40e-4641650a579d"/>
+			<Metadata name="Catalog.tsms_РучныеРассылки.Attribute.КоличествоПолучателей" id="ffc91db0-0d39-4b59-b36f-32cd167cbceb"/>
+		</Metadata>
 		<Metadata name="Catalog.АвансовыйОтчетПрисоединенныеФайлы" id="d11b89e1-90a2-47e7-b43f-7f231ec64b2f" configVersion="890531ea4202034a8f2c7975768cc89300000000">
 			<Metadata name="Catalog.АвансовыйОтчетПрисоединенныеФайлы.Attribute.ФайлХранилище" id="021d7ed2-c534-4b6b-ad1d-2130935209dc"/>
 			<Metadata name="Catalog.АвансовыйОтчетПрисоединенныеФайлы.TabularSection.СертификатыШифрования.Attribute.Представление" id="02911e38-8c90-4fd2-b779-4fb9b2aa9580"/>
@@ -12457,10 +12479,12 @@
 		<Metadata name="CommonModule.eCommСерверПереопределяемый.Module" id="13d0df79-717a-4239-b24c-c93b7296c725.0" configVersion="2c141757a815bb47ae36f9bda18f6ad600000000"/>
 		<Metadata name="CommonModule.ibs_ОбработчикиПодпискиСобытий" id="aad13535-e08a-4463-a5bd-bfe2d92a04ea" configVersion="f370aefbcd156845bf5cbb460dc970e500000000"/>
 		<Metadata name="CommonModule.ibs_ОбработчикиПодпискиСобытий.Module" id="aad13535-e08a-4463-a5bd-bfe2d92a04ea.0" configVersion="bda9a116c1bc224da25ded5d0de3d8cb00000000"/>
+		<Metadata name="CommonModule.tsms_Журнал" id="ff0e6cfc-dfe8-4ff7-8882-47fce98fe534" configVersion="4b9fa9d8cc55e5408fbc02af10d49dfa00000000"/>
+		<Metadata name="CommonModule.tsms_Журнал.Module" id="ff0e6cfc-dfe8-4ff7-8882-47fce98fe534.0" configVersion="34c45d154395a740a7a258b5a16fda8400000000"/>
 		<Metadata name="CommonModule.tsms_Логирование" id="090e8de9-31cf-4ac6-98fd-ad44e168b0c2" configVersion="4f7a3c52d1cf604ab695e7898678fe7f00000000"/>
 		<Metadata name="CommonModule.tsms_Логирование.Module" id="090e8de9-31cf-4ac6-98fd-ad44e168b0c2.0" configVersion="7204f51e87ec6945babc81b5687d24e000000000"/>
-		<Metadata name="CommonModule.tsms_СерверныйМодуль" id="04eae3d6-178c-4dcc-90d8-294e2a0eac05" configVersion="93408bf19e84a941a68b4aca665a7ea000000000"/>
-		<Metadata name="CommonModule.tsms_СерверныйМодуль.Module" id="04eae3d6-178c-4dcc-90d8-294e2a0eac05.0" configVersion="b800487d3bc38b41b253f33ff0c6e65100000000"/>
+		<Metadata name="CommonModule.tsms_СерверныйМодуль" id="04eae3d6-178c-4dcc-90d8-294e2a0eac05" configVersion="9ac5c4e0c4aa524a9a374367aff4544900000000"/>
+		<Metadata name="CommonModule.tsms_СерверныйМодуль.Module" id="04eae3d6-178c-4dcc-90d8-294e2a0eac05.0" configVersion="2ad1413122516043bede26e0eff5086300000000"/>
 		<Metadata name="CommonModule.АвтономнаяРабота" id="a5cc5ae2-be80-4957-8aca-9e477433dfcc" configVersion="82c9d95a76f1e444aa7eba1bcef9cba800000000"/>
 		<Metadata name="CommonModule.АвтономнаяРабота.Module" id="a5cc5ae2-be80-4957-8aca-9e477433dfcc.0" configVersion="702f8c632c95284ea4a5446c29e85a0000000000"/>
 		<Metadata name="CommonModule.АвтономнаяРаботаСлужебный" id="becfc481-4e41-4015-9ab5-d01c329b3e9e" configVersion="c9aa863edbc24f458966fc695ae5304600000000"/>
@@ -12829,8 +12853,8 @@
 		<Metadata name="CommonModule.ИнтеграцияС1СДокументооборотПереопределяемый.Module" id="6ef011aa-eda4-4ddf-a588-5208790f6937.0" configVersion="09352e9c0d491746b1871ac919ffb72b00000000"/>
 		<Metadata name="CommonModule.ИнтеграцияС1СДокументооборотПовтИсп" id="db07da1d-0281-4acf-90a2-3fd35629ab35" configVersion="147757becd2049498d8f1762bb203d2a00000000"/>
 		<Metadata name="CommonModule.ИнтеграцияС1СДокументооборотПовтИсп.Module" id="db07da1d-0281-4acf-90a2-3fd35629ab35.0" configVersion="52dea89cc8b1b343be41e13baeaea1d600000000"/>
-		<Metadata name="CommonModule.ИнтеграцияСТурбоСМС" id="135724d7-5934-462c-81af-d3f04ac2e7ae" configVersion="5e306186b201eb49ac0224970bb2fa7600000000"/>
-		<Metadata name="CommonModule.ИнтеграцияСТурбоСМС.Module" id="135724d7-5934-462c-81af-d3f04ac2e7ae.0" configVersion="9a5d9b5d3cfdc8499e4de2d4f3b84d1d00000000"/>
+		<Metadata name="CommonModule.ИнтеграцияСТурбоСМС" id="135724d7-5934-462c-81af-d3f04ac2e7ae" configVersion="42fb1e0b73dc0047a49854b75d6ac9b900000000"/>
+		<Metadata name="CommonModule.ИнтеграцияСТурбоСМС.Module" id="135724d7-5934-462c-81af-d3f04ac2e7ae.0" configVersion="1045b652054ecd48a45068c158fefa4900000000"/>
 		<Metadata name="CommonModule.ИнтеграцияСтандартныхПодсистем" id="f135b60e-6d28-4ba1-acd7-76090f14855d" configVersion="68d5a24b28e70a449941431b57fb544600000000"/>
 		<Metadata name="CommonModule.ИнтеграцияСтандартныхПодсистем.Module" id="f135b60e-6d28-4ba1-acd7-76090f14855d.0" configVersion="9c64425c75ce674580dcc63ec92be8ef00000000"/>
 		<Metadata name="CommonModule.ИнтернетПоддержкаПользователей" id="4bd0e1ca-5d31-4a25-aafd-1eccdacb025a" configVersion="be8442925065fc469792a78539afc4c600000000"/>
@@ -15963,7 +15987,7 @@
 		<Metadata name="CommonTemplate.ЭД_ИдентификаторДокумента.Template" id="54c91572-2089-43e2-bb64-1148f9dca369.0" configVersion="a25a90296b5a9f46aeef6df31f538f5900000000"/>
 		<Metadata name="CommonTemplate.ЭД_Список" id="5b3c173e-1f38-4aa9-ae9c-0cbc6571f746" configVersion="c7828c45e6a37e498f173164a013345000000000"/>
 		<Metadata name="CommonTemplate.ЭД_Список.Template" id="5b3c173e-1f38-4aa9-ae9c-0cbc6571f746.0" configVersion="423f7b216466d9468cd8062cf5b1ce2b00000000"/>
-		<Metadata name="Configuration.BASУправлениеТорговлей" id="61ee2494-c14a-4992-8c93-8e78b20bea27" configVersion="ed1be6f3ebd57244920c04fb2ec4004500000000"/>
+		<Metadata name="Configuration.BASУправлениеТорговлей" id="61ee2494-c14a-4992-8c93-8e78b20bea27" configVersion="51588627cf150847b810fe2db4f1987800000000"/>
 		<Metadata name="Configuration.BASУправлениеТорговлей.ClientApplicationInterface" id="c5546fcc-f2dc-43dd-8d40-a6cc2a81b865.b" configVersion="e1bca201ce62c544bdccd4e98338cabb00000000"/>
 		<Metadata name="Configuration.BASУправлениеТорговлей.CommandInterface" id="c5546fcc-f2dc-43dd-8d40-a6cc2a81b865.a" configVersion="d459cf8207dd4941a90c55669eec3b3c00000000"/>
 		<Metadata name="Configuration.BASУправлениеТорговлей.ExternalConnectionModule" id="c5546fcc-f2dc-43dd-8d40-a6cc2a81b865.5" configVersion="57eeb10325710d428501e0bcebbcd48300000000"/>
@@ -15972,7 +15996,7 @@
 		<Metadata name="Configuration.BASУправлениеТорговлей.MainSectionPicture" id="c5546fcc-f2dc-43dd-8d40-a6cc2a81b865.c" configVersion="8a4beecbb800c145b5eef63dd7da712f00000000"/>
 		<Metadata name="Configuration.BASУправлениеТорговлей.ManagedApplicationModule" id="c5546fcc-f2dc-43dd-8d40-a6cc2a81b865.6" configVersion="18a16738c1feac40a611ffcf3b1c9c7800000000"/>
 		<Metadata name="Configuration.BASУправлениеТорговлей.OrdinaryApplicationModule" id="c5546fcc-f2dc-43dd-8d40-a6cc2a81b865.0" configVersion="d64fdbc480d79a4e83098581fe70c70b00000000"/>
-		<Metadata name="Configuration.BASУправлениеТорговлей.ParentConfigurations" id="c5546fcc-f2dc-43dd-8d40-a6cc2a81b865.4" configVersion="6e15242a60f8d1448d52b9c6f5fe0d1d00000000"/>
+		<Metadata name="Configuration.BASУправлениеТорговлей.ParentConfigurations" id="c5546fcc-f2dc-43dd-8d40-a6cc2a81b865.4" configVersion="b42f7dfd45d2fe409848d5d4cb62613000000000"/>
 		<Metadata name="Configuration.BASУправлениеТорговлей.SessionModule" id="c5546fcc-f2dc-43dd-8d40-a6cc2a81b865.7" configVersion="6a4e67385a445244b31c714d388c7cb800000000"/>
 		<Metadata name="Configuration.BASУправлениеТорговлей.Splash" id="c5546fcc-f2dc-43dd-8d40-a6cc2a81b865.2" configVersion="241b8c20bdf56d4d9be71c15bd88048b00000000"/>
 		<Metadata name="Constant.tsms_TelegramИДЧата" id="756f808d-661d-40eb-b760-88221ec09679" configVersion="3c7b8d6a2ed77945b4eb2feb855cdb0400000000"/>
@@ -16660,6 +16684,10 @@
 		<Metadata name="DataProcessor.eComm_УкрПочта.ManagerModule" id="7e1edbe3-81e0-4be9-b016-1736a9edc0b7.2" configVersion="bdb26b161f0e664d99d71000d16aa83100000000"/>
 		<Metadata name="DataProcessor.eComm_УкрПочта.Template.СтатусыТрекинга" id="ecfcdcc5-117c-4dae-aecc-42d566b26391" configVersion="4e931f83394fe5458ef32486a4c7d2c800000000"/>
 		<Metadata name="DataProcessor.eComm_УкрПочта.Template.СтатусыТрекинга.Template" id="ecfcdcc5-117c-4dae-aecc-42d566b26391.0" configVersion="0b8d1a61abaf2d4eae4688f4e1b8aaa000000000"/>
+		<Metadata name="DataProcessor.tsms_РучнаяРассылка" id="119e3a50-e8be-440b-b281-b4b29e22ce72" configVersion="28c247619b5aff459a10d921acf2b9e000000000"/>
+		<Metadata name="DataProcessor.tsms_РучнаяРассылка.Form.Форма" id="8e07b7dd-2c2d-4430-aa89-81822f408df1" configVersion="19eefa9eda6b2e41b76f0394bb8840dc00000000"/>
+		<Metadata name="DataProcessor.tsms_РучнаяРассылка.Form.Форма.Form" id="8e07b7dd-2c2d-4430-aa89-81822f408df1.0" configVersion="df62b1983bf41949a6db51277871e0c800000000"/>
+		<Metadata name="DataProcessor.tsms_РучнаяРассылка.ManagerModule" id="119e3a50-e8be-440b-b281-b4b29e22ce72.2" configVersion="7a0d0f746cf9b6489522edbac0be2a5e00000000"/>
 		<Metadata name="DataProcessor.АРМинтернетМагазин" id="8ceb2753-e788-492c-b29e-41b0651f1a6d" configVersion="44f8bfc36425384d9c575c5adf17c93300000000"/>
 		<Metadata name="DataProcessor.АРМинтернетМагазин.Form.ФормаИнтернетМагазин" id="81af5059-e8c0-4ec3-a9a2-33211a1b302a" configVersion="d18d25826c87124782c4134c5bc4cb8700000000"/>
 		<Metadata name="DataProcessor.АРМинтернетМагазин.Form.ФормаИнтернетМагазин.Form" id="81af5059-e8c0-4ec3-a9a2-33211a1b302a.0" configVersion="bfb68e73932bed47b360ea2ef05a665b00000000"/>
@@ -31114,8 +31142,9 @@
 			<Metadata name="Enum.eComm_ТорговыеПлощадки.EnumValue.Horoshop" id="d3b2bd61-a1df-4669-9db5-9712744ceefd"/>
 		</Metadata>
 		<Metadata name="Enum.eComm_ТорговыеПлощадки.ManagerModule" id="b3e91541-3158-4bb0-b003-4ed189e062f4.0" configVersion="6043a40fa4728a4e8bbd12159a0e9fe600000000"/>
-		<Metadata name="Enum.tsms_ВидыСобытийОповещений" id="014362b8-eb7e-423e-addd-5300c315a913" configVersion="8a621eb76e6a6445b7c59c57a420d94400000000">
+		<Metadata name="Enum.tsms_ВидыСобытийОповещений" id="014362b8-eb7e-423e-addd-5300c315a913" configVersion="97314454e7537447b5d646533e2e157500000000">
 			<Metadata name="Enum.tsms_ВидыСобытийОповещений.EnumValue.ДеньРождения" id="0ead38a5-1c03-44b9-837c-7374547cc64c"/>
+			<Metadata name="Enum.tsms_ВидыСобытийОповещений.EnumValue.РучнаяРассылка" id="9ca86b0d-5db4-49a5-a91f-1e85f0f2e221"/>
 			<Metadata name="Enum.tsms_ВидыСобытийОповещений.EnumValue.СрокПослеПокупки" id="cf653ee9-7bc5-4417-82e9-2a2432e5fd08"/>
 		</Metadata>
 		<Metadata name="Enum.tsms_КаналыОтправки" id="643b78fa-86b7-430c-8d44-948e360c5ff8" configVersion="0b0f73dcc7c06049b8eaf090c0418acb00000000">
@@ -31123,15 +31152,36 @@
 			<Metadata name="Enum.tsms_КаналыОтправки.EnumValue.Telegram" id="ab6d9798-d128-4101-a085-71539c42a8af"/>
 			<Metadata name="Enum.tsms_КаналыОтправки.EnumValue.Viber" id="f9f0cd28-af92-4153-b725-9f5e5f52b9ef"/>
 		</Metadata>
-		<Metadata name="Enum.tsms_СобытияЛогирования" id="1bece592-4d11-4812-ae31-c56afe447d91" configVersion="c8bac1cb359eac4db07f1d8af930dae700000000">
+		<Metadata name="Enum.tsms_СобытияЛогирования" id="1bece592-4d11-4812-ae31-c56afe447d91" configVersion="b307161509dd944eb1506ff2aba49c7800000000">
 			<Metadata name="Enum.tsms_СобытияЛогирования.EnumValue.НекорректныйНомер" id="3ae67675-c4ad-49ca-9fac-00885e0a0da5"/>
+			<Metadata name="Enum.tsms_СобытияЛогирования.EnumValue.Эскалация" id="407ff62c-5ac6-4960-a335-e99a73d1ef69"/>
 			<Metadata name="Enum.tsms_СобытияЛогирования.EnumValue.ОшибкаНастройки" id="5733ba0a-9531-47d3-ae20-c8835f544089"/>
+			<Metadata name="Enum.tsms_СобытияЛогирования.EnumValue.ОбновлениеСтатусов" id="59c66113-78a8-4b36-b8d0-bed91de60016"/>
 			<Metadata name="Enum.tsms_СобытияЛогирования.EnumValue.НачалоРассылки" id="604b0444-4e14-4e2b-bb3c-79ca67678278"/>
 			<Metadata name="Enum.tsms_СобытияЛогирования.EnumValue.НетТелефона" id="63319c36-38f9-46ee-b34b-9c0cce71f851"/>
 			<Metadata name="Enum.tsms_СобытияЛогирования.EnumValue.ОшибкаВыполнения" id="765769b6-7703-4a30-b317-655b773c29b2"/>
+			<Metadata name="Enum.tsms_СобытияЛогирования.EnumValue.ОшибкаЗаписиЖурнала" id="858cd437-79a0-4cc6-afd4-d8be94076923"/>
 			<Metadata name="Enum.tsms_СобытияЛогирования.EnumValue.ОшибкаОтправки" id="9960d087-2785-4e08-af60-5771d832d2bf"/>
 			<Metadata name="Enum.tsms_СобытияЛогирования.EnumValue.ОшибкаЗаписиИстории" id="b621f6ef-768d-46b7-95ee-c7d06b4ad53c"/>
 			<Metadata name="Enum.tsms_СобытияЛогирования.EnumValue.ОкончаниеРассылки" id="eecebfc2-4093-4e43-9ef8-0e38e0d274b9"/>
+		</Metadata>
+		<Metadata name="Enum.tsms_СпособыОтправки" id="50474c92-d002-442e-b9f6-1566d882a837" configVersion="7cafcdf87a26c84597c8231bcc2515ff00000000">
+			<Metadata name="Enum.tsms_СпособыОтправки.EnumValue.Регламентная" id="054a852c-32a2-424d-ae70-da531858b1ed"/>
+			<Metadata name="Enum.tsms_СпособыОтправки.EnumValue.Ручная" id="655ee024-6703-49ca-8051-550bffc2732d"/>
+			<Metadata name="Enum.tsms_СпособыОтправки.EnumValue.Тестовая" id="82e95fc3-a867-4091-93a3-d1fff5107274"/>
+			<Metadata name="Enum.tsms_СпособыОтправки.EnumValue.Эскалация" id="88d9f17e-4585-446f-9e3a-fef64d8193ca"/>
+		</Metadata>
+		<Metadata name="Enum.tsms_СтатусыСообщений" id="0a4f7106-af67-4f90-9355-03c4ff69f60b" configVersion="d00ca033aaa03a458158644af6a0bece00000000">
+			<Metadata name="Enum.tsms_СтатусыСообщений.EnumValue.Неизвестно" id="3828c28c-a991-4bdd-a4a3-88f812d4f76d"/>
+			<Metadata name="Enum.tsms_СтатусыСообщений.EnumValue.Отклонено" id="48a58162-d4ed-41ba-95c6-80a5729534dc"/>
+			<Metadata name="Enum.tsms_СтатусыСообщений.EnumValue.Отправлено" id="b437cf85-8560-4c09-a420-a7b79eca888e"/>
+			<Metadata name="Enum.tsms_СтатусыСообщений.EnumValue.Доставлено" id="c47ea46d-4759-4622-8910-f23f8f32f531"/>
+			<Metadata name="Enum.tsms_СтатусыСообщений.EnumValue.Прочитано" id="c9a3aa46-3274-4cf9-a99f-a984735f7d82"/>
+			<Metadata name="Enum.tsms_СтатусыСообщений.EnumValue.Недоставлено" id="cc10668c-d5af-4968-880f-0556317f8ae7"/>
+		</Metadata>
+		<Metadata name="Enum.tsms_ТипыViberСообщений" id="b9aeaa4e-a9c1-4a78-bf96-c01ce842d259" configVersion="4707a5bfca31f040aeaefef71fc85f3300000000">
+			<Metadata name="Enum.tsms_ТипыViberСообщений.EnumValue.Карусель" id="0eb473f2-a63a-406e-b808-ccdd5f0bef83"/>
+			<Metadata name="Enum.tsms_ТипыViberСообщений.EnumValue.Обычное" id="1649c3e7-e678-4962-9daa-9f339c2385d9"/>
 		</Metadata>
 		<Metadata name="Enum.tsms_УровниЛогирования" id="9ee8cf8c-1ed1-4510-b30b-beb2b0a315cd" configVersion="ca4d1dacca24a942a90eecdc45cb97d400000000">
 			<Metadata name="Enum.tsms_УровниЛогирования.EnumValue.Информация" id="23a86abe-3165-4ebb-b837-69ed202f4642"/>
@@ -35570,6 +35620,40 @@
 			<Metadata name="InformationRegister.tsms_ЖурналЛогирования.Resource.НомерТелефона" id="db03d6bb-79bd-4c69-b4d1-023278c25820"/>
 			<Metadata name="InformationRegister.tsms_ЖурналЛогирования.Resource.Событие" id="e3c401ca-ea61-4e8e-992a-d748dc021ec2"/>
 		</Metadata>
+		<Metadata name="InformationRegister.tsms_ЖурналСообщений" id="04e27e3f-fd4d-47fd-88bc-a0d167589449" configVersion="838bd03c8a9f694b954bede2fbb0b88500000000">
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ДатаОбновленияСтатуса" id="28d7a2d0-1b21-4525-8b43-77c5e2f6a064"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.КаналФактический" id="32c59527-2525-44c7-addd-8cdf840e3a78"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ТекстСМС" id="361feb82-737e-42b6-8bc1-4063cb54f1eb"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ТекстСМСЭскалации" id="43dc2618-c5d6-4160-a580-1947722a6e63"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ЭскалироватьЧерезДней" id="478fbf30-b614-4741-8b77-71f105d1a373"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ВидОповещения" id="4efcbc15-e105-4529-86d4-660f900e17dd"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ДатаДоставки" id="55761874-c887-41f9-82fe-86873cc85691"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.Статус" id="56255b39-a771-4698-8ac1-a7b395157e88"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ДатаПрочтения" id="58561f6e-6b2e-4ba7-af14-62839d304ba7"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Command.СообщенияКлиента" id="58ee87d9-b3fd-4437-bb3c-67bef3dfff13"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ПричинаОтклонения" id="62955022-5340-4d0b-a760-9b08cced2bb0"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Dimension.ИДСообщения" id="62a73870-2f66-4faa-ba23-a39fc77e6c0e"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.Партнер" id="641a6aae-29cf-4ff9-bc14-c11c99e1dad4"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ОтслеживатьКлики" id="6b1d95f5-67d3-4068-bc00-0ddae73d689d"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ЭскалацияВыполнена" id="6c10166c-7d0e-44dd-9435-21d9430d349d"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.РезервнаяСМС" id="7551629e-49ef-4680-99d7-ba39fba77a6a"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ТекстViber" id="7c6f33bc-f341-4e90-ade2-47630d828928"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.Пользователь" id="7fcdc93a-b880-443c-9804-3371cebd9bfc"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ИДСообщенияЭскалации" id="81a54800-96d2-4ae8-8750-bd6eb1a5d608"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ИДИсходногоСообщения" id="86dae8f8-703b-4d9e-9a43-0426c8b33c4c"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.СтатусTurboSMS" id="890ca8be-f377-4336-8ebf-a22b9c5cef4e"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.РучнаяРассылка" id="8ade9b68-1d45-454f-972e-d53a4d84dc10"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ТипСообщения" id="91366439-57d5-4252-8d11-7f334b121276"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.СпособОтправки" id="a63bed74-c763-4302-a965-561dcc33c79b"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ДатаОтправки" id="ab4e3466-b2f3-4f53-bdb8-e3272f3591b0"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ДатаСобытия" id="b8ff0ded-41e0-47ca-be6e-f8e530dc28b4"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.КаналПлановый" id="bda51aa3-0245-452b-a42b-406e73573d70"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.НомерТелефона" id="cf04142d-8d82-47ad-b09b-a7fa8f6d9fa8"/>
+			<Metadata name="InformationRegister.tsms_ЖурналСообщений.Resource.ДатаКлика" id="e35558fb-f529-4fb9-92a0-8347ff5d7448"/>
+		</Metadata>
+		<Metadata name="InformationRegister.tsms_ЖурналСообщений.Command.СообщенияКлиента.CommandModule" id="58ee87d9-b3fd-4437-bb3c-67bef3dfff13.2" configVersion="ced524066f24054fa830beef18c54ae400000000"/>
+		<Metadata name="InformationRegister.tsms_ЖурналСообщений.Form.ФормаСписка" id="9439e3e0-e2a8-4a9e-902d-36206e8b3b0c" configVersion="b5be9bf61096fd4eaf592131eb7ed2e100000000"/>
+		<Metadata name="InformationRegister.tsms_ЖурналСообщений.Form.ФормаСписка.Form" id="9439e3e0-e2a8-4a9e-902d-36206e8b3b0c.0" configVersion="8e461886d792c848b4ec4856e0a3e60c00000000"/>
 		<Metadata name="InformationRegister.tsms_ИсторияОтправкиОповещений" id="de9d3d48-30c8-45a9-83a0-9e633b079761" configVersion="da998da4d3db8945aa93d420d0beb9d500000000">
 			<Metadata name="InformationRegister.tsms_ИсторияОтправкиОповещений.Dimension.Партнер" id="25aa0bae-e40e-472a-8f1b-7099cb5cf9b2"/>
 			<Metadata name="InformationRegister.tsms_ИсторияОтправкиОповещений.Resource.ТекстСообщения" id="2a882a7d-8f70-4b51-920f-77c3ec737900"/>
@@ -35580,6 +35664,13 @@
 		</Metadata>
 		<Metadata name="InformationRegister.tsms_ИсторияОтправкиОповещений.Form.ФормаЗаписи" id="98dd8cd7-9809-4739-9bbe-7df9720f788f" configVersion="7106b3ce0d378f45830529cc1971aca400000000"/>
 		<Metadata name="InformationRegister.tsms_ИсторияОтправкиОповещений.Form.ФормаЗаписи.Form" id="98dd8cd7-9809-4739-9bbe-7df9720f788f.0" configVersion="e8b83161c7d56e46939959573e80713a00000000"/>
+		<Metadata name="InformationRegister.tsms_КликиКарусели" id="4ae8edc9-4d37-473f-8c9e-4a780d64d832" configVersion="68ab3c17bac3d941923f4e3b4274045700000000">
+			<Metadata name="InformationRegister.tsms_КликиКарусели.Dimension.НомерКарточки" id="25c18ac0-679e-4ac2-89cc-25d578eeea71"/>
+			<Metadata name="InformationRegister.tsms_КликиКарусели.Dimension.ИДСообщения" id="41268215-2abf-450e-b294-cad4dd966376"/>
+			<Metadata name="InformationRegister.tsms_КликиКарусели.Resource.Заголовок" id="43230dfa-9706-411a-887a-eeef1d71bcc9"/>
+			<Metadata name="InformationRegister.tsms_КликиКарусели.Resource.КликовКнопки" id="dd83bece-d219-4373-8bc7-b92d3902a1b7"/>
+			<Metadata name="InformationRegister.tsms_КликиКарусели.Resource.КликовСсылки" id="e0e3e5d7-7ea7-40ed-8593-b9adc74bcce4"/>
+		</Metadata>
 		<Metadata name="InformationRegister.АдресаДляВыбора" id="ed7eb4ed-4017-4e58-854e-b6c735e39574" configVersion="4fbcf3a9d8c75d40b6319b1f23962f6200000000">
 			<Metadata name="InformationRegister.АдресаДляВыбора.Resource.Наименование" id="2aa6303f-b83f-4d80-b420-e175ae264363"/>
 			<Metadata name="InformationRegister.АдресаДляВыбора.Resource.ПочтовыйИндекс" id="2e2e90c8-c77b-41cc-bb43-2bf912d67c51"/>
@@ -38879,6 +38970,9 @@
 		<Metadata name="Report.eComm_Постоплата" id="519a60df-4d0a-4782-9559-62bc52e4c27b" configVersion="bc114155e60d7840bf3f518f9ce15ccb00000000"/>
 		<Metadata name="Report.eComm_Постоплата.Template.ОсновнаяСхемаКомпоновкиДанных" id="2d2b1244-5651-4622-8b57-d5f86ef4abc5" configVersion="6cc4ee94d3ff7941bf9d0a512d2f906800000000"/>
 		<Metadata name="Report.eComm_Постоплата.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="2d2b1244-5651-4622-8b57-d5f86ef4abc5.0" configVersion="6ba93bd51bf88646ae3abb50497e85f100000000"/>
+		<Metadata name="Report.tsms_АналитикаРассылок" id="329941eb-d6bd-44a1-91af-b15ae6933cb8" configVersion="6f27b8c0607cd44e99bb8b5a7869977200000000"/>
+		<Metadata name="Report.tsms_АналитикаРассылок.Template.ОсновнаяСхемаКомпоновкиДанных" id="1cb9ac50-3d8d-41fb-a85d-9fc5bfdbc466" configVersion="75e2ddcdf25c48468375367a8f467aa500000000"/>
+		<Metadata name="Report.tsms_АналитикаРассылок.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="1cb9ac50-3d8d-41fb-a85d-9fc5bfdbc466.0" configVersion="5c5b537e0c8c304a9734cb838f32e87a00000000"/>
 		<Metadata name="Report.АнализВерсийОбъектов" id="b3f7f763-bea9-4f59-9450-df95e5c3d89d" configVersion="8182102e7cd6b14ab8f9a1b3adf8dda300000000"/>
 		<Metadata name="Report.АнализВерсийОбъектов.Help" id="b3f7f763-bea9-4f59-9450-df95e5c3d89d.1" configVersion="4e0990c55143ae41afab902e9ddd527600000000"/>
 		<Metadata name="Report.АнализВерсийОбъектов.Template.ОсновнаяСхемаКомпоновкиДанных" id="9111e28e-c1c7-414b-9288-61bd06a04d04" configVersion="63e88a9282965c4d8129e1ecab1b223c00000000"/>
@@ -41099,8 +41193,10 @@
 		<Metadata name="Role.ibs_ЧтениеКлассификаторовМедицинскихУслугHelsi.Rights" id="6e17c88b-35ad-45e0-88ec-cd5561859c42.0" configVersion="359eb41ed22e45498892fff94ce78b8b00000000"/>
 		<Metadata name="Role.ibs_ЧтениеМестПредоставленияУслугHelsi" id="0028a5cc-71c3-4f66-a7b9-b6e8884afb61" configVersion="f87f22f5fe9b01489e4b61466efd51f600000000"/>
 		<Metadata name="Role.ibs_ЧтениеМестПредоставленияУслугHelsi.Rights" id="0028a5cc-71c3-4f66-a7b9-b6e8884afb61.0" configVersion="32935cc6ab9cf14ea69d98b607be39cf00000000"/>
-		<Metadata name="Role.tsms_ОсновнаяРоль" id="23ae24c9-afb3-42e1-883c-6433e61acb83" configVersion="8aa3075560cf5947b2d5ac960c207f7400000000"/>
-		<Metadata name="Role.tsms_ОсновнаяРоль.Rights" id="23ae24c9-afb3-42e1-883c-6433e61acb83.0" configVersion="dd3680f7cb43424197ac66a942606baa00000000"/>
+		<Metadata name="Role.tsms_ОсновнаяРоль" id="23ae24c9-afb3-42e1-883c-6433e61acb83" configVersion="25d9ee5fbe333c4e972769e969ca327900000000"/>
+		<Metadata name="Role.tsms_ОсновнаяРоль.Rights" id="23ae24c9-afb3-42e1-883c-6433e61acb83.0" configVersion="9352268c6b28fb449d164343d97add3900000000"/>
+		<Metadata name="Role.tsms_РучнаяРассылка" id="09387371-eb2e-4196-94a9-3a783523d811" configVersion="c7ceb1db52c94248bc7f19a5efd4db5a00000000"/>
+		<Metadata name="Role.tsms_РучнаяРассылка.Rights" id="09387371-eb2e-4196-94a9-3a783523d811.0" configVersion="70a449445dccc143aaa58dff663da90e00000000"/>
 		<Metadata name="Role.АРМИнтернетМагазин" id="f06ffcb0-be3e-4e13-9334-e4f962d6e834" configVersion="c9f9df0e50c92e4f87d01e6743dd0a1800000000"/>
 		<Metadata name="Role.АРМИнтернетМагазин.Rights" id="f06ffcb0-be3e-4e13-9334-e4f962d6e834.0" configVersion="5074f28c5d5ef248990c1ddb17eb28cf00000000"/>
 		<Metadata name="Role.АРМбухгалтера" id="e6117c0f-eda4-40ad-8adc-54f3d7873897" configVersion="5a953cec2d677b4bbe1d99124bbf72ea00000000"/>
@@ -42573,7 +42669,7 @@
 		<Metadata name="StyleItem.ШрифтТекстовогоПредставленияИндикаторов" id="b2a03a74-1763-450d-8d40-43d5ad07c3da" configVersion="df4e211c8322e04fa16f40f88d90e3e600000000"/>
 		<Metadata name="StyleItem.ШрифтТекстовогоПредставленияИндикаторовРежимКомпактный" id="82c0b5cd-c452-4bc8-9fa0-da8be86226d3" configVersion="b329899b53a4d74d8caa1ae482372c7000000000"/>
 		<Metadata name="StyleItem.ШрифтТекстовогоПредставленияОписанияИндикаторов" id="4612122f-f0d7-4677-9452-b028e0c1c5af" configVersion="4d872641c52be04b9d8ede6ebb4e9cb200000000"/>
-		<Metadata name="Subsystem.CRMИМаркетинг" id="86e05022-b8c0-4115-b7db-bc4853c53e50" configVersion="ddef877716cd5a4eb4ec41a1c6b5b85400000000"/>
+		<Metadata name="Subsystem.CRMИМаркетинг" id="86e05022-b8c0-4115-b7db-bc4853c53e50" configVersion="ac0fd97e73311e479fe81e4b4bdb59bb00000000"/>
 		<Metadata name="Subsystem.CRMИМаркетинг.CommandInterface" id="86e05022-b8c0-4115-b7db-bc4853c53e50.1" configVersion="3b21216abdbcd94598c99ad98d6f476f00000000"/>
 		<Metadata name="Subsystem.CRMИМаркетинг.Help" id="86e05022-b8c0-4115-b7db-bc4853c53e50.0" configVersion="95f9c4e032d8b748ba4199728514709300000000"/>
 		<Metadata name="Subsystem.CRMИМаркетинг.Subsystem.CRM" id="e44644da-2240-451e-8c7b-1d8f05809df5" configVersion="cb53dabb8ae8f3459098f78074459c6200000000"/>

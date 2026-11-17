@@ -394,6 +394,143 @@
 											<ContextMenu name="ШаблонСообщенияViberКонтекстноеМеню" id="85"/>
 											<ExtendedTooltip name="ШаблонСообщенияViberРасширеннаяПодсказка" id="86"/>
 										</InputField>
+										<UsualGroup name="ГруппаКарусель" id="156">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картки каруселі (від 2 до 5)</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Картки каруселі (від 2 до 5)</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Группа карусель</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаКарусельРасширеннаяПодсказка" id="157"/>
+											<ChildItems>
+												<Table name="КарточкиКарусели" id="158">
+													<AutoInsertNewRow>true</AutoInsertNewRow>
+													<EnableStartDrag>true</EnableStartDrag>
+													<EnableDrag>true</EnableDrag>
+													<DataPath>Объект.КарточкиКарусели</DataPath>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="КарточкиКаруселиКонтекстноеМеню" id="159"/>
+													<AutoCommandBar name="КарточкиКаруселиКоманднаяПанель" id="160">
+														<ChildItems>
+															<Button name="КарточкиКаруселиВыбратьКартинкуКарточки" id="195">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ВыбратьКартинкуКарточки</CommandName>
+																<ExtendedTooltip name="КарточкиКаруселиВыбратьКартинкуКарточкиРасширеннаяПодсказка" id="196"/>
+															</Button>
+															<Button name="КарточкиКаруселиОчиститьКартинкуКарточки" id="197">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ОчиститьКартинкуКарточки</CommandName>
+																<ExtendedTooltip name="КарточкиКаруселиОчиститьКартинкуКарточкиРасширеннаяПодсказка" id="198"/>
+															</Button>
+														</ChildItems>
+													</AutoCommandBar>
+													<ExtendedTooltip name="КарточкиКаруселиРасширеннаяПодсказка" id="161"/>
+													<SearchStringAddition name="КарточкиКаруселиСтрокаПоиска" id="162">
+														<AdditionSource>
+															<Item>КарточкиКарусели</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="КарточкиКаруселиСтрокаПоискаКонтекстноеМеню" id="163"/>
+														<ExtendedTooltip name="КарточкиКаруселиСтрокаПоискаРасширеннаяПодсказка" id="164"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="КарточкиКаруселиСостояниеПросмотра" id="165">
+														<AdditionSource>
+															<Item>КарточкиКарусели</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="КарточкиКаруселиСостояниеПросмотраКонтекстноеМеню" id="166"/>
+														<ExtendedTooltip name="КарточкиКаруселиСостояниеПросмотраРасширеннаяПодсказка" id="167"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="КарточкиКаруселиУправлениеПоиском" id="168">
+														<AdditionSource>
+															<Item>КарточкиКарусели</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="КарточкиКаруселиУправлениеПоискомКонтекстноеМеню" id="169"/>
+														<ExtendedTooltip name="КарточкиКаруселиУправлениеПоискомРасширеннаяПодсказка" id="170"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<LabelField name="КарточкиКаруселиНомерСтроки" id="171">
+															<DataPath>Объект.КарточкиКарусели.LineNumber</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="КарточкиКаруселиНомерСтрокиКонтекстноеМеню" id="172"/>
+															<ExtendedTooltip name="КарточкиКаруселиНомерСтрокиРасширеннаяПодсказка" id="173"/>
+														</LabelField>
+														<InputField name="КарточкиКаруселиЗаголовок" id="174">
+															<DataPath>Объект.КарточкиКарусели.Заголовок</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="КарточкиКаруселиЗаголовокКонтекстноеМеню" id="175"/>
+															<ExtendedTooltip name="КарточкиКаруселиЗаголовокРасширеннаяПодсказка" id="176"/>
+														</InputField>
+														<InputField name="КарточкиКаруселиКартинкаИД" id="177">
+															<DataPath>Объект.КарточкиКарусели.КартинкаИД</DataPath>
+															<Visible>false</Visible>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="КарточкиКаруселиКартинкаИДКонтекстноеМеню" id="178"/>
+															<ExtendedTooltip name="КарточкиКаруселиКартинкаИДРасширеннаяПодсказка" id="179"/>
+														</InputField>
+														<InputField name="КарточкиКаруселиИмяФайлаКартинки" id="180">
+															<DataPath>Объект.КарточкиКарусели.ИмяФайлаКартинки</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="КарточкиКаруселиИмяФайлаКартинкиКонтекстноеМеню" id="181"/>
+															<ExtendedTooltip name="КарточкиКаруселиИмяФайлаКартинкиРасширеннаяПодсказка" id="182"/>
+														</InputField>
+														<InputField name="КарточкиКаруселиТекстКнопки" id="183">
+															<DataPath>Объект.КарточкиКарусели.ТекстКнопки</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="КарточкиКаруселиТекстКнопкиКонтекстноеМеню" id="184"/>
+															<ExtendedTooltip name="КарточкиКаруселиТекстКнопкиРасширеннаяПодсказка" id="185"/>
+														</InputField>
+														<InputField name="КарточкиКаруселиСсылкаКнопки" id="186">
+															<DataPath>Объект.КарточкиКарусели.СсылкаКнопки</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="КарточкиКаруселиСсылкаКнопкиКонтекстноеМеню" id="187"/>
+															<ExtendedTooltip name="КарточкиКаруселиСсылкаКнопкиРасширеннаяПодсказка" id="188"/>
+														</InputField>
+														<InputField name="КарточкиКаруселиТекстСсылки" id="189">
+															<DataPath>Объект.КарточкиКарусели.ТекстСсылки</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="КарточкиКаруселиТекстСсылкиКонтекстноеМеню" id="190"/>
+															<ExtendedTooltip name="КарточкиКаруселиТекстСсылкиРасширеннаяПодсказка" id="191"/>
+														</InputField>
+														<InputField name="КарточкиКаруселиАдресСсылки" id="192">
+															<DataPath>Объект.КарточкиКарусели.АдресСсылки</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="КарточкиКаруселиАдресСсылкиКонтекстноеМеню" id="193"/>
+															<ExtendedTooltip name="КарточкиКаруселиАдресСсылкиРасширеннаяПодсказка" id="194"/>
+														</InputField>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="ТипViberСообщения" id="153">
+											<DataPath>Объект.ТипViberСообщения</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тип Viber-повідомлення</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Тип Viber-повідомлення</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ТипViberСообщенияКонтекстноеМеню" id="154"/>
+											<ExtendedTooltip name="ТипViberСообщенияРасширеннаяПодсказка" id="155"/>
+											<Events>
+												<Event name="OnChange">ТипViberСообщенияПриИзменении</Event>
+											</Events>
+										</InputField>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>
@@ -488,6 +625,86 @@
 						</InputField>
 					</ChildItems>
 				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЭскалация" id="142">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ескалація в SMS</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Ескалація в SMS</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа эскалация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаЭскалацияРасширеннаяПодсказка" id="143"/>
+			<ChildItems>
+				<CheckBoxField name="ЭскалацияВСМС" id="144">
+					<DataPath>Объект.ЭскалацияВСМС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Відправляти SMS, якщо Viber не прочитано</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відправляти SMS, якщо Viber не прочитано</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЭскалацияВСМСКонтекстноеМеню" id="145"/>
+					<ExtendedTooltip name="ЭскалацияВСМСРасширеннаяПодсказка" id="146"/>
+				</CheckBoxField>
+				<InputField name="ЭскалацияЧерезДней" id="147">
+					<DataPath>Объект.ЭскалацияЧерезДней</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Через днів</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Через днів</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЭскалацияЧерезДнейКонтекстноеМеню" id="148"/>
+					<ExtendedTooltip name="ЭскалацияЧерезДнейРасширеннаяПодсказка" id="149"/>
+				</InputField>
+				<InputField name="ШаблонСообщенияЭскалации" id="150">
+					<DataPath>Объект.ШаблонСообщенияЭскалации</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст SMS ескалації</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Текст SMS ескалації</v8:content>
+						</v8:item>
+					</Title>
+					<Height>3</Height>
+					<MultiLine>true</MultiLine>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порожньо — береться звичайний шаблон SMS</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Порожньо — береться звичайний шаблон SMS</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ШаблонСообщенияЭскалацииКонтекстноеМеню" id="151"/>
+					<ExtendedTooltip name="ШаблонСообщенияЭскалацииРасширеннаяПодсказка" id="152"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -632,6 +849,44 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОчиститьКартинкуViber</Action>
+		</Command>
+		<Command name="ВыбратьКартинкуКарточки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вибрати картинку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вибрати картинку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Выбрать картинку карточки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьКартинкуКарточки</Action>
+		</Command>
+		<Command name="ОчиститьКартинкуКарточки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистити картинку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очистити картинку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очистить картинку карточки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьКартинкуКарточки</Action>
 		</Command>
 	</Commands>
 </Form>

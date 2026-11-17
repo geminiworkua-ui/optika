@@ -4,6 +4,17 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>InformationRegister.tsms_ЖурналСообщений</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.tsms_ВидыОповещений</name>
 		<right>
 			<name>Read</name>
@@ -222,6 +233,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Report.tsms_АналитикаРассылок</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>AccumulationRegister.ВыручкаИСебестоимостьПродаж.Dimension.Склад</name>
 		<right>
 			<name>Edit</name>
@@ -243,6 +265,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.tsms_КликиКарусели</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>AccumulationRegister.ВыручкаИСебестоимостьПродаж.Resource.Себестоимость</name>
 		<right>
 			<name>Edit</name>
@@ -254,6 +287,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.tsms_ЖурналСообщений.Command.СообщенияКлиента</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -505,6 +545,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.tsms_РучныеРассылки</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>

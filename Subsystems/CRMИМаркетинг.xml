@@ -33,6 +33,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Report.РезультатыСогласованияЦенНоменклатуры</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.СоставСегмента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.РеестрТорговыхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.tsms_РучныеРассылки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.tsms_ЖурналСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.tsms_КликиКарусели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.tsms_РучнаяРассылка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.tsms_АналитикаРассылок</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
