@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
@@ -729,6 +729,7 @@
 					<v8:content>Сторінки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="ГруппаСтраницыExtendedTooltip" id="691"/>
 			<Events>
 				<Event name="OnCurrentPageChange">ГруппаСтраницыПриСменеСтраницы</Event>
@@ -3450,99 +3451,66 @@
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>10</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>2</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>4</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>3</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>13</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>5</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>7</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0:560ad9c5-c5aa-4c80-a9c4-9bae11473499</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>1</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>14</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>9</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>6</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>DataProcessor.ПомощникЗачетаОплат.Command.ЗачетОплаты</Command>
@@ -3556,170 +3524,113 @@
 				<Command>DataProcessor.ОбменСКонтрагентами.Command.УдалитьСформироватьПодписатьОтправитьЭД</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.ЭД</CommandGroup>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0:532f17d1-bc46-4c6d-a832-b58ddc6aecfc</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>15</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>16</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>17</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>18</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0:26cde412-3c95-472d-b935-076c4e2abd51</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>19</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>20</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>21</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>22</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>23</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>24</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>25</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>26</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0:5c8b4705-4367-4cef-a59d-08bd00f40d88</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>8</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>11</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>12</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>DataProcessor.ОбменСКонтрагентами.Command.ПереотправитьЭД</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.ЭД</CommandGroup>
 				<Index>1</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>DataProcessor.ОбменСКонтрагентами.Command.УдалитьСформироватьЭД</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.ЭД</CommandGroup>
 				<Index>2</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>Document.ДоверенностьВыданная.StandardCommand.CreateBasedOn</Command>

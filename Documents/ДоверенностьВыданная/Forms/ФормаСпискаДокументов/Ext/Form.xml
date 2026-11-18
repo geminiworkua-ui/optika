@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -65,6 +65,7 @@
 					<v8:content>Сторінки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="СтраницыExtendedTooltip" id="147"/>
 			<ChildItems>
 				<Page name="СтраницаДоверенностиНаПолучениеТоваров" id="28">
@@ -339,6 +340,7 @@
 							<ShowRoot>false</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="СписокДоверенностиКонтекстноеМеню" id="2"/>
 							<AutoCommandBar name="СписокДоверенностиКоманднаяПанель" id="3">
 								<Autofill>false</Autofill>
@@ -986,6 +988,7 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="СписокРаспоряженияНаОформлениеКонтекстноеМеню" id="31"/>
 							<AutoCommandBar name="СписокРаспоряженияНаОформлениеКоманднаяПанель" id="32">
 								<Autofill>false</Autofill>
@@ -1966,107 +1969,71 @@
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>6</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>7</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>3</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>2</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0:3ac17f81-25c5-4cba-b0e8-4278377c6b4f</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>4</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0:a8c4b4c2-11c8-40ec-9aa3-c06e16292def</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>5</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>1</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>8</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0:0296aa74-9e54-4ff2-9f78-97cd357c7eb5</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>10</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0:6e447f1b-6ca5-45c7-a492-68a7b2aff0bc</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>11</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>9</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьПисьмо</Command>
@@ -2112,27 +2079,18 @@
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<Index>1</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>CommonCommand.ДополнительныеСведенияКоманднаяПанель</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<Index>2</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 			<Item>
 				<Command>CommonCommand.ЗаполнениеОбъекта</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<Index>3</Index>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 		</CommandBar>
 	</CommandInterface>

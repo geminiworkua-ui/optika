@@ -2867,16 +2867,7 @@
 						<dcsset:appearance>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>Текст</dcscor:parameter>
-								<dcscor:value xsi:type="v8:LocalStringType">
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content/>
-									</v8:item>
-									<v8:item>
-										<v8:lang>uk</v8:lang>
-										<v8:content/>
-									</v8:item>
-								</dcscor:value>
+								<dcscor:value xsi:type="v8:LocalStringType"/>
 							</dcscor:item>
 						</dcsset:appearance>
 					</dcsset:item>
@@ -3217,16 +3208,7 @@
 						<dcsset:appearance>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>Текст</dcscor:parameter>
-								<dcscor:value xsi:type="v8:LocalStringType">
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content/>
-									</v8:item>
-									<v8:item>
-										<v8:lang>uk</v8:lang>
-										<v8:content/>
-									</v8:item>
-								</dcscor:value>
+								<dcscor:value xsi:type="v8:LocalStringType"/>
 							</dcscor:item>
 						</dcsset:appearance>
 					</dcsset:item>
@@ -3584,16 +3566,7 @@
 						<dcsset:appearance>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>Текст</dcscor:parameter>
-								<dcscor:value xsi:type="v8:LocalStringType">
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content/>
-									</v8:item>
-									<v8:item>
-										<v8:lang>uk</v8:lang>
-										<v8:content/>
-									</v8:item>
-								</dcscor:value>
+								<dcscor:value xsi:type="v8:LocalStringType"/>
 							</dcscor:item>
 						</dcsset:appearance>
 					</dcsset:item>

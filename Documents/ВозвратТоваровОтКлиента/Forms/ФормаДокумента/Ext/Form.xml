@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
 	<CommandSet>
 		<ExcludedCommand>PostAndClose</ExcludedCommand>
 	</CommandSet>
@@ -281,6 +281,7 @@
 					<v8:content>Сторінки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="ГруппаСтраницыExtendedTooltip" id="378"/>
 			<ChildItems>
 				<Page name="ГруппаОсновное" id="592">
@@ -1858,6 +1859,7 @@
 								<InputField name="ТоварыПричинаВозврата" id="658">
 									<DataPath>Объект.Товары.ПричинаВозврата</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ТоварыПричинаВозвратаКонтекстноеМеню" id="659"/>
 									<ExtendedTooltip name="ТоварыПричинаВозвратаРасширеннаяПодсказка" id="660"/>
 								</InputField>
@@ -1951,16 +1953,19 @@
 										</InputField>
 										<InputField name="Лікар" id="664">
 											<DataPath>Объект.Лікар</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="ЛікарКонтекстноеМеню" id="665"/>
 											<ExtendedTooltip name="ЛікарРасширеннаяПодсказка" id="666"/>
 										</InputField>
 										<InputField name="СтроннійЛікар" id="670">
 											<DataPath>Объект.СтроннійЛікар</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="СтроннійЛікарКонтекстноеМеню" id="671"/>
 											<ExtendedTooltip name="СтроннійЛікарРасширеннаяПодсказка" id="672"/>
 										</InputField>
 										<InputField name="Майстер" id="667">
 											<DataPath>Объект.Майстер</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="МайстерКонтекстноеМеню" id="668"/>
 											<ExtendedTooltip name="МайстерРасширеннаяПодсказка" id="669"/>
 										</InputField>

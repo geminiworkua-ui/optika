@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -401,6 +401,7 @@
 							<v8:content>Сторінки</v8:content>
 						</v8:item>
 					</ToolTip>
+					<PagesRepresentation>TabsOnTop</PagesRepresentation>
 					<ExtendedTooltip name="СтраницыExtendedTooltip" id="852"/>
 					<ChildItems>
 						<Page name="СтраницаСформировать" id="205">
@@ -475,6 +476,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="СформироватьКонтекстноеМеню" id="207"/>
 									<AutoCommandBar name="СформироватьКоманднаяПанель" id="208">
 										<ChildItems>
@@ -693,6 +695,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="ОбработатьКонтекстноеМеню" id="336">
 										<ChildItems>
 											<Button name="ОбработатьКонтекстноеМенюСправочникЭДПрисоединенныеФайлыСтруктураЭДО" id="1380">
@@ -990,6 +993,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="УтвердитьКонтекстноеМеню" id="179">
 										<ChildItems>
 											<Button name="УтвердитьКонтекстноеМенюСправочникЭДПрисоединенныеФайлыСтруктураЭДО" id="1372">
@@ -1244,6 +1248,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="ПодписатьКонтекстноеМеню" id="278">
 										<ChildItems>
 											<Button name="ПодписатьКонтекстноеМенюСправочникЭДПрисоединенныеФайлыСтруктураЭДО" id="1370">
@@ -1487,6 +1492,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="ИсправитьКонтекстноеМеню" id="679">
 										<ChildItems>
 											<Button name="ИсправитьКонтекстноеМенюСправочникЭДПрисоединенныеФайлыСтруктураЭДО" id="1368">
@@ -1754,6 +1760,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="АннулироватьКонтекстноеМеню" id="1092">
 										<ChildItems>
 											<Button name="АннулироватьКонтекстноеМенюСправочникЭДПрисоединенныеФайлыСтруктураЭДО" id="1366">
@@ -2012,6 +2019,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="НаКонтролеКонтекстноеМеню" id="373">
 										<ChildItems>
 											<Button name="НаКонтролеКонтекстноеМенюСправочникЭДПрисоединенныеФайлыСтруктураЭДО" id="1376">
@@ -2272,6 +2280,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="ОтправитьКонтекстноеМеню" id="144"/>
 									<AutoCommandBar name="ОтправитьКоманднаяПанель" id="145">
 										<Autofill>false</Autofill>
@@ -2454,6 +2463,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="РаспаковатьКонтекстноеМеню" id="415"/>
 									<AutoCommandBar name="РаспаковатьКоманднаяПанель" id="416">
 										<Autofill>false</Autofill>
@@ -2665,6 +2675,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="РазобратьКонтекстноеМеню" id="562"/>
 									<AutoCommandBar name="РазобратьКоманднаяПанель" id="563">
 										<Autofill>false</Autofill>
@@ -2824,6 +2835,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="ПриглашенияКонтекстноеМеню" id="742"/>
 									<AutoCommandBar name="ПриглашенияКоманднаяПанель" id="743">
 										<Autofill>false</Autofill>
@@ -2981,6 +2993,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="ТребуетсяПригласитьКонтекстноеМеню" id="756"/>
 									<AutoCommandBar name="ТребуетсяПригласитьКоманднаяПанель" id="757">
 										<Autofill>false</Autofill>
@@ -3195,6 +3208,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="ЖдемСогласияКонтекстноеМеню" id="780"/>
 									<AutoCommandBar name="ЖдемСогласияКоманднаяПанель" id="781">
 										<Autofill>false</Autofill>
@@ -3379,6 +3393,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="ТребуетсяСогласиеКонтекстноеМеню" id="769"/>
 									<AutoCommandBar name="ТребуетсяСогласиеКоманднаяПанель" id="770">
 										<Autofill>false</Autofill>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -56,6 +56,7 @@
 					<v8:content>Группа продажа и возврат</v8:content>
 				</v8:item>
 			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="ГруппаПродажаИВозвратРасширеннаяПодсказка" id="2265"/>
 			<Events>
 				<Event name="OnCurrentPageChange">ГруппаПродажаИВозвратПриСменеСтраницы</Event>
@@ -2896,6 +2897,7 @@
 																			<ShowRoot>true</ShowRoot>
 																			<AllowRootChoice>false</AllowRootChoice>
 																			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+																			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 																			<ContextMenu name="СписокКонтекстноеМеню" id="2305"/>
 																			<AutoCommandBar name="СписокКоманднаяПанель" id="2306">
 																				<Autofill>false</Autofill>
@@ -3221,6 +3223,7 @@
 													<ShowRoot>true</ShowRoot>
 													<AllowRootChoice>false</AllowRootChoice>
 													<UpdateOnDataChange>Auto</UpdateOnDataChange>
+													<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 													<ContextMenu name="СписокЧековККМКонтекстноеМеню" id="2570">
 														<ChildItems>
 															<Button name="СписокЧековККМКонтекстноеМенюВозвратТовара" id="3050">
@@ -3670,6 +3673,7 @@
 											<ShowRoot>true</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 											<ContextMenu name="СписокЧековККМНаВозвратКонтекстноеМеню" id="2711"/>
 											<AutoCommandBar name="СписокЧековККМНаВозвратКоманднаяПанель" id="2712">
 												<Autofill>false</Autofill>
@@ -3812,6 +3816,7 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="СписокЧековКонтекстноеМеню" id="3550"/>
 							<AutoCommandBar name="СписокЧековКоманднаяПанель" id="3551"/>
 							<ExtendedTooltip name="СписокЧековРасширеннаяПодсказка" id="3552"/>
@@ -4081,6 +4086,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="СписокЗаказовКонтекстноеМеню" id="2424">
 										<ChildItems>
 											<Button name="СтруктураПодчиненностиЗаказа" id="3041">
@@ -4861,6 +4867,7 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="СписокПриемаВрачейКонтекстноеМеню" id="3059"/>
 							<AutoCommandBar name="СписокПриемаВрачейКоманднаяПанель" id="3060">
 								<Autofill>false</Autofill>
@@ -5366,6 +5373,7 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="ТоварыКОтгрузкеКонтекстноеМеню" id="3213"/>
 							<AutoCommandBar name="ТоварыКОтгрузкеКоманднаяПанель" id="3214">
 								<Autofill>false</Autofill>
@@ -5589,6 +5597,7 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="СписокТоварыКПолучениюКонтекстноеМеню" id="3276"/>
 							<AutoCommandBar name="СписокТоварыКПолучениюКоманднаяПанель" id="3277">
 								<Autofill>false</Autofill>
@@ -5717,6 +5726,7 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="СписокТабелиКонтекстноеМеню" id="3400"/>
 							<AutoCommandBar name="СписокТабелиКоманднаяПанель" id="3401">
 								<ChildItems>
@@ -5961,6 +5971,7 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="СписокСогласованияЗаменыКонтекстноеМеню" id="3511"/>
 							<AutoCommandBar name="СписокСогласованияЗаменыКоманднаяПанель" id="3512"/>
 							<ExtendedTooltip name="СписокСогласованияЗаменыРасширеннаяПодсказка" id="3513"/>

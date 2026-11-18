@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
@@ -569,6 +569,7 @@
 					<v8:content>Сторінки картка номенклатури</v8:content>
 				</v8:item>
 			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="СтраницыКарточкаНоменклатурыРасширеннаяПодсказка" id="683"/>
 			<Events>
 				<Event name="OnCurrentPageChange">СтраницыКарточкаНоменклатурыПриСменеСтраницы</Event>
@@ -6489,6 +6490,7 @@
 									<v8:content>Группа свойств</v8:content>
 								</v8:item>
 							</ToolTip>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
 							<ExtendedTooltip name="ГруппаСвойствРасширеннаяПодсказка" id="1486"/>
 							<ChildItems>
 								<Page name="ГруппаХарактеристики" id="1567">
@@ -6528,6 +6530,7 @@
 											<ShowRoot>true</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 											<ContextMenu name="ХарактеристикиКонтекстноеМеню" id="1570"/>
 											<AutoCommandBar name="ХарактеристикиКоманднаяПанель" id="1571">
 												<ChildItems>
@@ -6611,6 +6614,7 @@
 													<v8:content>Группа составы</v8:content>
 												</v8:item>
 											</ToolTip>
+											<PagesRepresentation>TabsOnTop</PagesRepresentation>
 											<ExtendedTooltip name="ГруппаСоставыРасширеннаяПодсказка" id="1610"/>
 											<ChildItems>
 												<Page name="ГруппаСборкаРазборка" id="1611">
@@ -6650,6 +6654,7 @@
 															<ShowRoot>true</ShowRoot>
 															<AllowRootChoice>false</AllowRootChoice>
 															<UpdateOnDataChange>Auto</UpdateOnDataChange>
+															<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 															<ContextMenu name="СоставКонтекстноеМеню" id="1786"/>
 															<AutoCommandBar name="СоставКоманднаяПанель" id="1787">
 																<Autofill>false</Autofill>
@@ -6763,6 +6768,7 @@
 															<ShowRoot>true</ShowRoot>
 															<AllowRootChoice>false</AllowRootChoice>
 															<UpdateOnDataChange>Auto</UpdateOnDataChange>
+															<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 															<ContextMenu name="ПереработкаКонтекстноеМеню" id="1817"/>
 															<AutoCommandBar name="ПереработкаКоманднаяПанель" id="1818">
 																<Autofill>false</Autofill>
@@ -6876,6 +6882,7 @@
 											<ShowRoot>true</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 											<ContextMenu name="СвойстваОбъектаКонтекстноеМеню" id="1733"/>
 											<AutoCommandBar name="СвойстваОбъектаКоманднаяПанель" id="1734">
 												<Autofill>false</Autofill>
@@ -6984,6 +6991,7 @@
 											<ShowRoot>true</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 											<ContextMenu name="НоменклатураПостащиковКонтекстноеМеню" id="1711"/>
 											<AutoCommandBar name="НоменклатураПостащиковКоманднаяПанель" id="1712">
 												<Autofill>false</Autofill>
@@ -7082,6 +7090,7 @@
 											<ShowRoot>true</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 											<ContextMenu name="ЦеныНоменклатурыКонтекстноеМеню" id="1848"/>
 											<AutoCommandBar name="ЦеныНоменклатурыКоманднаяПанель" id="1849">
 												<ChildItems>
@@ -7185,6 +7194,7 @@
 											<ShowRoot>true</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 											<ContextMenu name="ЦеныПоставщиковКонтекстноеМеню" id="1876"/>
 											<AutoCommandBar name="ЦеныПоставщиковКоманднаяПанель" id="1877">
 												<ChildItems>
@@ -7293,6 +7303,7 @@
 											<ShowRoot>true</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 											<ContextMenu name="РезервКонтекстноеМеню" id="1761"/>
 											<AutoCommandBar name="РезервКоманднаяПанель" id="1762">
 												<Autofill>false</Autofill>
@@ -7392,6 +7403,7 @@
 											<ShowRoot>true</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 											<ContextMenu name="ШтрихкодыКонтекстноеМеню" id="1909"/>
 											<AutoCommandBar name="ШтрихкодыКоманднаяПанель" id="1910">
 												<Autofill>false</Autofill>
@@ -7492,6 +7504,7 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="СписокСвойстваОбъектаКонтекстноеМеню" id="2033"/>
 							<AutoCommandBar name="СписокСвойстваОбъектаКоманднаяПанель" id="2034"/>
 							<ExtendedTooltip name="СписокСвойстваОбъектаРасширеннаяПодсказка" id="2035"/>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
@@ -48,6 +48,7 @@
 			</ChildItems>
 		</UsualGroup>
 		<Pages name="Группа6" id="153">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="154"/>
 			<ChildItems>
 				<Page name="РаботаСКлиентом" id="151">
@@ -112,6 +113,7 @@
 									<v8:content>Группа страницы</v8:content>
 								</v8:item>
 							</ToolTip>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
 							<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="13"/>
 							<ChildItems>
 								<Page name="ОбщаяИнформация" id="160">
@@ -158,6 +160,7 @@
 											<ShowRoot>true</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 											<ContextMenu name="ЗаказыКлиентаКонтекстноеМеню" id="197"/>
 											<AutoCommandBar name="ЗаказыКлиентаКоманднаяПанель" id="198">
 												<Autofill>false</Autofill>
@@ -308,6 +311,7 @@
 													<ShowRoot>true</ShowRoot>
 													<AllowRootChoice>false</AllowRootChoice>
 													<UpdateOnDataChange>Auto</UpdateOnDataChange>
+													<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 													<ContextMenu name="ЗаписиКврачуКонтекстноеМеню" id="163"/>
 													<AutoCommandBar name="ЗаписиКврачуКоманднаяПанель" id="164">
 														<Autofill>false</Autofill>
@@ -401,6 +405,7 @@
 													<ShowRoot>true</ShowRoot>
 													<AllowRootChoice>false</AllowRootChoice>
 													<UpdateOnDataChange>Auto</UpdateOnDataChange>
+													<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 													<ContextMenu name="РекомендацииОкулистаКонтекстноеМеню" id="420"/>
 													<AutoCommandBar name="РекомендацииОкулистаКоманднаяПанель" id="421">
 														<Autofill>false</Autofill>
@@ -570,6 +575,7 @@
 													<ShowRoot>true</ShowRoot>
 													<AllowRootChoice>false</AllowRootChoice>
 													<UpdateOnDataChange>Auto</UpdateOnDataChange>
+													<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 													<ContextMenu name="ПодборТовараКонтекстноеМеню" id="68"/>
 													<AutoCommandBar name="ПодборТовараКоманднаяПанель" id="69">
 														<Autofill>false</Autofill>
@@ -941,6 +947,7 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="РасписаниеОкулистаКонтекстноеМеню" id="833"/>
 							<AutoCommandBar name="РасписаниеОкулистаКоманднаяПанель" id="834"/>
 							<ExtendedTooltip name="РасписаниеОкулистаРасширеннаяПодсказка" id="835"/>
@@ -1052,6 +1059,7 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="ЗаказыКлиентовКонтекстноеМеню" id="492"/>
 							<AutoCommandBar name="ЗаказыКлиентовКоманднаяПанель" id="493"/>
 							<ExtendedTooltip name="ЗаказыКлиентовРасширеннаяПодсказка" id="494"/>
@@ -1529,6 +1537,7 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="ДвиженияПоКассамКонтекстноеМеню" id="812"/>
 							<AutoCommandBar name="ДвиженияПоКассамКоманднаяПанель" id="813"/>
 							<ExtendedTooltip name="ДвиженияПоКассамРасширеннаяПодсказка" id="814"/>
@@ -1603,6 +1612,7 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="ГрафикРаботыНаТекущийДеньКонтекстноеМеню" id="769"/>
 							<AutoCommandBar name="ГрафикРаботыНаТекущийДеньКоманднаяПанель" id="770"/>
 							<ExtendedTooltip name="ГрафикРаботыНаТекущийДеньРасширеннаяПодсказка" id="771"/>
@@ -1701,6 +1711,7 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="ТабельРабочегоВремениКонтекстноеМеню" id="735"/>
 							<AutoCommandBar name="ТабельРабочегоВремениКоманднаяПанель" id="736"/>
 							<ExtendedTooltip name="ТабельРабочегоВремениРасширеннаяПодсказка" id="737"/>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -399,6 +399,7 @@
 							<v8:content>Сторінки</v8:content>
 						</v8:item>
 					</ToolTip>
+					<PagesRepresentation>TabsOnTop</PagesRepresentation>
 					<ExtendedTooltip name="СтраницыExtendedTooltip" id="900"/>
 					<Events>
 						<Event name="OnCurrentPageChange">СтраницыПриСменеСтраницы</Event>
@@ -689,6 +690,7 @@
 															<ShowRoot>true</ShowRoot>
 															<AllowRootChoice>false</AllowRootChoice>
 															<UpdateOnDataChange>Auto</UpdateOnDataChange>
+															<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 															<ContextMenu name="СписокСтандартныйПоискНоменклатураКонтекстноеМеню" id="774">
 																<Autofill>false</Autofill>
 																<ChildItems>
@@ -1057,6 +1059,7 @@
 															<ShowRoot>true</ShowRoot>
 															<AllowRootChoice>false</AllowRootChoice>
 															<UpdateOnDataChange>Auto</UpdateOnDataChange>
+															<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 															<ContextMenu name="СписокСтандартныйПоискХарактеристикиКонтекстноеМеню" id="800">
 																<Autofill>false</Autofill>
 																<ChildItems>
@@ -1464,6 +1467,7 @@
 															<ShowRoot>true</ShowRoot>
 															<AllowRootChoice>false</AllowRootChoice>
 															<UpdateOnDataChange>Auto</UpdateOnDataChange>
+															<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 															<ContextMenu name="СписокРасширенныйПоискНоменклатураКонтекстноеМеню" id="163">
 																<Autofill>false</Autofill>
 																<ChildItems>
@@ -1872,6 +1876,7 @@
 															<ShowRoot>true</ShowRoot>
 															<AllowRootChoice>false</AllowRootChoice>
 															<UpdateOnDataChange>Auto</UpdateOnDataChange>
+															<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 															<ContextMenu name="СписокРасширенныйПоискХарактеристикиКонтекстноеМеню" id="176">
 																<Autofill>false</Autofill>
 																<ChildItems>
@@ -2358,6 +2363,7 @@
 															<ShowRoot>true</ShowRoot>
 															<AllowRootChoice>false</AllowRootChoice>
 															<UpdateOnDataChange>Auto</UpdateOnDataChange>
+															<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 															<ContextMenu name="ИерархияНоменклатурыКонтекстноеМеню" id="567"/>
 															<AutoCommandBar name="ИерархияНоменклатурыКоманднаяПанель" id="568"/>
 															<ExtendedTooltip name="ИерархияНоменклатурыExtendedTooltip" id="1007"/>
@@ -2490,6 +2496,7 @@
 															<ShowRoot>false</ShowRoot>
 															<AllowRootChoice>false</AllowRootChoice>
 															<UpdateOnDataChange>Auto</UpdateOnDataChange>
+															<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 															<ContextMenu name="ВидыНоменклатурыКонтекстноеМеню" id="1249"/>
 															<AutoCommandBar name="ВидыНоменклатурыКоманднаяПанель" id="1250">
 																<Autofill>false</Autofill>
@@ -3168,6 +3175,7 @@
 															<ShowRoot>true</ShowRoot>
 															<AllowRootChoice>false</AllowRootChoice>
 															<UpdateOnDataChange>Auto</UpdateOnDataChange>
+															<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 															<ContextMenu name="СписокСтандартныйПоискНоменклатураПоставщикаКонтекстноеМеню" id="843">
 																<ChildItems>
 																	<Button name="СписокСтандартныйПоискНоменклатураПоставщикаКонтекстноеМенюПерейтиКЦенамНоменклатуры" id="866">
@@ -3508,6 +3516,7 @@
 															<ShowRoot>true</ShowRoot>
 															<AllowRootChoice>false</AllowRootChoice>
 															<UpdateOnDataChange>Auto</UpdateOnDataChange>
+															<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 															<ContextMenu name="СписокРасширенныйПоискНоменклатураПоставщикаКонтекстноеМеню" id="400">
 																<ChildItems>
 																	<Button name="СписокРасширенныйПоискНоменклатураПоставщикаКонтекстноеМенюПерейтиКЦенамНоменклатуры" id="430">
@@ -3916,6 +3925,7 @@
 													<ShowRoot>true</ShowRoot>
 													<AllowRootChoice>true</AllowRootChoice>
 													<UpdateOnDataChange>Auto</UpdateOnDataChange>
+													<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 													<ContextMenu name="ИерархияНоменклатурыПоставщикаКонтекстноеМеню" id="681"/>
 													<AutoCommandBar name="ИерархияНоменклатурыПоставщикаКоманднаяПанель" id="682"/>
 													<ExtendedTooltip name="ИерархияНоменклатурыПоставщикаExtendedTooltip" id="1080"/>
